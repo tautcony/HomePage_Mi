@@ -71,15 +71,23 @@
 }
 
 .nav .logo {
-    background-color: red;
+    background-color: #ff6700;
+    background:url(../img/logo.png) no-repeat;
     width: 55px;
     height: 55px;
     margin-right: 7px;
     margin-top: 12px;
 }
 
+.doodle-ad {
+    width:180px;
+    height:60px;
+    background:url(../img/doodle0517.gif) no-repeat;
+    margin-top: 8px;
+    margin-left: -10px;
+}
 .nav .nav_list {
-    padding: 2px 0px 0px 30px;
+    padding: 2px 0 0 0;
 }
 
 .nav .nav_list li {
@@ -88,7 +96,7 @@
 
 .nav .nav_list a {
     line-height: 80px;
-    padding: 26px 18px 40px;
+    padding: 26px 12px 40px;
     color: #333;
     font-size: 16px;
 }
@@ -107,7 +115,7 @@
     height: 50px;
     position: relative;
     margin-top: 15px;
-    margin-left: 37px;
+    margin-left: 63px;
 }
 
 .search-box .search-txt {
@@ -123,7 +131,17 @@
     width: 53px;
     height: 50px;
     border: 1px solid #e0e0e0;
-    /*background: url(../images/search1.png) 16px 15px no-repeat;*/
+    background: url(../img/search1.png) 16px 15px no-repeat;
+}
+
+/*todo: the hover do not active*/
+.search_btn:hover {
+    cursor: pointer;
+    width: 53px;
+    height: 50px;
+    border-color: 1px solid #ff6700;
+    transition: all .8s;
+    background:url(../img/search2.png) 16px 15px no-repeat;
 }
 
 .search-box .hot-word1,
@@ -157,11 +175,7 @@
     color: #fff;
 }
 
-/*.search-btn:hover {
-    border-color: #666666;
-    transition: all .8s;
-}
-
+/*
 .search-box .search-txt:hover + .search-btn,
 .search-box .search-txt:hover {
     border-color: #666666;
