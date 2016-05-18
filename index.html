@@ -357,15 +357,12 @@
             <div class="nav clearfix">
                 <div class="header-logo"><div class="logo fl"></div><div class="doodle-ad fl"></div></div>
                 <ul class="nav_list clearfix fl">
-                    <li><a href="#">小米手机</a></li>
-                    <li><a href="#">红米</a></li>
-                    <li><a href="#">平板</a></li>
-                    <li><a href="#">电视</a></li>
-                    <li><a href="#">盒子 · 影音</a></li>
-                    <li><a href="#">路由器</a></li>
-                    <li><a href="#">智能硬件</a></li>
-                    <li><a href="#">服务</a></li>
-                    <li><a href="#">社区</a></li>
+                    <li v-for="item in (nav_list)">
+                        <a href="{{item.href}}">{{item.title}}</a>
+                    </li>
+                    <!--
+                    <li><a href="#">小米手机</a></li><li><a href="#">红米</a></li><li><a href="#">平板</a></li><li><a href="#">电视</a></li><li><a href="#">盒子 · 影音</a></li><li><a href="#">路由器</a></li><li><a href="#">智能硬件</a></li><li><a href="#">服务</a></li><li><a href="#">社区</a></li>
+                    -->
                 </ul>
                 <div class="search fl">
                     <div class="search-box">
@@ -382,16 +379,7 @@
                                 <a href="#"><span class="spec_name">{{item.title}}</span><span class="result">约有{{item.count}}件</span></a>
                             </li>
                             <!--
-                            <li><a href="#"><span class="spec_name">移动电源</span><span class="result">约有22件</span></a></li>
-                            <li><a href="#"><span class="spec_name">空气净化器</span><span class="result">约有2件</span></a></li>
-                            <li><a href="#"><span class="spec_name">小米手环</span><span class="result">约有5件</span></a></li>
-                            <li><a href="#"><span class="spec_name">WiFi</span><span class="result">约有7件</span></a></li>
-                            <li><a href="#"><span class="spec_name">自拍杆</span><span class="result">约有1件</span></a></li>
-                            <li><a href="#"><span class="spec_name">小米体重秤</span><span class="result">约有134件</span></a></li>
-                            <li><a href="#"><span class="spec_name">小蚁摄像机</span><span class="result">约有6件</span></a></li>
-                            <li><a href="#"><span class="spec_name">运动相机</span><span class="result">约有22件</span></a></li>
-                            <li><a href="#"><span class="spec_name">智能插座</span><span class="result">约有4件</span></a></li>
-                            <li><a href="#"><span class="spec_name">配件优惠套装</span><span class="result">约有11件</span></a></li>
+                                <li><a href="#"><span class="spec_name">移动电源</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">空气净化器</span><span class="result">约有2件</span></a></li><li><a href="#"><span class="spec_name">小米手环</span><span class="result">约有5件</span></a></li><li><a href="#"><span class="spec_name">WiFi</span><span class="result">约有7件</span></a></li><li><a href="#"><span class="spec_name">自拍杆</span><span class="result">约有1件</span></a></li><li><a href="#"><span class="spec_name">小米体重秤</span><span class="result">约有134件</span></a></li><li><a href="#"><span class="spec_name">小蚁摄像机</span><span class="result">约有6件</span></a></li><li><a href="#"><span class="spec_name">运动相机</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">智能插座</span><span class="result">约有4件</span></a></li><li><a href="#"><span class="spec_name">配件优惠套装</span><span class="result">约有11件</span></a></li>
                             -->
                         </ul>
                     </div>
@@ -400,49 +388,21 @@
             <div class="category">
                 <div class="category clearfix">
                     <ul class="category_list">
-                    <li class="category_item"  v-for="item in (category_list)">
+                    <li class="category_item" v-for="item in (category_list)">
                             <a href="" class="category_item_icon">{{item.title}}</a>
                     </li>
                     <!--
-                        <li class="category_item"><a href="" class="category_item_icon">手机 平板 电话卡</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">电视 盒子</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">路由器 智能硬件</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">移动电源 插线板</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">耳机 音箱</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">电池 存储卡</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">保护套 后盖</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">贴膜 其他配件</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">米兔 服装</a></li>
-                        <li class="category_item"><a href="" class="category_item_icon">箱包 其他周边</a></li>
+                        <li class="category_item"><a href="" class="category_item_icon">手机 平板 电话卡</a></li><li class="category_item"><a href="" class="category_item_icon">电视 盒子</a></li><li class="category_item"><a href="" class="category_item_icon">路由器 智能硬件</a></li><li class="category_item"><a href="" class="category_item_icon">移动电源 插线板</a></li><li class="category_item"><a href="" class="category_item_icon">耳机 音箱</a></li><li class="category_item"><a href="" class="category_item_icon">电池 存储卡</a></li><li class="category_item"><a href="" class="category_item_icon">保护套 后盖</a></li><li class="category_item"><a href="" class="category_item_icon">贴膜 其他配件</a></li><li class="category_item"><a href="" class="category_item_icon">米兔 服装</a></li><li class="category_item"><a href="" class="category_item_icon">箱包 其他周边</a></li>
                     -->
                     </ul>
                     <ul class="category_hot">
-                            <ul class="category_hot_list">
-                            <li style="display: block">
-                                <a href="#" >
-                                    <img src="img/hot1.jpg" />
-                                </a>
+                        <ul class="category_hot_list">
+                            <li style="display: block" v-for="item in (category_hot_list)">
+                                <a href="{{item.href}}"><img src="img/{{item.img_name}}"/></a>
                             </li>
-                            <li style="display: none">
-                                <a href="#">
-                                    <img src="img/hot2.jpg" />
-                                </a>
-                            </li>
-                            <li style="display: none">
-                                <a href="#">
-                                    <img src="img/hot3.jpg" />
-                                </a>
-                            </li>
-                            <li style="display: none">
-                                <a href="#">
-                                    <img src="img/hot4.jpg" />
-                                </a>
-                            </li>
-                            <li style="display: none">
-                                <a href="#">
-                                    <img src="img/hot5.jpg" />
-                                </a>
-                            </li>
+                        <!--
+                            <li style="display: block"><a href="#"><img src="img/hot1.jpg"/></a></li><li style="display: block"><a href="#"><img src="img/hot5.jpg"/></a></li>
+                        -->
                         </ul>
                         <ul class="category_move">
                             <li>
@@ -488,6 +448,7 @@
         </div>
         <div class="footer"></div>
     </div>
+    <script src="js/vue-view.js"></script>
     <script src="js/mi.js"></script>
 </body>
 
