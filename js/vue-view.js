@@ -55,7 +55,7 @@ var category_hot_list_display = new Vue({
     el: ".category_hot_list",
     data: {
         category_hot_list: [
-            {img_name: "hot1.jpg", href: "#"},
+            //{img_name: "hot1.jpg", href: "#"},
             {img_name: "hot2.jpg", href: "#"},
             {img_name: "hot3.jpg", href: "#"},
             {img_name: "hot4.jpg", href: "#"},

@@ -262,7 +262,8 @@
                     </ul>
                     <ul class="category_hot">
                         <ul class="category_hot_list">
-                            <li style="display: block" v-for="item in (category_hot_list)">
+                            <li style="display: block"><a href="#"><img src="img/hot1.jpg"/></a></li>
+                            <li style="display: none" v-for="item in (category_hot_list)">
                                 <a href="{{item.href}}"><img src="img/{{item.img_name}}"/></a>
                             </li>
                         <!--
