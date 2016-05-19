@@ -142,16 +142,16 @@ var category_list_display = new Vue({
    el: ".category_list",
      data: {
         category_list: [
-            {title: "手机 平板 电话卡"},
-            {title: "电视 盒子"},
-            {title: "路由器 智能硬件"},
-            {title: "移动电源 插线板"},
-            {title: "耳机 音箱"},
-            {title: "电池 存储卡"},
-            {title: "保护套 后盖"},
-            {title: "贴膜 其他配件"},
-            {title: "米兔 服装"},
-            {title: "箱包 其他周边"}
+            {title: "手机 平板 电话卡", id: "category_list_phone"},
+            {title: "电视 盒子", id: "category_list_tv"},
+            {title: "路由器 智能硬件", id: "category_list_hw"},
+            {title: "移动电源 插线板", id: "category_list_plug"},
+            {title: "耳机 音箱", id: "category_list_speaker"},
+            {title: "电池 存储卡", id: "category_list_battery"},
+            {title: "保护套 后盖", id: "category_list_back_case"},
+            {title: "贴膜 其他配件", id: "category_list_mo"},
+            {title: "米兔 服装", id: "category_list_cloth"},
+            {title: "箱包 其他周边", id: "category_list_case"},
         ]
      }
 });
