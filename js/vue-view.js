@@ -142,8 +142,39 @@ var category_list_display = new Vue({
    el: ".category_list",
      data: {
         category_list: [
-            {title: "手机 平板 电话卡"},
-            {title: "电视 盒子"},
+            {
+            	title: "手机 平板 电话卡",
+            	datalist: [
+            		{title: "小米手机5", img_name: "mi5.jpg", href: ""},
+					{title: "小米手机4S", img_name: "mi4.jpg", href: ""},
+					{title: "小米手机MAX", img_name: "mimax.jpg", href: ""},
+					{title: "红米Note2", img_name: "note2.jpg", href: ""},
+					{title: "小米手机4", img_name: "mi4.jpg", href: ""},
+					{title: "小米手机4C", img_name: "mi4c.jpg", href: ""}
+            	],
+            	datalist_2: [
+            		{title: "红米Note3", img_name: "note3.jpg", href: ""},
+            		{title: "红米手机3", img_name: "hongmi3.jpg", href: ""},
+            		{title: "小米平板2", img_name: "pad2.png", href: ""},
+            		{title: "电信版", img_name: "telcom.jpg", href: ""},
+            		{title: "合约机", img_name: "telcom.jpg", href: ""},
+            		{title: "对比手机", img_name: "compare.jpg", href: ""}
+            	],
+            	datalist_3: [
+            		{title: "小米移动电话卡", img_name: "mimobile.jpg", href: ""}
+            	]
+        	},
+            {
+            	title: "电视 盒子",
+            	datalist: [
+            		{title: "小米电视 40英寸", img_name: "tv40.jpg", href: ""},
+            		{title: "小米电视 48英寸", img_name: "tv48.jpg", href: ""},
+            		{title: "小米电视 49英寸", img_name: "tv49.jpg", href: ""},
+            		{title: "小米电视 55英寸", img_name: "tv3-55.jpg", href: ""},
+            		{title: "小米电视 60英寸", img_name: "tv60.jpg", href: ""},
+            		{title: "小米盒子3", img_name: "hezis.jpg", href: ""}
+            	]
+        	},
             {title: "路由器 智能硬件"},
             {title: "移动电源 插线板"},
             {title: "耳机 音箱"},
@@ -167,7 +198,17 @@ var category_hot_list_display = new Vue({
             {img_name: "hot5.jpg", href: "#"}
         ]
     }
-})
+});
+
+/*var category_item_list_display = new Vue({
+	el: ".category_item_list",
+	data: {
+		category_item_list: [
+			{title: "小米Note", img_name: "minote.jpg", href: ""},
+			{title: "小米手机4", img_name: "mi4.jpg", href: ""}
+		]
+	}
+});*/
 
 var star_goods_display = new Vue({
     el: "#star_goods",

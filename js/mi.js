@@ -150,3 +150,18 @@ $(".category_move span").click(function() {
     }
 });
 
+//category栏的category_item_box显示隐藏
+$(".category_item").hover(function() {
+    var index = $(this).index();
+    $(".category_item_box:eq(" + index + ")").css("display", "block");
+    var category_item_list = $(this).find(".category_item_box").children(".category_item_list");
+    var width = $(this).index() == 0 ? 265 : 265;
+    var len = category_item_list.length;
+    category_item_list.width(width);
+    width = len == 1 ? len * width : len * width;
+    $(".category_list .category_item_box").width(width);
+    //console.log(len * width);
+}, function() {
+    var index = $(this).index();
+    $(".category_item_box:eq(" + index + ")").css("display", "none");
+})

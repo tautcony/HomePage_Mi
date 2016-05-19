@@ -184,6 +184,38 @@
                     <ul class="category_list">
                         <li class="category_item" v-for="item in (category_list)">
                             <a href="" class="category_item_icon">{{item.title}}</a>
+                            <div class="category_item_box clearfix">
+                                <ul class="category_item_list fl">
+                                    <li class="category_item_spec clearfix" v-for="list in item.datalist">
+                                        <a href="{{list.href}}" class="category_item_spec_detail fl">
+                                            <img src="img/category/{{list.img_name}}">
+                                            <span class="category_item_title">{{list.title}}</span>
+                                        </a>
+                                        <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选够</span>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                                <ul class="category_item_list fl">
+                                    <li class="category_item_spec clearfix" v-for="list in item.datalist_2">
+                                        <a href="{{list.href}}" class="category_item_spec_detail fl">
+                                            <img src="img/category/{{list.img_name}}">
+                                            <span class="category_item_title">{{list.title}}</span>
+                                        </a>
+                                        <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选够</span>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                                <ul class="category_item_list fl">
+                                    <li class="category_item_spec clearfix" v-for="list in item.datalist_3">
+                                        <a href="{{list.href}}" class="category_item_spec_detail fl">
+                                            <img src="img/category/{{list.img_name}}">
+                                            <span class="category_item_title">{{list.title}}</span>
+                                        </a>
+                                        <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'&&!item.datalist_3">选够</span>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
                         </li>
                         <!--
                         <li class="category_item"><a href="" class="category_item_icon">手机 平板 电话卡</a></li><li class="category_item"><a href="" class="category_item_icon">电视 盒子</a></li><li class="category_item"><a href="" class="category_item_icon">路由器 智能硬件</a></li><li class="category_item"><a href="" class="category_item_icon">移动电源 插线板</a></li><li class="category_item"><a href="" class="category_item_icon">耳机 音箱</a></li><li class="category_item"><a href="" class="category_item_icon">电池 存储卡</a></li><li class="category_item"><a href="" class="category_item_icon">保护套 后盖</a></li><li class="category_item"><a href="" class="category_item_icon">贴膜 其他配件</a></li><li class="category_item"><a href="" class="category_item_icon">米兔 服装</a></li><li class="category_item"><a href="" class="category_item_icon">箱包 其他周边</a></li>
