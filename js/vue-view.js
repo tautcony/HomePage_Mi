@@ -247,12 +247,17 @@ var category_hot_list_display = new Vue({
     }
 });
 
-/*var category_item_list_display = new Vue({
-	el: ".category_item_list",
+//用阿里图标库再用vue写会报错 先注销
+/*var channel_list_display = new Vue({
+	el: ".channel_list",
 	data: {
-		category_item_list: [
-			{title: "小米Note", img_name: "minote.jpg", href: ""},
-			{title: "小米手机4", img_name: "mi4.jpg", href: ""}
+		channel_list: [
+			{href: "#", icon: "&#xe665;", content: "电信专场"},
+			{href: "#", icon: "&#xe65a;", content: "企业团购"},
+			{href: "#", icon: "&#xe614;", content: "官翻产品"},
+			{href: "#", icon: "&#xe618;", content: "小米移动"},
+			{href: "#", icon: "&#xe671;", content: "以旧换新"},
+			{href: "#", icon: "&#xf00a8;", content: "话费充值"}
 		]
 	}
 });*/

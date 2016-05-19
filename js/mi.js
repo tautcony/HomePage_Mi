@@ -158,7 +158,7 @@ $(".category_item").hover(function() {
     var width = $(this).index() == 0 ? 265 : 265;
     var len = category_item_list.length;
     category_item_list.width(width);
-    width = len == 1 ? len * width : len * width;
+    width = len * width;
     $(".category_list .category_item_box").width(width);
     //console.log(len * width);
 }, function() {
