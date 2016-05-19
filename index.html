@@ -54,179 +54,99 @@
                 </div>
             </div>
         </div>
+		<!--
+		<div id="nav_menu_template">
+			<div v-for="c in (nav_template)" class="navMenu nav_menu_show{{c.id}}">
+				<div class="nav_menu_list">
+					<ul class="nav_menu_spec" id="nav_item_list_{{c.id}}">
+						<li v-for="item in ({{c.catalog}})">
+							<a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+							<p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+							<p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		-->
         <div class="navMenu nav_menu_show1">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
+                <ul class="nav_menu_spec" id="nav_item_list_1">
                     <li v-for="item in (mi_phone)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{tiem.price}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
-                    <!--
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu1_1.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu1_2.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu1_3.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米Note 标准版</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1799元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="bdr_0 nav_menu_list_img "><img src="img/nav_menu1_4.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米Note 顶配版</a></p>
-                        <p><a href="#" class="nav_menu_list_price">2999元起</a></p>
-                    </li>
-                    -->
                 </ul>
             </div>
         </div>
         <div class="navMenu nav_menu_show2">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu2_1.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu2_2.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu2_3.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="bdr_0 nav_menu_list_img "><img src="img/nav_menu2_4.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
+                <ul class="nav_menu_spec" id="nav_item_list_2">
+					<li v-for="item in (red_mi)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="navMenu nav_menu_show3">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu3_1.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu3_2.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
+                <ul class="nav_menu_spec" id="nav_item_list_3">
+					<li v-for="item in (mi_pad)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="navMenu nav_menu_show4">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu4_1.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu4_2.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img"><img src="img/nav_menu4_3.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="bdr_0 nav_menu_list_img "><img src="img/nav_menu4_4.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
+                <ul class="nav_menu_spec" id="nav_item_list_4">
+					<li v-for="item in (mi_tv)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="navMenu nav_menu_show5">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu5_1.jpg" /></a>
-                        <p><a href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu5_2.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu5_3.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="bdr_0 nav_menu_list_img ">
-                            <img src="img/nav_menu5_4.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
+                <ul class="nav_menu_spec" id="nav_item_list_5">
+					<li v-for="item in (mi_tv_box)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="navMenu nav_menu_show6">
             <div class="nav_menu_list">
-                <ul class="nav_menu_spec">
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu6_1.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu6_2.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu6_3.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu6_4.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="nav_menu_list_img">
-                            <img src="img/nav_menu6_5.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
-                    </li>
-                    <li>
-                        <a href="#" class="bdr_0 nav_menu_list_img ">
-                            <img src="img/nav_menu6_6.jpg" /></a>
-                        <p><a  href="#" class="nav_menu_list_title">小米手机4c</a></p>
-                        <p><a  href="#" class="nav_menu_list_price">1299元起</a></p>
+                <ul class="nav_menu_spec" id="nav_item_list_6">
+					<li v-for="item in (mi_router)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                     </li>
                 </ul>
             </div>
         </div>
+		<div class="navMenu nav_menu_show7">
+            <div class="nav_menu_list">
+                <ul class="nav_menu_spec" id="nav_item_list_7">
+					<li v-for="item in (mi_smart_hardware)">
+                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+		
         <div class="container comWidth clearfix">
             <div class="nav clearfix">
                 <div class="header-logo"><div class="logo fl"></div><div class="doodle-ad fl"></div></div>

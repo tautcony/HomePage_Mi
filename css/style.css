@@ -242,7 +242,7 @@
 }
 
 .nav_menu_list {
-    margin-left: 350px;
+    margin-left: 1%;
 }
 
 .nav_menu_list_img {
@@ -279,7 +279,8 @@
 .nav_menu_show3,
 .nav_menu_show4,
 .nav_menu_show5,
-.nav_menu_show6 {
+.nav_menu_show6,
+.nav_menu_show7 {
     display: none;
 }
 
@@ -328,7 +329,7 @@
     color: #fff;
     line-height: 42px;
     padding-left: 30px;
-    background: url(../img/navMenu_icon.png) no-repeat 200px 5px;
+    background: url(../img/navMenu_icon.png) no-repeat 190px 5px;
     z-index: 30;
 }
 
