@@ -542,6 +542,11 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
     height: 170px;
 }
 
+.hotimg-grid-list img:hover {
+    box-shadow: 0 7px 14px #969696;
+    transition: box-shadow .2s;
+}
+
 .span4 {
     width: 234px;
     float: left;
