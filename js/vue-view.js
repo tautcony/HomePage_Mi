@@ -15,8 +15,8 @@ var nav_list_display = new Vue({
     }
 });
 
-var nav_item = new Vue({
-    el: ".nav_menu_list",
+var nav_item_display = new Vue({
+    el: ".nav_menu_spec",
     mi_phone: [
         {title: "小米Max", price: "1499元起", img_name: "", href: ""},
         {title: "小米手机5", price: "1999元起", img_name: "", href: ""},
