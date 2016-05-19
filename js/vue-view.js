@@ -175,14 +175,61 @@ var category_list_display = new Vue({
             		{title: "小米盒子3", img_name: "hezis.jpg", href: ""}
             	]
         	},
-            {title: "路由器 智能硬件"},
-            {title: "移动电源 插线板"},
-            {title: "耳机 音箱"},
-            {title: "电池 存储卡"},
-            {title: "保护套 后盖"},
-            {title: "贴膜 其他配件"},
-            {title: "米兔 服装"},
-            {title: "箱包 其他周边"}
+            {
+            	title: "路由器 智能硬件",
+            	datalist: [
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""}
+            	]
+            },
+            {
+            	title: "移动电源 插线板",
+            	datalist: [
+            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
+            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
+            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""}		
+            	]
+            },
+            {
+            	title: "耳机 音箱",
+            	datalist: [
+            		{title: "小米头戴式耳机", img_name: "headphone.jpg", href: ""},
+            	]
+            },
+            {
+            	title: "电池 存储卡",
+            	datalist: [
+            		{title: "彩虹五号电池", img_name: "5Battery1.jpg", href: ""},
+            	]
+            },
+            {
+            	title: "保护套 后盖",
+            	datalist: [
+            		{title: "保护套保护壳", img_name: "baohu.jpg", href: ""},
+            	]
+        	},
+            {
+            	title: "贴膜 其他配件",
+            	datalist: [
+            		{title: "贴膜", img_name: "tiemo.jpg", href: ""},
+            	]
+            },
+            {
+            	title: "米兔 服装",
+            	datalist: [
+            		{title: "米兔", img_name: "mitu-80.jpg", href: ""},
+            	]
+            },
+            {
+            	title: "箱包 其他周边",
+            	datalist: [
+            		{title: "箱包", img_name: "xiangbao-80.jpg", href: ""},
+            	]
+            }
         ]
      }
 });
