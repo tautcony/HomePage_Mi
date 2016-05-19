@@ -54,21 +54,21 @@
                 </div>
             </div>
         </div>
-		<!--
-		<div id="nav_menu_template">
-			<div v-for="c in (nav_template)" class="navMenu nav_menu_show{{c.id}}">
-				<div class="nav_menu_list">
-					<ul class="nav_menu_spec" id="nav_item_list_{{c.id}}">
-						<li v-for="item in ({{c.catalog}})">
-							<a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-							<p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-							<p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		-->
+        <!--
+        <div id="nav_menu_template">
+            <div v-for="c in (nav_template)" class="navMenu nav_menu_show{{c.id}}">
+                <div class="nav_menu_list">
+                    <ul class="nav_menu_spec" id="nav_item_list_{{c.id}}">
+                        <li v-for="item in ({{c.catalog}})">
+                            <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                            <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        -->
         <div class="navMenu nav_menu_show1">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_1">
@@ -83,7 +83,7 @@
         <div class="navMenu nav_menu_show2">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_2">
-					<li v-for="item in (red_mi)">
+                    <li v-for="item in (red_mi)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -94,7 +94,7 @@
         <div class="navMenu nav_menu_show3">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_3">
-					<li v-for="item in (mi_pad)">
+                    <li v-for="item in (mi_pad)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -105,7 +105,7 @@
         <div class="navMenu nav_menu_show4">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_4">
-					<li v-for="item in (mi_tv)">
+                    <li v-for="item in (mi_tv)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -116,7 +116,7 @@
         <div class="navMenu nav_menu_show5">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_5">
-					<li v-for="item in (mi_tv_box)">
+                    <li v-for="item in (mi_tv_box)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -127,7 +127,7 @@
         <div class="navMenu nav_menu_show6">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_6">
-					<li v-for="item in (mi_router)">
+                    <li v-for="item in (mi_router)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -135,10 +135,10 @@
                 </ul>
             </div>
         </div>
-		<div class="navMenu nav_menu_show7">
+        <div class="navMenu nav_menu_show7">
             <div class="nav_menu_list">
                 <ul class="nav_menu_spec" id="nav_item_list_7">
-					<li v-for="item in (mi_smart_hardware)">
+                    <li v-for="item in (mi_smart_hardware)">
                         <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                         <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                         <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -146,10 +146,12 @@
                 </ul>
             </div>
         </div>
-		
         <div class="container comWidth clearfix">
             <div class="nav clearfix">
-                <div class="header-logo"><div class="logo fl"></div><div class="doodle-ad fl"></div></div>
+                <div class="header-logo">
+                    <div class="logo fl"></div>
+                    <div class="doodle-ad fl"></div>
+                </div>
                 <ul class="nav_list clearfix fl">
                     <li v-for="item in (nav_list)">
                         <a href="{{item.href}}">{{item.title}}</a>
@@ -167,33 +169,35 @@
                             <div class="hot-word2"> <a href="#">平衡车</a></div>
                         </form>
                     </div>
-                        <ul class="search-extra">
-                            <li v-for="item in (search_extra)">
-                                <a href="#"><span class="spec_name">{{item.title}}</span><span class="result">约有{{item.count}}件</span></a>
-                            </li>
-                            <!--
+                    <ul class="search-extra">
+                        <li v-for="item in (search_extra)">
+                            <a href="#"><span class="spec_name">{{item.title}}</span><span class="result">约有{{item.count}}件</span></a>
+                        </li>
+                        <!--
                                 <li><a href="#"><span class="spec_name">移动电源</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">空气净化器</span><span class="result">约有2件</span></a></li><li><a href="#"><span class="spec_name">小米手环</span><span class="result">约有5件</span></a></li><li><a href="#"><span class="spec_name">WiFi</span><span class="result">约有7件</span></a></li><li><a href="#"><span class="spec_name">自拍杆</span><span class="result">约有1件</span></a></li><li><a href="#"><span class="spec_name">小米体重秤</span><span class="result">约有134件</span></a></li><li><a href="#"><span class="spec_name">小蚁摄像机</span><span class="result">约有6件</span></a></li><li><a href="#"><span class="spec_name">运动相机</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">智能插座</span><span class="result">约有4件</span></a></li><li><a href="#"><span class="spec_name">配件优惠套装</span><span class="result">约有11件</span></a></li>
                             -->
-                        </ul>
+                    </ul>
                 </div>
             </div>
             <div class="category">
                 <div class="category clearfix">
                     <ul class="category_list">
-                    <li class="category_item" v-for="item in (category_list)">
+                        <li class="category_item" v-for="item in (category_list)">
                             <a href="" class="category_item_icon">{{item.title}}</a>
-                    </li>
-                    <!--
+                        </li>
+                        <!--
                         <li class="category_item"><a href="" class="category_item_icon">手机 平板 电话卡</a></li><li class="category_item"><a href="" class="category_item_icon">电视 盒子</a></li><li class="category_item"><a href="" class="category_item_icon">路由器 智能硬件</a></li><li class="category_item"><a href="" class="category_item_icon">移动电源 插线板</a></li><li class="category_item"><a href="" class="category_item_icon">耳机 音箱</a></li><li class="category_item"><a href="" class="category_item_icon">电池 存储卡</a></li><li class="category_item"><a href="" class="category_item_icon">保护套 后盖</a></li><li class="category_item"><a href="" class="category_item_icon">贴膜 其他配件</a></li><li class="category_item"><a href="" class="category_item_icon">米兔 服装</a></li><li class="category_item"><a href="" class="category_item_icon">箱包 其他周边</a></li>
                     -->
                     </ul>
                     <ul class="category_hot">
                         <ul class="category_hot_list">
-                            <li style="display: block"><a href="#"><img src="img/hot1.jpg"/></a></li>
-                            <li style="display: none" v-for="item in (category_hot_list)">
-                                <a href="{{item.href}}"><img src="img/{{item.img_name}}"/></a>
+                            <li style="display: block">
+                                <a href="#"><img src="img/hot1.jpg" /></a>
                             </li>
-                        <!--
+                            <li style="display: none" v-for="item in (category_hot_list)">
+                                <a href="{{item.href}}"><img src="img/{{item.img_name}}" /></a>
+                            </li>
+                            <!--
                             <li style="display: block"><a href="#"><img src="img/hot1.jpg"/></a></li><li style="display: block"><a href="#"><img src="img/hot5.jpg"/></a></li>
                         -->
                         </ul>
@@ -213,16 +217,15 @@
                 <div class="spec_top">
                     <h2 class="spec_type_title fl">小米明星单品</h2>
                     <div class="spec_left_right fl">
-                        <a class="left_img fl" >
+                        <a class="left_img fl">
                             <img src="img/icon/left2.png" /></a>
                         <a class="right_img fl">
                             <img src="img/icon/right1.png" /></a>
                     </div>
                 </div>
-                
                 <ul class="spec_item_list" id="star_goods">
                     <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
-                        <a class="spec_img" ><img src="img/star/star_{{item.img_id}}.jpg" /></a>
+                        <a class="spec_img"><img src="img/star/star_{{item.img_id}}.jpg" /></a>
                         <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
                         <p class="spec_desc">{{item.desc}}</p>
                         <p class="spec_money">{{item.price}}</p>
