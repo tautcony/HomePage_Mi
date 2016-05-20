@@ -65,6 +65,7 @@ $(function() {
             isLeft = 1;
         }
     });
+    $(".left_img").click();
 });
 
 //nav list event

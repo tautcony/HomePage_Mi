@@ -34,12 +34,12 @@ var nav_item_mi_phone_display = new Vue({
     el: "#nav_item_list_1",
 	data: {
 		mi_phone: [
-			{title: "小米Max", price: "1499元起", img_name: "/nav_item/miMax.jpg", href: ""},
-			{title: "小米手机5", price: "1999元起", img_name: "/nav_item/mi5.jpg", href: ""},
-			{title: "小米手机4S", price: "1699元", img_name: "/nav_item/mi4s.jpg", href: ""},
-			{title: "小米手机4c", price: "1099元", img_name: "/nav_item/mi4c.jpg", href: ""},
-			{title: "小米手机4", price: "1299元", img_name: "/nav_item/mi4.jpg", href: ""},
-			{title: "小米Note 标准版", price: "1499元起", img_name: "/nav_item/minote.jpg", href: ""}
+			{title: "小米Max", price: "1499元起", img_name: "/nav_item/mi_phone/miMax.jpg", href: ""},
+			{title: "小米手机5", price: "1999元起", img_name: "/nav_item/mi_phone/mi5.jpg", href: ""},
+			{title: "小米手机4S", price: "1699元", img_name: "/nav_item/mi_phone/mi4s.jpg", href: ""},
+			{title: "小米手机4c", price: "1099元", img_name: "/nav_item/mi_phone/mi4c.jpg", href: ""},
+			{title: "小米手机4", price: "1299元", img_name: "/nav_item/mi_phone/mi4.jpg", href: ""},
+			{title: "小米Note 标准版", price: "1499元起", img_name: "/nav_item/mi_phone/minote.jpg", href: ""}
 		],
 	}
 });
@@ -48,8 +48,8 @@ var nav_item_red_mi_display = new Vue({
     el: "#nav_item_list_2",
 	data: {
 		red_mi: [
-			{title: "红米Note 3", price: "899元起", img_name: "", href: ""},
-			{title: "红米手机3", price: "699元起", img_name: "", href: ""}
+			{title: "红米Note 3", price: "899元起", img_name: "/nav_item/red_mi/redmi3.jpg", href: ""},
+			{title: "红米手机3", price: "699元起", img_name: "/nav_item/red_mi/redminote3.jpg", href: ""}
 		],
 	}
 });
@@ -58,9 +58,9 @@ var nav_item_mi_pad_display = new Vue({
     el: "#nav_item_list_3",
 	data: {
 		mi_pad: [
-			{title: "小米平板2 16GB", price: "899元起", img_name: "", href: ""},
-			{title: "小米平板2 64GB", price: "699元起", img_name: "", href: ""},
-			{title: "小米平板2  64GB Windows版", price: "699元起", img_name: "", href: ""}
+			{title: "小米平板2 16GB", price: "899元起", img_name: "/nav_item/mi_pad/mi_pad_2_16.jpg", href: ""},
+			{title: "小米平板2 64GB", price: "699元起", img_name: "/nav_item/mi_pad/mi_pad_2_64.jpg", href: ""},
+			{title: "小米平板2  64GB Windows版", price: "699元起", img_name: "/nav_item/mi_pad/mi_pad_2_64_win.jpg", href: ""}
 		],
 	}
 });
@@ -69,12 +69,12 @@ var nav_item_mi_tv_display = new Vue({
     el: "#nav_item_list_4",
 	data: {
 		mi_tv: [
-			{title: "小米电视3S 43英寸", price: "1799元", img_name: "", href: ""},
-			{title: "小米电视3S 48英寸", price: "1999元", img_name: "", href: ""},
-			{title: "小米电视3 55英寸", price: "3999元起", img_name: "", href: ""},
-			{title: "小米电视3 60英寸", price: "4999元起", img_name: "", href: ""},
-			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_name: "", href: ""},
-			{title: "小米电视3 70英寸", price: "9999元", img_name: "", href: ""}
+			{title: "小米电视3S 43英寸", price: "1799元", img_name: "/nav_item/mi_tv/mitv3s_43.jpg", href: ""},
+			{title: "小米电视3S 48英寸", price: "1999元", img_name: "/nav_item/mi_tv/mitv3s_48.jpg", href: ""},
+			{title: "小米电视3 55英寸", price: "3999元起", img_name: "/nav_item/mi_tv/mitv3_55.jpg", href: ""},
+			{title: "小米电视3 60英寸", price: "4999元起", img_name: "/nav_item/mi_tv/mitv3_65.jpg", href: ""},
+			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_name: "/nav_item/mi_tv/mitv3s_65c.jpg", href: ""},
+			{title: "小米电视3 70英寸", price: "9999元", img_name: "/nav_item/mi_tv/mitv3_70.jpg", href: ""}
 		],
 	}
 });
@@ -83,12 +83,12 @@ var nav_item_mi_tv_box_display = new Vue({
     el: "#nav_item_list_5",
 	data: {
 		mi_tv_box: [
-			{title: "小米盒子mini版", price: "199元", img_name: "", href: ""},
-			{title: "小米盒子3", price: "299元", img_name: "", href: ""},
-			{title: "小米盒子3 增强版", price: "399元", img_name: "", href: ""},
-			{title: "小米电视主机", price: "999元", img_name: "", href: ""},
-			{title: "小米家庭音响 金属版", price: "899元", img_name: "", href: ""},
-			{title: "小米家庭音响 标准版", price: "699元", img_name: "", href: ""}
+			{title: "小米盒子mini版", price: "199元", img_name: "/nav_item/mi_tv_box/box_mini.jpg", href: ""},
+			{title: "小米盒子3", price: "299元", img_name: "/nav_item/mi_tv_box/box_3.jpg", href: ""},
+			{title: "小米盒子3 增强版", price: "399元", img_name: "/nav_item/mi_tv_box/box_3s.jpg", href: ""},
+			{title: "小米电视主机", price: "999元", img_name: "/nav_item/mi_tv_box/tv_console.jpg", href: ""},
+			{title: "小米家庭音响 金属版", price: "899元", img_name: "/nav_item/mi_tv_box/seaker_std.jpg", href: ""},
+			{title: "小米家庭音响 标准版", price: "699元", img_name: "/nav_item/mi_tv_box/speaker_pro.jpg", href: ""}
 		],
 	}
 });
@@ -97,11 +97,11 @@ var nav_item_mi_router_display = new Vue({
     el: "#nav_item_list_6",
 	data: {
 		mi_router: [
-			{title: "全新小米路由器", price: "699元起", img_name: "", href: ""},
-			{title: "小米路由器 3", price: "149元", img_name: "", href: ""},
-			{title: "小米路由器 mini", price: "129元", img_name: "", href: ""},
-			{title: "小米路由器 青春版", price: "79元", img_name: "", href: ""},
-			{title: "小米WiFi放大器", price: "39元", img_name: "", href: ""}
+			{title: "全新小米路由器", price: "699元起", img_name: "/nav_item/mi_router/new_router.jpg", href: ""},
+			{title: "小米路由器 3", price: "149元", img_name: "/nav_item/mi_router/router3.jpg", href: ""},
+			{title: "小米路由器 mini", price: "129元", img_name: "/nav_item/mi_router/router_mini.jpg", href: ""},
+			{title: "小米路由器 青春版", price: "79元", img_name: "/nav_item/mi_router/router_seishun.jpg", href: ""},
+			{title: "小米WiFi放大器", price: "39元", img_name: "/nav_item/mi_router/wifi_amp.jpg", href: ""}
 		],
 	}
 });
@@ -110,12 +110,12 @@ var nav_item_mi_smart_hardware_display = new Vue({
     el: "#nav_item_list_7",
 	data: {
 		mi_smart_hardware: [
-			{title: "米家压力IH电饭煲", price: "999元", img_name: "", href: ""},
-			{title: "九号平衡车", price: "1999元", img_name: "", href: ""},
-			{title: "小米空气净化器 2", price: "699元", img_name: "", href: ""},
-			{title: "体重秤", price: "99元", img_name: "", href: ""},
-			{title: "摄像机", price: "149元", img_name: "", href: ""},
-			{title: "查看全部 智能硬件", price: "", img_name: "", href: ""}
+			{title: "米家压力IH电饭煲", price: "999元", img_name: "/nav_item/mi_smart_hardware/cooker.jpg", href: ""},
+			{title: "九号平衡车", price: "1999元", img_name: "/nav_item/mi_smart_hardware/balance_car.jpg", href: ""},
+			{title: "小米空气净化器 2", price: "699元", img_name: "/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
+			{title: "体重秤", price: "99元", img_name: "/nav_item/mi_smart_hardware/weight.jpg", href: ""},
+			{title: "摄像机", price: "149元", img_name: "/nav_item/mi_smart_hardware/camera.jpg", href: ""},
+			{title: "查看全部 智能硬件", price: "", img_name: "/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
 		]
 	}
 });
