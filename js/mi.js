@@ -48,7 +48,7 @@ $(".search-box").mouseout(function(event) {
 
 $(function() {
     var isLeft = 1;
-    var timeout = 300;
+    var timeout = 500;
     $(".left_img").click(function() {
         if (isLeft == 1) {
             $(".left_img > img").attr("src", "img/icon/left2.png");
@@ -68,6 +68,20 @@ $(function() {
     $(".left_img").click();
 });
 
+$(function() {
+    var isLeft = 1;
+    setInterval(function() {
+        if(isLeft == 1) {
+            console.log("interval right click");
+            $(".right_img").click();
+            isLeft = 0;
+        } else {
+            console.log("interval left click");
+            $(".left_img").click();
+            isLeft = 1;
+        }
+    }, 7500);
+});
 //nav list event
 var listNum = 6;
 var listindex;
