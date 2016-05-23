@@ -280,10 +280,10 @@ var star_goods_display = new Vue({
     }
 });
 
-var brick_list_display = new Vue({
-    el: ".block-list",
+var smart_list_display = new Vue({
+    el: ".smart .block-list",
     data: {
-        brick_list: [
+        smart_list: [
             {href: "", img_src: "img/page-main/smart/hardware1.jpg", title: "米家压力IH电饭煲" , intro: "智能烹饪，5月24日早10点现货" , price: "999元", label: "new"},
             {href: "", img_src: "img/page-main/smart/hardware2.jpg", title: "小米路由器3" , intro: "更安全更稳定，现货发售" , price: "149元", label: "new"},
             {href: "", img_src: "img/page-main/smart/hardware3.jpg", title: "小米智能安防套装" , intro: "智能警戒，为您的家增添一份安心" , price: "169元", label: "saleoff", sale: "享9折"},
@@ -292,6 +292,25 @@ var brick_list_display = new Vue({
             {href: "", img_src: "img/page-main/smart/hardware6.jpg", title: "小蚁运动相机" , intro: "边玩边录边拍，手机随时分享" , price: "399元"},
             {href: "", img_src: "img/page-main/smart/hardware7.jpg", title: "小蚁智能摄像机 夜视版" , intro: "能看能听能说，手机远程观看" , price: "149元"},
             {href: "", img_src: "img/page-main/smart/hardware8.jpg", title: "米家iHealth血压计" , intro: "爸妈上手就会用的智能血压计" , price: "399元", label: "new"}
+        ]
+    }
+});
+
+var match_list_display = new Vue({
+    el: ".match .block-list",
+    data: {
+        match1_list: [
+            {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh"  , price: "79元"},
+            {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版"  , price: "29元"},
+            {href: "", img_src: "img/page-main/match/match3.jpg", title: "小米移动电源10000mAh 高配版"  , price: "149元"},
+            {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机"  , price: "79元"},
+            {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板"  , price: "49元"},
+            {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机"  , price: "99元"},
+            {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2"  , price: "129元", label: "new"},/*
+            {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元"}*/
+        ],
+        match2_list: [
+            {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh"  , price: "79元"},
         ]
     }
 });
