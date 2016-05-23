@@ -253,35 +253,35 @@
             <div class="channel clearfix">
                 <div class="span4">
                     <ul class="channel_list fl">
-                        <li><a href="#">
-                               <i class="iconfont">&#xe665;</i>
-                               电信专场
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xe665;</i> 电信专场
+                            </a>
                         </li>
-                        <li><a href="#">
-                               <i class="iconfont">&#xe65a;</i>
-                               企业团购
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xe65a;</i> 企业团购
+                            </a>
                         </li>
-                        <li><a href="#">
-                               <i class="iconfont">&#xe614;</i>
-                               官翻产品
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xe614;</i> 官翻产品
+                            </a>
                         </li>
-                        <li><a href="#">
-                               <i class="iconfont">&#xe618;</i>
-                               小米移动
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xe618;</i> 小米移动
+                            </a>
                         </li>
-                        <li><a href="#">
-                               <i class="iconfont">&#xe671;</i>
-                               以旧换新
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xe671;</i> 以旧换新
+                            </a>
                         </li>
-                        <li><a href="#">
-                               <i class="iconfont">&#xf00a8;</i>
-                               话费充值
-                           </a>
+                        <li>
+                            <a href="#">
+                                <i class="iconfont">&#xf00a8;</i> 话费充值
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -292,11 +292,13 @@
                                 <img src="img/hot6.jpg">
                             </a>
                         </li>
-                        <li><a href="">
+                        <li>
+                            <a href="">
                                 <img src="img/hot7.jpg">
                             </a>
                         </li>
-                        <li><a href="">
+                        <li>
+                            <a href="">
                                 <img src="img/hot8.jpg">
                             </a>
                         </li>
@@ -304,27 +306,91 @@
                 </div>
             </div>
             <div class="star_spec_wrapper">
-            <div class="star_spec comWidth clearfix">
-                <div class="spec_top">
-                    <h2 class="spec_type_title fl">小米明星单品</h2>
-                    <div class="spec_left_right fl">
-                        <a class="left_img fl">
-                            <img src="img/icon/left2.png" /></a>
-                        <a class="right_img fl">
-                            <img src="img/icon/right1.png" /></a>
+                <div class="star_spec comWidth clearfix">
+                    <div class="spec_top">
+                        <h2 class="spec_type_title fl">小米明星单品</h2>
+                        <div class="spec_left_right fl">
+                            <a class="left_img fl">
+                                <img src="img/icon/left2.png" /></a>
+                            <a class="right_img fl">
+                                <img src="img/icon/right1.png" /></a>
+                        </div>
                     </div>
+                    <ul class="spec_item_list" id="star_goods">
+                        <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
+                            <a class="spec_img"><img src="img/star/star_{{item.img_id}}.jpg" /></a>
+                            <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
+                            <p class="spec_desc">{{item.desc}}</p>
+                            <p class="spec_money">{{item.price}}</p>
+                        </li>
+                    </ul>
                 </div>
-                <ul class="spec_item_list" id="star_goods">
-                    <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
-                        <a class="spec_img"><img src="img/star/star_{{item.img_id}}.jpg" /></a>
-                        <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
-                        <p class="spec_desc">{{item.desc}}</p>
-                        <p class="spec_money">{{item.price}}</p>
-                    </li>
-                </ul>
-            </div>
             </div>
         </div>
+        <!--
+        <div class="home-page">
+            <div class="container">
+                <div class="hardware">
+                    <div class="box-hd">
+                        <h2>智能硬件</h2>
+                        <div class="more-product">
+                            <a href="#">
+                            查看全部
+                            </a>
+                        </div>
+                    </div>
+                    <div class="box-bd">
+                        <div class="box-bd-first fl box-shadow">
+                            <a href="">
+                                <img src="img/hardware/left-span.jpg">
+                            </a>
+                        </div>
+                        <div class="box-bd-list fl">
+                            <ul class="brick-list clearfix">
+
+                                <li v-for="item in (brick_list)" class="box-shadow">
+                                    <div class="figure-img">
+                                        <a href="{{item.href}}">
+                                            <img src="{{item.img_src}}">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                     <a href="{{item.href}}">
+                                        {{item.title}}
+                                     </a>
+                                    </h3>
+                                    <p class="intro">{{item.intro}}</p>
+                                    <p class="price">{{item.price}}</p>
+                                    <div class="flag" v-if="item.label=='new'">新品</div>
+                                </li>
+
+                                <li class="block-item block-item-m" v-for="item in (brick_list)">
+                                    <div class="figure figure-img">
+                                        <a href="{{item.href}}">
+                                            <img src="{{item.img_src}}" width="160" height="160" alt="米家压力IH电饭煲">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
+                                        <a href="{{item.href}}">{{item.title}}</a>
+                                    </h3>
+                                    <p class="desc">{{item.intro}}</p>
+                                    <p class="price"> <span>{{item.price}}</span>元</p>
+                                    <div class="flag flag-new">新品</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="match"></div>
+                <div class="armature"></div>
+                <div class="around"></div>
+                <div class="recommend"></div>
+                <div class="review"></div>
+                <div class="content"></div>
+                <div class="video"></div>
+            </div>
+        </div>
+-->
         <div class="page-main"><div class="comWidth">
             <div class="smart">
                 <div class="title-box">
@@ -334,24 +400,26 @@
                 <div class="row">
                     <div class="span4 first-row">
                         <div class="block-item">
-                            <img src="img/page-main/smart/water.jpg" />
+                            <img src="img/page-main/smart/left-span.jpg" />
                         </div>
                     </div>
                     <div class="span16">
-                        <ul class="block-list ">
-                            <li class="block-item block-item-m">
+                        <ul class="block-list">
+                            <li class="block-item block-item-m" v-for="item in (brick_list)">
                                 <div class="figure figure-img">
-                                    <a href="">
-                                        <img src="img/page-main/smart/cooker.jpg" width="160" height="160" alt="米家压力IH电饭煲">
+                                    <a href="{{item.href}}">
+                                        <img src="{{item.img_src}}" width="160" height="160" alt="米家压力IH电饭煲">
                                     </a>
                                 </div>
                                 <h3 class="title">
-                                    <a href="">米家压力IH电饭煲</a>
+                                    <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="desc">智能烹饪，5月24日早10点现货</p>
-                                <p class="price"> <span class="num">999</span>元</p>
-                                <div class="flag flag-new">新品</div>
+                                <p class="desc">{{item.intro}}</p>
+                                <p class="price"> <span>{{item.price}}</span></p>
+                                <div class="flag flag-new" v-if="item.label=='new'">新品</div>
+                                <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
                             </li>
+
                         </ul>
                     </div>
                 </div>
@@ -378,6 +446,7 @@
 
             </div>
         </div></div>
+
         <div id="footer">
             <div class="footer_top comWidth">
                 <div class="footer-service">
@@ -392,46 +461,47 @@
                 <div class="footer-links clearfix">
                     <dl class="col-links col-links-first">
                         <dt>帮助中心</dt>
-                        <dd><a href="" target="_blank" >购物指南</a></dd>
-                        <dd><a href="" target="_blank" >支付方式</a></dd>
-                        <dd><a href="" target="_blank" >配送方式</a></dd>
+                        <dd><a href="" target="_blank">购物指南</a></dd>
+                        <dd><a href="" target="_blank">支付方式</a></dd>
+                        <dd><a href="" target="_blank">配送方式</a></dd>
                     </dl>
                     <dl class="col-links">
                         <dt>服务支持</dt>
-                        <dd><a href="" target="_blank" >售后政策</a></dd>
-                        <dd><a href="" target="_blank" >自助服务</a></dd>
-                        <dd><a href="" target="_blank" >相关下载</a></dd>
+                        <dd><a href="" target="_blank">售后政策</a></dd>
+                        <dd><a href="" target="_blank">自助服务</a></dd>
+                        <dd><a href="" target="_blank">相关下载</a></dd>
                     </dl>
                     <dl class="col-links">
                         <dt>线下门店</dt>
-                        <dd><a href="" target="_blank" >小米之家</a></dd>
-                        <dd><a href="" target="_blank" >服务网点</a></dd>
-                        <dd><a href="" target="_blank" >零售网点</a></dd>
+                        <dd><a href="" target="_blank">小米之家</a></dd>
+                        <dd><a href="" target="_blank">服务网点</a></dd>
+                        <dd><a href="" target="_blank">零售网点</a></dd>
                     </dl>
                     <dl class="col-links">
                         <dt>关于小米</dt>
-                        <dd><a href="" target="_blank" >了解小米</a></dd>
-                        <dd><a href="" target="_blank" >加入小米</a></dd>
-                        <dd><a href="" target="_blank" >联系我们</a></dd>
+                        <dd><a href="" target="_blank">了解小米</a></dd>
+                        <dd><a href="" target="_blank">加入小米</a></dd>
+                        <dd><a href="" target="_blank">联系我们</a></dd>
                     </dl>
                     <dl class="col-links">
                         <dt>关注我们</dt>
-                        <dd><a href="" target="_blank" >新浪微博</a></dd>
-                        <dd><a href="" target="_blank" >小米部落</a></dd>
-                        <dd><a href="" data-toggle="modal" >官方微信</a></dd>
+                        <dd><a href="" target="_blank">新浪微博</a></dd>
+                        <dd><a href="" target="_blank">小米部落</a></dd>
+                        <dd><a href="" data-toggle="modal">官方微信</a></dd>
                     </dl>
                     <dl class="col-links">
                         <dt>特色服务</dt>
-                        <dd><a href="" target="_blank" >F 码通道</a></dd>
-                        <dd><a href="" target="_blank" >小米移动</a></dd>
-                        <dd><a href="" target="_blank" >防伪查询</a></dd>
+                        <dd><a href="" target="_blank">F 码通道</a></dd>
+                        <dd><a href="" target="_blank">小米移动</a></dd>
+                        <dd><a href="" target="_blank">防伪查询</a></dd>
                     </dl>
                     <div class="col-contact">
                         <p class="phone">400-100-5678</p>
                         <p>
-                            周一至周日 8:00-18:00<br>（仅收市话费）
+                            周一至周日 8:00-18:00
+                            <br>（仅收市话费）
                         </p>
-                        <a class="btn-line" href="" target="_blank" ><i class="iconfont"></i> 24小时在线客服</a>
+                        <a class="btn-line" href="" target="_blank"><i class="iconfont"></i> 24小时在线客服</a>
                     </div>
                 </div>
             </div>
@@ -477,17 +547,16 @@
                             违法和不良信息举报电话：185-0130-1238, 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
                         </p>
                     </div>
-                                    <div class="useless_link">
-                    <a href="" target="_blank" ><img src="img/v-logo-1.png" alt="诚信网站"></a>
-                    <a href="" target="_blank" ><img src="img/v-logo-2.png" alt="可信网站"></a>
-                    <a href="" target="_blank" ><img src="img/v-logo-3.png" alt="网上交易保障中心"></a>
+                    <div class="useless_link">
+                        <a href="" target="_blank"><img src="img/v-logo-1.png" alt="诚信网站"></a>
+                        <a href="" target="_blank"><img src="img/v-logo-2.png" alt="可信网站"></a>
+                        <a href="" target="_blank"><img src="img/v-logo-3.png" alt="网上交易保障中心"></a>
+                    </div>
                 </div>
-                </div>
-
                 <div class="slogan ir">探索黑科技，小米为发烧而生</div>
             </div>
         </div>
-	</div>
+    </div>
     <script src="js/vue-view.js"></script>
     <script src="js/mi.js"></script>
 </body>

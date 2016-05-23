@@ -191,7 +191,7 @@ var category_list_display = new Vue({
             	datalist: [
             		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
             		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
-            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""}		
+            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""}
             	]
             },
             {
@@ -276,6 +276,22 @@ var star_goods_display = new Vue({
             {color_id: "3", img_id: "8", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
             {color_id: "4", img_id: "9", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
             {color_id: "5", img_id: "X", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
+        ]
+    }
+});
+
+var brick_list_display = new Vue({
+    el: ".block-list",
+    data: {
+        brick_list: [
+            {href: "", img_src: "img/page-main/smart/hardware1.jpg", title: "米家压力IH电饭煲" , intro: "智能烹饪，5月24日早10点现货" , price: "999元", label: "new"},
+            {href: "", img_src: "img/page-main/smart/hardware2.jpg", title: "小米路由器3" , intro: "更安全更稳定，现货发售" , price: "149元", label: "new"},
+            {href: "", img_src: "img/page-main/smart/hardware3.jpg", title: "小米智能安防套装" , intro: "智能警戒，为您的家增添一份安心" , price: "169元", label: "saleoff", sale: "享9折"},
+            {href: "", img_src: "img/page-main/smart/hardware4.jpg", title: "米兔儿童电话手表" , intro: "安全防走丢，宝贝的贴身护卫" , price: "299元", label: "new"},
+            {href: "", img_src: "img/page-main/smart/hardware5.jpg", title: "九号平衡车" , intro: "年轻人的酷玩具，骑行遥控两种玩法" , price: "1999元"},
+            {href: "", img_src: "img/page-main/smart/hardware6.jpg", title: "小蚁运动相机" , intro: "边玩边录边拍，手机随时分享" , price: "399元"},
+            {href: "", img_src: "img/page-main/smart/hardware7.jpg", title: "小蚁智能摄像机 夜视版" , intro: "能看能听能说，手机远程观看" , price: "149元"},
+            {href: "", img_src: "img/page-main/smart/hardware8.jpg", title: "米家iHealth血压计" , intro: "爸妈上手就会用的智能血压计" , price: "399元", label: "new"}
         ]
     }
 });
