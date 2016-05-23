@@ -327,101 +327,133 @@
                 </div>
             </div>
         </div>
-
-        <div class="page-main"><div class="comWidth">
-            <div class="smart">
-                <div class="title-box">
-                    <h2 class="title">智能硬件</h2>
-                    <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
-                </div>
-                <div class="row">
-                    <div class="span4 first-row">
-                        <div class="block-item">
-                            <img src="img/page-main/smart/left-span.jpg" />
-                        </div>
+        <div class="page-main">
+            <div class="comWidth">
+                <div class="smart">
+                    <div class="title-box">
+                        <h2 class="title">智能硬件</h2>
+                        <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
                     </div>
-                    <div class="span16">
-                        <ul class="block-list">
-                            <li class="block-item block-item-m" v-for="item in (brick_list)">
-                                <div class="figure figure-img">
-                                    <a href="{{item.href}}">
-                                        <img src="{{item.img_src}}" width="160" height="160" alt="米家压力IH电饭煲">
-                                    </a>
-                                </div>
-                                <h3 class="title">
+                    <div class="row">
+                        <div class="span4 first-row">
+                            <div class="block-item">
+                                <img src="img/page-main/smart/left-span.jpg" />
+                            </div>
+                        </div>
+                        <div class="span16">
+                            <ul class="block-list">
+                                <li class="block-item block-item-m" v-for="item in (brick_list)">
+                                    <div class="figure figure-img">
+                                        <a href="{{item.href}}">
+                                            <img src="{{item.img_src}}" width="160" height="160" alt="米家压力IH电饭煲">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="desc">{{item.intro}}</p>
-                                <p class="price"> <span>{{item.price}}</span></p>
-                                <div class="flag flag-new" v-if="item.label=='new'">新品</div>
-                                <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div class="match">
-                    <div class="box-hd">
-                        <h2>搭配</h2>
-                    </div>
-                    <div class="box-bd">
-                        <div class="box-bd-first fl">
-                            <ul class="match_left clearfix">
-                                <li class="box-shadow">
-                                    <a href="#">
-                                        <img src="img/match/match_left1.jpg" alt="">
-                                    </a>
-                                </li>
-                                <li class="box-shadow">
-                                     <a href="#">
-                                        <img src="img/match/match_left2.jpg" alt="">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="box-bd-list fl">
-                            <ul class="match-list clearfix">
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="box-shadow">
-                                    
-                                </li>
-                                <li class="brick-list-small">
-                                    
-                                </li>
-                                 <li class="brick-list-small">
-                                    
+                                    <p class="desc">{{item.intro}}</p>
+                                    <p class="price"> <span>{{item.price}}</span></p>
+                                    <div class="flag flag-new" v-if="item.label=='new'">新品</div>
+                                    <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
                                 </li>
                             </ul>
                         </div>
                     </div>
+                    <div class="match">
+                        <div class="box-hd">
+                            <h2>搭配</h2>
+                        </div>
+                        <div class="box-bd">
+                            <div class="box-bd-first fl">
+                                <ul class="match_left clearfix">
+                                    <li class="box-shadow">
+                                        <a href="#">
+                                            <img src="img/match/match_left1.jpg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="box-shadow">
+                                        <a href="#">
+                                            <img src="img/match/match_left2.jpg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="box-bd-list fl">
+                                <ul class="match-list clearfix">
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="box-shadow">
+                                    </li>
+                                    <li class="brick-list-small">
+                                    </li>
+                                    <li class="brick-list-small">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="armature"></div>
+                    <div class="around"></div>
+                    <div class="recommend"></div>
+                    <div class="review"></div>
+                    <div class="content">
+                        <div class="title-box">
+                            <h2 class="title">内容</h2>
+                        </div>
+                        <div>
+                            <ul class="content-list">
+                                <li v-for="item in (content_list)" class="content-item {{item.item_class}} {{item.item_first_class}} box-shadow" >
+                                    <h2 class="title">{{item.title}}</h2>
+                                    <div class="content-bd">
+                                        <a href="">
+                                        <ul class="item-list {{item.cont_class}}">
+                                            <li v-for="list in item.datalist">
+                                                <h4 class="name">
+                                                    {{list.name}}
+                                                </h4>
+                                                <p class="desc">{{list.desc}}</p>
+                                                <p class="price">{{list.price}}</p>
+                                                <div class="figure-img figure">
+                                                    <img src="img/content/{{list.img_src}}" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        </a>
+                                    </div>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers {{item.xm_class}}">
+                                            <li class="pager pager-active">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video"></div>
                 </div>
-                <div class="armature"></div>
-                <div class="around"></div>
-                <div class="recommend"></div>
-                <div class="review"></div>
-                <div class="content"></div>
-                <div class="video"></div>
+            </div>
         </div>
-    </div>
-    </div>
-
         <div id="footer">
             <div class="footer_top comWidth">
                 <div class="footer-service">
@@ -480,7 +512,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer_bottom">
                 <div class="footer_bottom_container comWidth">
                     <div class="footer_bottom_img fl">
@@ -512,9 +543,6 @@
                             <li><span>|</span></li>
                             <li><a href="#">Select Region</a></li>
                         </ul>
-
-
-
                         <p class="footer_bottom_info">
                             ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号
                         </p>

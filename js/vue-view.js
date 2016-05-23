@@ -295,3 +295,60 @@ var brick_list_display = new Vue({
         ]
     }
 });
+
+var content_list_display = new Vue({
+    el: ".content-list",
+    data: {
+        content_list: [
+            {
+                title: "图书",
+                xm_class: "xm-pagers-1",
+                item_first_class: "content-item-first",
+                item_class: "content-item-book",
+                cont_class: "item-list-1",
+                datalist: [
+                    {name: "阿弥陀佛，么么哒", desc: "大冰新书，12个不舍得读完的、暖心的、真实的江湖故事！",price: "9.99元", img_src: "list1_1.jpg"},
+                    {name: "特价专区", desc: "精选畅销好书，特价促销，天天更新，天天特价！",price: "限时优惠", img_src: "list1_2.jpg"},
+                    {name: "杂志专区", desc: "纸媒杂志＋互联网杂志，你想看的这都有！",price: "同步新刊上线", img_src: "list1_3.jpg"},
+                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "list1_4.jpg"}
+                ]
+            },
+            {
+                title: "MIUI 主题",
+                xm_class: "xm-pagers-2",
+                item_class: "content-item-theme",
+                cont_class: "item-list-2",
+                datalist: [
+                    {name: "小米Max【深色版】", desc: "小米Max官方主题，专属的锁屏鲜花壁纸惊艳全场" , price: "免费", img_src: "list2_1.jpg"},
+                    {name: "pai", desc: "全新界面设计，椭圆形图标风格，扁平化图标" , price: "免费", img_src: "list2_2.jpg"},
+                    {name: "盐", desc: "不规则图标，搭配上静谧的壁纸，带给你不一样的心情" , price: "免费", img_src: "list2_3.jpg"},
+                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "list1_4.jpg"}
+                ]
+            },
+            {
+                title: "游戏",
+                xm_class: "xm-pagers-3",
+                item_class: "content-item-game",
+                cont_class: "item-list-3",
+                datalist: [
+                    {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "list3_1.jpg"},
+                    {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "list3_2.jpg"},
+                    {name: "COK列王的纷争", desc: "全球同服，跨国约战！全世界都是你的战场！" , price: "免费", img_src: "list3_3.jpg"},
+                    {desc: "免费下载海量的手机游戏<br>天天都有现金福利赠送",price: "前往小米商店", img_src: "list3_4.jpg"}
+                ]
+            },
+            {
+                title: "应用",
+                xm_class: "xm-pagers-4",
+                item_class: "content-item-app",
+                cont_class: "item-list-4",
+                datalist: [
+                    {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "list4_1.jpg"},
+                    {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "list4_2.jpg"},
+                    {name: "小米应用", desc: "小米出品 必属精品" , price: "免费", img_src: "list4_3.jpg"},
+                    {desc: "帮助小米手机和其他安卓手机用户<br>发现好用的安卓应用",price: "前往小米应用商店", img_src: "list4_4.jpg"}
+                ]
+            }
+        ]
+    }
+});
