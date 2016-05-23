@@ -1,4 +1,4 @@
-// javascript && jquery 
+// javascript && jquery
 
 //search event
 $(document).click(function() {
@@ -181,6 +181,7 @@ $(".category_item").hover(function() {
     $(".category_item_box:eq(" + index + ")").css("display", "none");
 })
 
+
 //content 轮播
 $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(function(event) {
     /* Act on the event */
@@ -200,5 +201,22 @@ $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(funct
             console.log('hao ');
     });*/
     $(this).parents("div").prev().children().children().animate({marginLeft: -index * 296}, 400);
+});
+
+
+$(function() {
+    var arr = [$("#match-tab-hot"), $("#match-tab-speaker"), $("#match-tab-battery"), $("#match-tab-memcard")];
+    var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
+    $.each(arr, function( index, value ) {
+        console.log( index + ": " + value );
+        $(value).mouseover(function() {
+            for(var i = 0; i < 4; ++i) {
+                $(corspondID[i]).css("display", "none");
+                $(arr[i]).removeClass();
+            }
+            $(corspondID[index]).css("display", "block");
+            $(arr[index]).addClass("tab-active");
+        });
+    });
 });
 

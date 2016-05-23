@@ -1,3 +1,5 @@
+Vue.config.debug = true;
+
 var nav_list_display = new Vue({
     el: ".nav_list",
     data: {
@@ -280,10 +282,10 @@ var star_goods_display = new Vue({
     }
 });
 
-var brick_list_display = new Vue({
-    el: ".block-list",
+var smart_list_display = new Vue({
+    el: ".smart .block-list",
     data: {
-        brick_list: [
+        smart_list: [
             {href: "", img_src: "img/page-main/smart/hardware1.jpg", title: "米家压力IH电饭煲" , intro: "智能烹饪，5月24日早10点现货" , price: "999元", label: "new"},
             {href: "", img_src: "img/page-main/smart/hardware2.jpg", title: "小米路由器3" , intro: "更安全更稳定，现货发售" , price: "149元", label: "new"},
             {href: "", img_src: "img/page-main/smart/hardware3.jpg", title: "小米智能安防套装" , intro: "智能警戒，为您的家增添一份安心" , price: "169元", label: "saleoff", sale: "享9折"},
@@ -295,6 +297,7 @@ var brick_list_display = new Vue({
         ]
     }
 });
+
 
 var content_list_display = new Vue({
     el: ".content-list",
@@ -352,3 +355,31 @@ var content_list_display = new Vue({
         ]
     }
 });
+
+var main_page_list_display = new Vue({
+    el: ".match-row-template",
+    data: {
+        main_page: {
+            hot: [
+                {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh", price: "79元"},
+                {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版", price: "29元"},
+                {href: "", img_src: "img/page-main/match/match3.jpg", title: "小米移动电源10000mAh 高配版", price: "149元"},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
+                {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元"},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new"},
+                //{href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元"}
+            ],
+            speaker: [
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
+                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元"},//
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
+                {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元"},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new"},
+            ]
+        }
+    }
+});
+
