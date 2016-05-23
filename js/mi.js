@@ -1,4 +1,4 @@
-// javascript && jquery 
+// javascript && jquery
 
 //search event
 $(document).click(function() {
@@ -180,3 +180,21 @@ $(".category_item").hover(function() {
     var index = $(this).index();
     $(".category_item_box:eq(" + index + ")").css("display", "none");
 })
+
+
+
+$(function() {
+    var arr = [$("#match-tab-hot"), $("#match-tab-speaker"), $("#match-tab-battery"), $("#match-tab-memcard")];
+    var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
+    $.each(arr, function( index, value ) {
+        console.log( index + ": " + value );
+        $(value).mouseover(function() {
+            for(var i = 0; i < 4; ++i) {
+                $(corspondID[i]).css("display", "none");
+                $(arr[i]).removeClass();
+            }
+            $(corspondID[index]).css("display", "block");
+            $(arr[index]).addClass("tab-active");
+        });
+    });
+});
