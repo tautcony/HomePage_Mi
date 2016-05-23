@@ -279,3 +279,19 @@ var star_goods_display = new Vue({
         ]
     }
 });
+
+var brick_list_display = new Vue({
+    el: ".brick-list",
+    data: {
+        brick_list: [
+            {href: "", img_src: "img/hardware/hardware1.jpg", title: "米家压力IH电饭煲" , intro: "智能烹饪，5月24日早10点现货" , price: "999元", label: "new"},
+            {href: "", img_src: "img/hardware/hardware2.jpg", title: "小米路由器3" , intro: "更安全更稳定，现货发售" , price: "149元", label: "new"},
+            {href: "", img_src: "img/hardware/hardware3.jpg", title: "小米智能安防套装" , intro: "智能警戒，为您的家增添一份安心" , price: "169元"},
+            {href: "", img_src: "img/hardware/hardware4.jpg", title: "米兔儿童电话手表" , intro: "安全防走丢，宝贝的贴身护卫" , price: "299元", label: "new"},
+            {href: "", img_src: "img/hardware/hardware5.jpg", title: "九号平衡车" , intro: "年轻人的酷玩具，骑行遥控两种玩法" , price: "1999元"},
+            {href: "", img_src: "img/hardware/hardware6.jpg", title: "小蚁运动相机" , intro: "边玩边录边拍，手机随时分享" , price: "399元"},
+            {href: "", img_src: "img/hardware/hardware7.jpg", title: "小蚁智能摄像机 夜视版" , intro: "能看能听能说，手机远程观看" , price: "149元"},
+            {href: "", img_src: "img/hardware/hardware8.jpg", title: "米家iHealth血压计" , intro: "爸妈上手就会用的智能血压计" , price: "399元", label: "new"}
+        ]
+    }
+});
