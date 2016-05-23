@@ -310,17 +310,20 @@ var main_page_list_display = new Vue({
                 {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元"},
                 {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
                 {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new"},
-                //{href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元"}
+                {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元"}
             ],
             speaker: [
                 {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
                 {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元"},//
-                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元"},
-                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new"},
-            ]
+                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元"},
+                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元"},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元"},
+                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元"},
+                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new"},
+                {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元"},
+            ],
+            battery: [],
+            memcard: []
         }
     }
 });
