@@ -162,34 +162,9 @@
             <div class="channel clearfix">
                 <div class="span4">
                     <ul class="channel_list fl">
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xe665;</i> 电信专场
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xe65a;</i> 企业团购
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xe614;</i> 官翻产品
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xe618;</i> 小米移动
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xe671;</i> 以旧换新
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="iconfont">&#xf00a8;</i> 话费充值
+                        <li v-for="item in channel_list">
+                            <a href="{{item.href}}">
+                                <i class="iconfont">{{item.icon}}</i>{{item.content}}
                             </a>
                         </li>
                     </ul>
@@ -383,11 +358,9 @@
                 <div class="footer_top comWidth">
                     <div class="footer-service">
                         <ul class="list-service clearfix">
-                            <li><a href=""><i class="iconfont"></i>1小时快修服务</a></li>
-                            <li><a href=""><i class="iconfont"></i>7天无理由退货</a></li>
-                            <li><a href=""><i class="iconfont"></i>15天免费换货</a></li>
-                            <li><a href=""><i class="iconfont"></i>满150元包邮</a></li>
-                            <li><a href=""><i class="iconfont"></i>520余家售后网点</a></li>
+                            <li v-for="item in footer_service_list">
+                                <a href="{{item.href}}"><i class="iconfont">{{item.icon}}</i>{{item.content}}</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="footer-links clearfix">
