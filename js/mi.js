@@ -188,19 +188,18 @@ $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(funct
     $(this).addClass('pager-active');
     $(this).siblings().removeClass('pager-active');
     var index = $(this).index();
-    //console.log(index);
-    //console.log($(this).children().attr('class'));
-    //console.log($(this).parent().parent().prev().children().children().attr('class'));
     //console.log($(this).parents("div").prev().children().children().attr('class'));
+    //console.log($(this).parents("div").parents("li").index());
+    var contentindex = ($(this).parents("div").parents("li").index())+1;
     //$(this).parents("div").prev().children().children().animate({
-    /*$("ul.item-list-1").animate({
+    $("ul.item-list-"+contentindex).animate({
             marginLeft: -index * 296
         },
         500,
         function() {
             console.log('hao ');
-    });*/
-    $(this).parents("div").prev().children().children().animate({marginLeft: -index * 296}, 400);
+    });
+    //$(this).parents("div").prev().children().children().animate({ marginLeft: -index * 296 }, 400);
 });
 
 
