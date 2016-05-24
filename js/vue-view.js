@@ -361,13 +361,13 @@ var footer_service_display = new Vue({
 var footer_links_display = new Vue({
     el: ".footer-links",
     data: {
-        footer_links_table_list: [
+        footer_links_table_list: {
             "帮助中心": [{href: "#", content: "购物指南"}, {href: "#", content: "支付方式"}, {href: "#", content: "配送方式"}],
             "服务支持": [{href: "#", content: "售后政策"}, {href: "#", content: "自助服务"}, {href: "#", content: "相关下载"}],
             "线下门店": [{href: "#", content: "小米之家"}, {href: "#", content: "服务网点"}, {href: "#", content: "零售网点"}],
             "关于小米": [{href: "#", content: "了解小米"}, {href: "#", content: "加入小米"}, {href: "#", content: "联系我们"}],
             "关注我们": [{href: "#", content: "新浪微博"}, {href: "#", content: "小米部落"}, {href: "#", content: "官方微信"}],
             "特色服务": [{href: "#", content: "F 码通道"}, {href: "#", content: "小米移动"}, {href: "#", content: "防伪查询"}],
-        ]
+        }
     }
 });
