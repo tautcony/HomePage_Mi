@@ -312,10 +312,10 @@ var content_list_display = new Vue({
     }
 });
 
-var main_page_list_display = new Vue({
+var main_page_match_list_display = new Vue({
     el: ".match-row-template",
     data: {
-        main_page: {
+        main_page_match: {
             hot: [
                 {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh", price: "79元", reviewed: "17万", review: "这个小巧玲珑啊，比10400安的小了好多，感觉不错，...",author: "LIN翼"},
                 {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版", price: "29元", reviewed: "2.2万", review: "价钱优惠，音质好。值得推荐",author: "1006768313"},
@@ -360,8 +360,121 @@ var main_page_list_display = new Vue({
     }
 });
 
+var main_page_accessories_list_display = new Vue({
+    el: ".accessories-row-template",
+    data: {
+        main_page_accessories: {
+            hot: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            phonecase: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            backcase: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            mo: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            other: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+        }
+    }
+});
 
-
+var main_page_around_list_display = new Vue({
+    el: ".around-row-template",
+    data: {
+        main_page_around: {
+            hot: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            cloth: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            rabbit: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            life: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            case: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+        }
+    }
+});
 
 
 
