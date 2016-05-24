@@ -182,6 +182,27 @@ $(".category_item").hover(function() {
 })
 
 
+//content 轮播
+$(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(function(event) {
+    /* Act on the event */
+    $(this).addClass('pager-active');
+    $(this).siblings().removeClass('pager-active');
+    var index = $(this).index();
+    //console.log(index);
+    //console.log($(this).children().attr('class'));
+    //console.log($(this).parent().parent().prev().children().children().attr('class'));
+    //console.log($(this).parents("div").prev().children().children().attr('class'));
+    //$(this).parents("div").prev().children().children().animate({
+    /*$("ul.item-list-1").animate({
+            marginLeft: -index * 296
+        },
+        500,
+        function() {
+            console.log('hao ');
+    });*/
+    $(this).parents("div").prev().children().children().animate({marginLeft: -index * 296}, 400);
+});
+
 
 $(function() {
     var arr = [$("#match-tab-hot"), $("#match-tab-speaker"), $("#match-tab-battery"), $("#match-tab-memcard")];
@@ -198,3 +219,4 @@ $(function() {
         });
     });
 });
+

@@ -249,7 +249,6 @@
                 </div>
             </div>
         </div>
-
         <div class="page-main"><div class="comWidth">
             <div class="smart">
                 <div class="title-box">
@@ -334,18 +333,60 @@
 
                         </ul>
                     </div>
+                    <div class="video"></div>
                 </div>
             </div>
-            <div class="armature"></div>
-            <div class="around"></div>
-            <div class="recommend"></div>
-            <div class="review"></div>
-            <div class="content"></div>
-            <div class="video"></div>
-        </div>
-    </div>
-    </div>
+                    <div class="armature"></div>
+                    <div class="around"></div>
+                    <div class="recommend"></div>
+                    <div class="review"></div>
+                    <div class="content">
+                        <div class="title-box">
+                            <h2 class="title">内容</h2>
+                        </div>
+                        <div>
+                            <ul class="content-list">
+                                <li v-for="item in (content_list)" class="content-item {{item.item_class}} {{item.item_first_class}} box-shadow" >
+                                    <h2 class="title">{{item.title}}</h2>
+                                    <div class="content-bd">
+                                        <a href="">
+                                        <ul class="item-list {{item.cont_class}}">
+                                            <li v-for="list in item.datalist">
+                                                <h4 class="name">
+                                                    {{list.name}}
+                                                </h4>
+                                                <p class="desc">{{list.desc}}</p>
+                                                <p class="price">{{list.price}}</p>
+                                                <div class="figure-img figure">
+                                                    <img src="img/content/{{list.img_src}}" alt="">
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        </a>
+                                    </div>
+                                    <div class="xm-pagers-wrapper">
+                                        <ul class="xm-pagers {{item.xm_class}}">
+                                            <li class="pager pager-active">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                            <li class="pager">
+                                                <span class="dot"></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
+        </div>
+        </div>
+        </div>
         <div id="footer">
             <div class="footer_top comWidth">
                 <div class="footer-service">
@@ -404,7 +445,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="footer_bottom">
                 <div class="footer_bottom_container comWidth">
                     <div class="footer_bottom_img fl">
@@ -436,9 +476,6 @@
                             <li><span>|</span></li>
                             <li><a href="#">Select Region</a></li>
                         </ul>
-
-
-
                         <p class="footer_bottom_info">
                             ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号
                         </p>
