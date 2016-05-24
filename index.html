@@ -60,7 +60,7 @@
                 <div class="nav_menu_list">
                     <ul class="nav_menu_spec" id="nav_item_list_{{$key}}">
                         <li v-for="item in c">
-                            <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
+                            <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_name" /></a>
                             <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                             <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                         </li>
@@ -108,7 +108,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img src="img/category/{{list.img_name}}">
+                                            <img v-bind:src="list.img_name">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -118,7 +118,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_2">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_2">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img src="img/category/{{list.img_name}}">
+                                            <img v-bind:src="list.img_name">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -128,7 +128,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_3">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_3">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img src="img/category/{{list.img_name}}">
+                                            <img v-bind:src="list.img_name">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'&&!item.datalist_3">选购</span>
@@ -144,7 +144,7 @@
                                 <a href="#"><img src="img/hot1.jpg" /></a>
                             </li>
                             <li style="display: none" v-for="item in (category_hot_list)">
-                                <a href="{{item.href}}"><img src="img/{{item.img_name}}" /></a>
+                                <a href="{{item.href}}"><img v-bind:src="item.img_name" /></a>
                             </li>
                         </ul>
                         <ul class="category_move">
@@ -227,7 +227,7 @@
                     </div>
                     <ul class="spec_item_list" id="star_goods">
                         <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
-                            <a class="spec_img"><img src="img/star/star_{{item.img_id}}.jpg" /></a>
+                            <a class="spec_img"><img v-bind:src="item.img_id" /></a>
                             <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
                             <p class="spec_desc">{{item.desc}}</p>
                             <p class="spec_money">{{item.price}}</p>
@@ -254,7 +254,7 @@
                                 <li class="block-item block-item-m" v-for="item in (smart_list)">
                                     <div class="figure figure-img">
                                         <a href="{{item.href}}">
-                                            <img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}">
+                                            <img v-bind:src="item.img_src" width="160" height="160" alt="{{item.title}}">
                                         </a>
                                     </div>
                                     <h3 class="title">
@@ -296,7 +296,7 @@
                             <ul class="block-list">
                                 <li class="block-item block-item-m" v-for="item in (value)" v-if="$index != 7">
                                     <div class="figure figure-img">
-                                        <a href="{{item.href}}"><img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}"></a>
+                                        <a href="{{item.href}}"><img v-bind:src="item.img_src" width="160" height="160" alt="{{item.title}}"></a>
                                     </div>
                                     <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
@@ -315,7 +315,7 @@
                                 <li class="block-item block-list-s">
                                     <div class="figure-img">
                                         <a href="#">
-                                            <img src="{{value[7].img_src}}" width="80" height="80" alt="{{item.title}}">
+                                            <img v-bind:src="value[7].img_src" width="80" height="80" alt="{{item.title}}">
                                         </a>
                                     </div>
                                     <h3 class="title">{{value[7].title}}</h3>
@@ -349,7 +349,7 @@
                                             <p class="desc">{{list.desc}}</p>
                                             <p class="price">{{list.price}}</p>
                                             <div class="figure-img figure">
-                                                <a href=""><img src="img/content/{{list.img_src}}" alt=""></a>
+                                                <a href=""><img v-bind:src="list.img_src" alt=""></a>
                                             </div>
                                         </li>
                                     </ul>

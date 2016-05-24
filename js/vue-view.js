@@ -22,52 +22,52 @@ var nav_item_display = new Vue({
 	data: {
         nav_item_list: {
             1: [
-                {title: "小米Max", price: "1499元起", img_name: "/nav_item/mi_phone/miMax.jpg", href: ""},
-                {title: "小米手机5", price: "1999元起", img_name: "/nav_item/mi_phone/mi5.jpg", href: ""},
-                {title: "小米手机4S", price: "1699元", img_name: "/nav_item/mi_phone/mi4s.jpg", href: ""},
-                {title: "小米手机4c", price: "1099元", img_name: "/nav_item/mi_phone/mi4c.jpg", href: ""},
-                {title: "小米手机4", price: "1299元", img_name: "/nav_item/mi_phone/mi4.jpg", href: ""},
-                {title: "小米Note 标准版", price: "1499元起", img_name: "/nav_item/mi_phone/minote.jpg", href: ""}
+                {title: "小米Max", price: "1499元起", img_name: "img/nav_item/mi_phone/miMax.jpg", href: ""},
+                {title: "小米手机5", price: "1999元起", img_name: "img/nav_item/mi_phone/mi5.jpg", href: ""},
+                {title: "小米手机4S", price: "1699元", img_name: "img/nav_item/mi_phone/mi4s.jpg", href: ""},
+                {title: "小米手机4c", price: "1099元", img_name: "img/nav_item/mi_phone/mi4c.jpg", href: ""},
+                {title: "小米手机4", price: "1299元", img_name: "img/nav_item/mi_phone/mi4.jpg", href: ""},
+                {title: "小米Note 标准版", price: "1499元起", img_name: "img/nav_item/mi_phone/minote.jpg", href: ""}
             ],
             2: [
-    			{title: "红米Note 3", price: "899元起", img_name: "/nav_item/red_mi/redmi3.jpg", href: ""},
-    			{title: "红米手机3", price: "699元起", img_name: "/nav_item/red_mi/redminote3.jpg", href: ""}
+    			{title: "红米Note 3", price: "899元起", img_name: "img/nav_item/red_mi/redmi3.jpg", href: ""},
+    			{title: "红米手机3", price: "699元起", img_name: "img/nav_item/red_mi/redminote3.jpg", href: ""}
     		],
             3: [
-    			{title: "小米平板2 16GB", price: "899元起", img_name: "/nav_item/mi_pad/mi_pad_2_16.jpg", href: ""},
-    			{title: "小米平板2 64GB", price: "699元起", img_name: "/nav_item/mi_pad/mi_pad_2_64.jpg", href: ""},
-    			{title: "小米平板2  64GB Windows版", price: "699元起", img_name: "/nav_item/mi_pad/mi_pad_2_64_win.jpg", href: ""}
+    			{title: "小米平板2 16GB", price: "899元起", img_name: "img/nav_item/mi_pad/mi_pad_2_16.jpg", href: ""},
+    			{title: "小米平板2 64GB", price: "699元起", img_name: "img/nav_item/mi_pad/mi_pad_2_64.jpg", href: ""},
+    			{title: "小米平板2  64GB Windows版", price: "699元起", img_name: "img/nav_item/mi_pad/mi_pad_2_64_win.jpg", href: ""}
     		],
             4: [
-    			{title: "小米电视3S 43英寸", price: "1799元", img_name: "/nav_item/mi_tv/mitv3s_43.jpg", href: ""},
-    			{title: "小米电视3S 48英寸", price: "1999元", img_name: "/nav_item/mi_tv/mitv3s_48.jpg", href: ""},
-    			{title: "小米电视3 55英寸", price: "3999元起", img_name: "/nav_item/mi_tv/mitv3_55.jpg", href: ""},
-    			{title: "小米电视3 60英寸", price: "4999元起", img_name: "/nav_item/mi_tv/mitv3_65.jpg", href: ""},
-    			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_name: "/nav_item/mi_tv/mitv3s_65c.jpg", href: ""},
-    			{title: "小米电视3 70英寸", price: "9999元", img_name: "/nav_item/mi_tv/mitv3_70.jpg", href: ""}
+    			{title: "小米电视3S 43英寸", price: "1799元", img_name: "img/nav_item/mi_tv/mitv3s_43.jpg", href: ""},
+    			{title: "小米电视3S 48英寸", price: "1999元", img_name: "img/nav_item/mi_tv/mitv3s_48.jpg", href: ""},
+    			{title: "小米电视3 55英寸", price: "3999元起", img_name: "img/nav_item/mi_tv/mitv3_55.jpg", href: ""},
+    			{title: "小米电视3 60英寸", price: "4999元起", img_name: "img/nav_item/mi_tv/mitv3_65.jpg", href: ""},
+    			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_name: "img/nav_item/mi_tv/mitv3s_65c.jpg", href: ""},
+    			{title: "小米电视3 70英寸", price: "9999元", img_name: "img/nav_item/mi_tv/mitv3_70.jpg", href: ""}
     		],
             5: [
-    			{title: "小米盒子mini版", price: "199元", img_name: "/nav_item/mi_tv_box/box_mini.jpg", href: ""},
-    			{title: "小米盒子3", price: "299元", img_name: "/nav_item/mi_tv_box/box_3.jpg", href: ""},
-    			{title: "小米盒子3 增强版", price: "399元", img_name: "/nav_item/mi_tv_box/box_3s.jpg", href: ""},
-    			{title: "小米电视主机", price: "999元", img_name: "/nav_item/mi_tv_box/tv_console.jpg", href: ""},
-    			{title: "小米家庭音响 金属版", price: "899元", img_name: "/nav_item/mi_tv_box/seaker_std.jpg", href: ""},
-    			{title: "小米家庭音响 标准版", price: "699元", img_name: "/nav_item/mi_tv_box/speaker_pro.jpg", href: ""}
+    			{title: "小米盒子mini版", price: "199元", img_name: "img/nav_item/mi_tv_box/box_mini.jpg", href: ""},
+    			{title: "小米盒子3", price: "299元", img_name: "img/nav_item/mi_tv_box/box_3.jpg", href: ""},
+    			{title: "小米盒子3 增强版", price: "399元", img_name: "img/nav_item/mi_tv_box/box_3s.jpg", href: ""},
+    			{title: "小米电视主机", price: "999元", img_name: "img/nav_item/mi_tv_box/tv_console.jpg", href: ""},
+    			{title: "小米家庭音响 金属版", price: "899元", img_name: "img/nav_item/mi_tv_box/seaker_std.jpg", href: ""},
+    			{title: "小米家庭音响 标准版", price: "699元", img_name: "img/nav_item/mi_tv_box/speaker_pro.jpg", href: ""}
     		],
             6: [
-    			{title: "全新小米路由器", price: "699元起", img_name: "/nav_item/mi_router/new_router.jpg", href: ""},
-    			{title: "小米路由器 3", price: "149元", img_name: "/nav_item/mi_router/router3.jpg", href: ""},
-    			{title: "小米路由器 mini", price: "129元", img_name: "/nav_item/mi_router/router_mini.jpg", href: ""},
-    			{title: "小米路由器 青春版", price: "79元", img_name: "/nav_item/mi_router/router_seishun.jpg", href: ""},
-    			{title: "小米WiFi放大器", price: "39元", img_name: "/nav_item/mi_router/wifi_amp.jpg", href: ""}
+    			{title: "全新小米路由器", price: "699元起", img_name: "img/nav_item/mi_router/new_router.jpg", href: ""},
+    			{title: "小米路由器 3", price: "149元", img_name: "img/nav_item/mi_router/router3.jpg", href: ""},
+    			{title: "小米路由器 mini", price: "129元", img_name: "img/nav_item/mi_router/router_mini.jpg", href: ""},
+    			{title: "小米路由器 青春版", price: "79元", img_name: "img/nav_item/mi_router/router_seishun.jpg", href: ""},
+    			{title: "小米WiFi放大器", price: "39元", img_name: "img/nav_item/mi_router/wifi_amp.jpg", href: ""}
     		],
             7: [
-    			{title: "米家压力IH电饭煲", price: "999元", img_name: "/nav_item/mi_smart_hardware/cooker.jpg", href: ""},
-    			{title: "九号平衡车", price: "1999元", img_name: "/nav_item/mi_smart_hardware/balance_car.jpg", href: ""},
-    			{title: "小米空气净化器 2", price: "699元", img_name: "/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
-    			{title: "体重秤", price: "99元", img_name: "/nav_item/mi_smart_hardware/weight.jpg", href: ""},
-    			{title: "摄像机", price: "149元", img_name: "/nav_item/mi_smart_hardware/camera.jpg", href: ""},
-    			{title: "查看全部 智能硬件", price: "", img_name: "/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
+    			{title: "米家压力IH电饭煲", price: "999元", img_name: "img/nav_item/mi_smart_hardware/cooker.jpg", href: ""},
+    			{title: "九号平衡车", price: "1999元", img_name: "img/nav_item/mi_smart_hardware/balance_car.jpg", href: ""},
+    			{title: "小米空气净化器 2", price: "699元", img_name: "img/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
+    			{title: "体重秤", price: "99元", img_name: "img/nav_item/mi_smart_hardware/weight.jpg", href: ""},
+    			{title: "摄像机", price: "149元", img_name: "img/nav_item/mi_smart_hardware/camera.jpg", href: ""},
+    			{title: "查看全部 智能硬件", price: "", img_name: "img/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
     		]
         }
 	}
@@ -98,89 +98,89 @@ var category_list_display = new Vue({
             {
             	title: "手机 平板 电话卡",
             	datalist: [
-            		{title: "小米手机5", img_name: "mi5.jpg", href: ""},
-					{title: "小米手机4S", img_name: "mi4.jpg", href: ""},
-					{title: "小米手机MAX", img_name: "mimax.jpg", href: ""},
-					{title: "红米Note2", img_name: "note2.jpg", href: ""},
-					{title: "小米手机4", img_name: "mi4.jpg", href: ""},
-					{title: "小米手机4C", img_name: "mi4c.jpg", href: ""}
+            		{title: "小米手机5", img_name: "img/category/mi5.jpg", href: ""},
+					{title: "小米手机4S", img_name: "img/category/mi4.jpg", href: ""},
+					{title: "小米手机MAX", img_name: "img/category/mimax.jpg", href: ""},
+					{title: "红米Note2", img_name: "img/category/note2.jpg", href: ""},
+					{title: "小米手机4", img_name: "img/category/mi4.jpg", href: ""},
+					{title: "小米手机4C", img_name: "img/category/mi4c.jpg", href: ""}
             	],
             	datalist_2: [
-            		{title: "红米Note3", img_name: "note3.jpg", href: ""},
-            		{title: "红米手机3", img_name: "hongmi3.jpg", href: ""},
-            		{title: "小米平板2", img_name: "pad2.png", href: ""},
-            		{title: "电信版", img_name: "telcom.jpg", href: ""},
-            		{title: "合约机", img_name: "telcom.jpg", href: ""},
-            		{title: "对比手机", img_name: "compare.jpg", href: ""}
+            		{title: "红米Note3", img_name: "img/category/note3.jpg", href: ""},
+            		{title: "红米手机3", img_name: "img/category/hongmi3.jpg", href: ""},
+            		{title: "小米平板2", img_name: "img/category/pad2.png", href: ""},
+            		{title: "电信版", img_name: "img/category/telcom.jpg", href: ""},
+            		{title: "合约机", img_name: "img/category/telcom.jpg", href: ""},
+            		{title: "对比手机", img_name: "img/category/compare.jpg", href: ""}
             	],
             	datalist_3: [
-            		{title: "小米移动电话卡", img_name: "mimobile.jpg", href: ""}
+            		{title: "小米移动电话卡", img_name: "img/category/mimobile.jpg", href: ""}
             	]
         	},
             {
             	title: "电视 盒子",
             	datalist: [
-            		{title: "小米电视 40英寸", img_name: "tv40.jpg", href: ""},
-            		{title: "小米电视 48英寸", img_name: "tv48.jpg", href: ""},
-            		{title: "小米电视 49英寸", img_name: "tv49.jpg", href: ""},
-            		{title: "小米电视 55英寸", img_name: "tv3-55.jpg", href: ""},
-            		{title: "小米电视 60英寸", img_name: "tv60.jpg", href: ""},
-            		{title: "小米盒子3", img_name: "hezis.jpg", href: ""}
+            		{title: "小米电视 40英寸", img_name: "img/category/tv40.jpg", href: ""},
+            		{title: "小米电视 48英寸", img_name: "img/category/tv48.jpg", href: ""},
+            		{title: "小米电视 49英寸", img_name: "img/category/tv49.jpg", href: ""},
+            		{title: "小米电视 55英寸", img_name: "img/category/tv3-55.jpg", href: ""},
+            		{title: "小米电视 60英寸", img_name: "img/category/tv60.jpg", href: ""},
+            		{title: "小米盒子3", img_name: "img/category/hezis.jpg", href: ""}
             	]
         	},
             {
             	title: "路由器 智能硬件",
             	datalist: [
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "luyouqi-80.jpg", href: ""}
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""}
             	]
             },
             {
             	title: "移动电源 插线板",
             	datalist: [
-            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
-            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""},
-            		{title: "小米移动电源", img_name: "dianyuan.jpg", href: ""}
+            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""},
+            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""},
+            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""}
             	]
             },
             {
             	title: "耳机 音箱",
             	datalist: [
-            		{title: "小米头戴式耳机", img_name: "headphone.jpg", href: ""},
+            		{title: "小米头戴式耳机", img_name: "img/category/headphone.jpg", href: ""},
             	]
             },
             {
             	title: "电池 存储卡",
             	datalist: [
-            		{title: "彩虹五号电池", img_name: "5Battery1.jpg", href: ""},
+            		{title: "彩虹五号电池", img_name: "img/category/5Battery1.jpg", href: ""},
             	]
             },
             {
             	title: "保护套 后盖",
             	datalist: [
-            		{title: "保护套保护壳", img_name: "baohu.jpg", href: ""},
+            		{title: "保护套保护壳", img_name: "img/category/baohu.jpg", href: ""},
             	]
         	},
             {
             	title: "贴膜 其他配件",
             	datalist: [
-            		{title: "贴膜", img_name: "tiemo.jpg", href: ""},
+            		{title: "贴膜", img_name: "img/category/tiemo.jpg", href: ""},
             	]
             },
             {
             	title: "米兔 服装",
             	datalist: [
-            		{title: "米兔", img_name: "mitu-80.jpg", href: ""},
+            		{title: "米兔", img_name: "img/category/mitu-80.jpg", href: ""},
             	]
             },
             {
             	title: "箱包 其他周边",
             	datalist: [
-            		{title: "箱包", img_name: "xiangbao-80.jpg", href: ""},
+            		{title: "箱包", img_name: "img/category/xiangbao-80.jpg", href: ""},
             	]
             }
         ]
@@ -192,10 +192,10 @@ var category_hot_list_display = new Vue({
     data: {
         category_hot_list: [
             //{img_name: "hot1.jpg", href: "#"},
-            {img_name: "hot2.jpg", href: "#"},
-            {img_name: "hot3.jpg", href: "#"},
-            {img_name: "hot4.jpg", href: "#"},
-            {img_name: "hot5.jpg", href: "#"}
+            {img_name: "img/hot2.jpg", href: "#"},
+            {img_name: "img/hot3.jpg", href: "#"},
+            {img_name: "img/hot4.jpg", href: "#"},
+            {img_name: "img/hot5.jpg", href: "#"}
         ]
     }
 });
@@ -219,16 +219,16 @@ var star_goods_display = new Vue({
     el: "#star_goods",
     data: {
         star_goods: [
-            {color_id: "1", img_id: "1", title: "小米电视全系列", desc: "买就送爱奇艺会员卡", price: "1799元起"},
-            {color_id: "2", img_id: "2", title: "小米盒子3 增强版", desc: "高端 4K 网络机顶盒", price: "399元"},
-            {color_id: "3", img_id: "3", title: "小米手环 光感版", desc: "小米手环 光感版", price: "99元"},
-            {color_id: "4", img_id: "4", title: "米家压力IH电饭煲", desc: "米家压力IH电饭煲", price: "999元"},
-            {color_id: "5", img_id: "5", title: "移动电源10000mAh 高配版", desc: "支持USB Type-C充放电，双向快充", price: "149元"},
-            {color_id: "1", img_id: "6", title: "Yeelight床头灯", desc: "触摸式操作，给卧室1600万种颜色", price: "249元"},
-            {color_id: "2", img_id: "7", title: "小米路由器 mini", desc: "双频AC智能路由器，高性价比", price: "129元"},
-            {color_id: "3", img_id: "8", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
-            {color_id: "4", img_id: "9", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
-            {color_id: "5", img_id: "X", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
+            {color_id: "1", img_id: "img/star/star_1.jpg", title: "小米电视全系列", desc: "买就送爱奇艺会员卡", price: "1799元起"},
+            {color_id: "2", img_id: "img/star/star_2.jpg", title: "小米盒子3 增强版", desc: "高端 4K 网络机顶盒", price: "399元"},
+            {color_id: "3", img_id: "img/star/star_3.jpg", title: "小米手环 光感版", desc: "小米手环 光感版", price: "99元"},
+            {color_id: "4", img_id: "img/star/star_4.jpg", title: "米家压力IH电饭煲", desc: "米家压力IH电饭煲", price: "999元"},
+            {color_id: "5", img_id: "img/star/star_5.jpg", title: "移动电源10000mAh 高配版", desc: "支持USB Type-C充放电，双向快充", price: "149元"},
+            {color_id: "1", img_id: "img/star/star_6.jpg", title: "Yeelight床头灯", desc: "触摸式操作，给卧室1600万种颜色", price: "249元"},
+            {color_id: "2", img_id: "img/star/star_7.jpg", title: "小米路由器 mini", desc: "双频AC智能路由器，高性价比", price: "129元"},
+            {color_id: "3", img_id: "img/star/star_8.jpg", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
+            {color_id: "4", img_id: "img/star/star_9.jpg", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
+            {color_id: "5", img_id: "img/star/star_X.jpg", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
         ]
     }
 });
@@ -261,10 +261,10 @@ var content_list_display = new Vue({
                 item_class: "content-item-book",
                 cont_class: "item-list-1",
                 datalist: [
-                    {name: "阿弥陀佛，么么哒", desc: "大冰新书，12个不舍得读完的、暖心的、真实的江湖故事！",price: "9.99元", img_src: "list1_1.jpg"},
-                    {name: "特价专区", desc: "精选畅销好书，特价促销，天天更新，天天特价！",price: "限时优惠", img_src: "list1_2.jpg"},
-                    {name: "杂志专区", desc: "纸媒杂志＋互联网杂志，你想看的这都有！",price: "同步新刊上线", img_src: "list1_3.jpg"},
-                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "list1_4.jpg"}
+                    {name: "阿弥陀佛，么么哒", desc: "大冰新书，12个不舍得读完的、暖心的、真实的江湖故事！",price: "9.99元", img_src: "img/content/list1_1.jpg"},
+                    {name: "特价专区", desc: "精选畅销好书，特价促销，天天更新，天天特价！",price: "限时优惠", img_src: "img/content/list1_2.jpg"},
+                    {name: "杂志专区", desc: "纸媒杂志＋互联网杂志，你想看的这都有！",price: "同步新刊上线", img_src: "img/content/list1_3.jpg"},
+                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "img/content/list1_4.jpg"}
                 ]
             },
             {
@@ -273,10 +273,10 @@ var content_list_display = new Vue({
                 item_class: "content-item-theme",
                 cont_class: "item-list-2",
                 datalist: [
-                    {name: "小米Max【深色版】", desc: "小米Max官方主题，专属的锁屏鲜花壁纸惊艳全场" , price: "免费", img_src: "list2_1.jpg"},
-                    {name: "pai", desc: "全新界面设计，椭圆形图标风格，扁平化图标" , price: "免费", img_src: "list2_2.jpg"},
-                    {name: "盐", desc: "不规则图标，搭配上静谧的壁纸，带给你不一样的心情" , price: "免费", img_src: "list2_3.jpg"},
-                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "list1_4.jpg"}
+                    {name: "小米Max【深色版】", desc: "小米Max官方主题，专属的锁屏鲜花壁纸惊艳全场" , price: "免费", img_src: "img/content/list2_1.jpg"},
+                    {name: "pai", desc: "全新界面设计，椭圆形图标风格，扁平化图标" , price: "免费", img_src: "img/content/list2_2.jpg"},
+                    {name: "盐", desc: "不规则图标，搭配上静谧的壁纸，带给你不一样的心情" , price: "免费", img_src: "img/content/list2_3.jpg"},
+                    {desc: "海量好书，享受精品阅读时光<br>漂亮的中文排版，千万读者选择！",price: "前往查看", img_src: "img/content/list1_4.jpg"}
                 ]
             },
             {
@@ -285,10 +285,10 @@ var content_list_display = new Vue({
                 item_class: "content-item-game",
                 cont_class: "item-list-3",
                 datalist: [
-                    {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "list3_1.jpg"},
-                    {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "list3_2.jpg"},
-                    {name: "COK列王的纷争", desc: "全球同服，跨国约战！全世界都是你的战场！" , price: "免费", img_src: "list3_3.jpg"},
-                    {desc: "免费下载海量的手机游戏<br>天天都有现金福利赠送",price: "前往小米商店", img_src: "list3_4.jpg"}
+                    {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "img/content/list3_1.jpg"},
+                    {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "img/content/list3_2.jpg"},
+                    {name: "COK列王的纷争", desc: "全球同服，跨国约战！全世界都是你的战场！" , price: "免费", img_src: "img/content/list3_3.jpg"},
+                    {desc: "免费下载海量的手机游戏<br>天天都有现金福利赠送",price: "前往小米商店", img_src: "img/content/list3_4.jpg"}
                 ]
             },
             {
@@ -297,10 +297,10 @@ var content_list_display = new Vue({
                 item_class: "content-item-app",
                 cont_class: "item-list-4",
                 datalist: [
-                    {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "list4_1.jpg"},
-                    {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "list4_2.jpg"},
-                    {name: "小米应用", desc: "小米出品 必属精品" , price: "免费", img_src: "list4_3.jpg"},
-                    {desc: "帮助小米手机和其他安卓手机用户<br>发现好用的安卓应用",price: "前往小米应用商店", img_src: "list4_4.jpg"}
+                    {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "img/content/list4_1.jpg"},
+                    {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "img/content/list4_2.jpg"},
+                    {name: "小米应用", desc: "小米出品 必属精品" , price: "免费", img_src: "img/content/list4_3.jpg"},
+                    {desc: "帮助小米手机和其他安卓手机用户<br>发现好用的安卓应用",price: "前往小米应用商店", img_src: "img/content/list4_4.jpg"}
                 ]
             }
         ]
