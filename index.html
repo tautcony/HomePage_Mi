@@ -12,9 +12,9 @@
     <script>
     if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>')
     </script>
-    <script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script> -->
     <script>
-    if (!window.Vue) document.write('<script src="js/vue.min.js">\x3C/script>')
+    if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>')
     </script>
 </head>
 
@@ -55,7 +55,6 @@
                 </div>
             </div>
         </div>
-
         <div id="nav_menu_template">
             <div v-for="c in (nav_item_list)" class="navMenu nav_menu_show{{$key}}">
                 <div class="nav_menu_list">
@@ -282,60 +281,60 @@
                             </ul>
                         </div>
                     </div>
-                <div class="row match-row-template">
-                    <div class="span4 first-row"><ul>
-                        <li class="block-item img-m">
-                            <img src="img/page-main/match/match_left_1.jpg" />
-                        </li>
-                        <li class="block-item img-m">
-                            <img src="img/page-main/match/match_left_2.jpg" />
-                        </li>
-                    </ul></div>
-                    <div class="span16" v-for="value in (main_page)" id="{{$key}}" style="display: none;">
-                        <ul class="block-list">
-                            <li class="block-item block-item-m" v-for="item in (value)" v-if="$index != 7">
-                                <div class="figure figure-img">
-                                    <a href="{{item.href}}"><img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}"></a>
-                                </div>
-                                <h3 class="title">
+                    <div class="row match-row-template">
+                        <div class="span4 first-row">
+                            <ul>
+                                <li class="block-item img-m">
+                                    <img src="img/page-main/match/match_left_1.jpg" />
+                                </li>
+                                <li class="block-item img-m">
+                                    <img src="img/page-main/match/match_left_2.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span16" v-for="value in (main_page)" id="{{$key}}" style="display: none;">
+                            <ul class="block-list">
+                                <li class="block-item block-item-m" v-for="item in (value)" v-if="$index != 7">
+                                    <div class="figure figure-img">
+                                        <a href="{{item.href}}"><img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}"></a>
+                                    </div>
+                                    <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="price"> <span>{{item.price}}</span></p>
-                                <p class="desc">{{item.reviewed}}人评论</p>
-                                <div class="review-wrapper">
-                                    <a href="" >
-                                        <span class="review">{{item.review}}</span>
-                                        <span class="author">来自 {{item.author}} 的评论</span>
-                                    </a>
-                                </div>
-                                <div class="flag flag-new" v-if="item.label=='new'">新品</div>
-                                <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
-                             </li>
-                            <li class="block-item block-list-s">
-                                <div class="figure-img">
-                                    <a href="#">
-                                        <img src="{{value[7].img_src}}" width="80" height="80" alt="{{item.title}}">
-                                    </a>
-                                </div>
-                                <h3 class="title">{{value[7].title}}</h3>
-                                <p class="price">{{value[7].price}}</p>
-                            </li>
-                            <li class="block-item block-list-s">
-                                <div class="figure-more"><a><i class="iconfont"></i></a></div>
-                                <a class="more">浏览更多<br><small>热门</small></a>
-                            </li>
-
-                        </ul>
+                                    <p class="price"> <span>{{item.price}}</span></p>
+                                    <p class="desc">{{item.reviewed}}人评论</p>
+                                    <div class="review-wrapper">
+                                        <a href="">
+                                            <span class="review">{{item.review}}</span>
+                                            <span class="author">来自 {{item.author}} 的评论</span>
+                                        </a>
+                                    </div>
+                                    <div class="flag flag-new" v-if="item.label=='new'">新品</div>
+                                    <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                </li>
+                                <li class="block-item block-list-s">
+                                    <div class="figure-img">
+                                        <a href="#">
+                                            <img src="{{value[7].img_src}}" width="80" height="80" alt="{{item.title}}">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">{{value[7].title}}</h3>
+                                    <p class="price">{{value[7].price}}</p>
+                                </li>
+                                <li class="block-item block-list-s">
+                                    <div class="figure-more"><a><i class="iconfont"></i></a></div>
+                                    <a class="more">浏览更多<br><small>热门</small></a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    <div class="armature"></div>
+                    <div class="around"></div>
+                    <div class="recommend"></div>
+                    <div class="review"></div>
+                    <div class="video"></div>
                 </div>
-                <div class="armature"></div>
-                <div class="around"></div>
-                <div class="recommend"></div>
-                <div class="review"></div>
-                
-                <div class="video"></div>
-            </div>
-            <div class="content">
+                <div class="content">
                     <div class="title-box">
                         <h2 class="title">内容</h2>
                     </div>
@@ -344,20 +343,16 @@
                             <li v-for="item in (content_list)" class="content-item {{item.item_class}} {{item.item_first_class}} box-shadow">
                                 <h2 class="title">{{item.title}}</h2>
                                 <div class="content-bd">
-                                    <a href="">
-                                        <ul class="item-list {{item.cont_class}}">
-                                            <li v-for="list in item.datalist">
-                                                <h4 class="name">
-                                                    {{list.name}}
-                                                </h4>
-                                                <p class="desc">{{list.desc}}</p>
-                                                <p class="price">{{list.price}}</p>
-                                                <div class="figure-img figure">
-                                                    <img src="img/content/{{list.img_src}}" alt="">
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </a>
+                                    <ul class="item-list {{item.cont_class}}">
+                                        <li v-for="list in item.datalist">
+                                            <h4 class="name">{{list.name}}</h4>
+                                            <p class="desc">{{list.desc}}</p>
+                                            <p class="price">{{list.price}}</p>
+                                            <div class="figure-img figure">
+                                                <a href=""><img src="img/content/{{list.img_src}}" alt=""></a>
+                                            </div>
+                                        </li>
+                                    </ul>
                                 </div>
                                 <div class="xm-pagers-wrapper">
                                     <ul class="xm-pagers {{item.xm_class}}">
@@ -375,119 +370,123 @@
                                         </li>
                                     </ul>
                                 </div>
+                                <div class="xm-controls xm-controls-block-small">
+                                    <a class="control control-prev iconfont" href="#"></a>
+                                    <a class="control control-next iconfont" href="#">111</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-        </div>
-        <div id="footer">
-            <div class="footer_top comWidth">
-                <div class="footer-service">
-                    <ul class="list-service clearfix">
-                        <li><a href=""><i class="iconfont"></i>1小时快修服务</a></li>
-                        <li><a href=""><i class="iconfont"></i>7天无理由退货</a></li>
-                        <li><a href=""><i class="iconfont"></i>15天免费换货</a></li>
-                        <li><a href=""><i class="iconfont"></i>满150元包邮</a></li>
-                        <li><a href=""><i class="iconfont"></i>520余家售后网点</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links clearfix">
-                    <dl class="col-links col-links-first">
-                        <dt>帮助中心</dt>
-                        <dd><a href="" target="_blank">购物指南</a></dd>
-                        <dd><a href="" target="_blank">支付方式</a></dd>
-                        <dd><a href="" target="_blank">配送方式</a></dd>
-                    </dl>
-                    <dl class="col-links">
-                        <dt>服务支持</dt>
-                        <dd><a href="" target="_blank">售后政策</a></dd>
-                        <dd><a href="" target="_blank">自助服务</a></dd>
-                        <dd><a href="" target="_blank">相关下载</a></dd>
-                    </dl>
-                    <dl class="col-links">
-                        <dt>线下门店</dt>
-                        <dd><a href="" target="_blank">小米之家</a></dd>
-                        <dd><a href="" target="_blank">服务网点</a></dd>
-                        <dd><a href="" target="_blank">零售网点</a></dd>
-                    </dl>
-                    <dl class="col-links">
-                        <dt>关于小米</dt>
-                        <dd><a href="" target="_blank">了解小米</a></dd>
-                        <dd><a href="" target="_blank">加入小米</a></dd>
-                        <dd><a href="" target="_blank">联系我们</a></dd>
-                    </dl>
-                    <dl class="col-links">
-                        <dt>关注我们</dt>
-                        <dd><a href="" target="_blank">新浪微博</a></dd>
-                        <dd><a href="" target="_blank">小米部落</a></dd>
-                        <dd><a href="" data-toggle="modal">官方微信</a></dd>
-                    </dl>
-                    <dl class="col-links">
-                        <dt>特色服务</dt>
-                        <dd><a href="" target="_blank">F 码通道</a></dd>
-                        <dd><a href="" target="_blank">小米移动</a></dd>
-                        <dd><a href="" target="_blank">防伪查询</a></dd>
-                    </dl>
-                    <div class="col-contact">
-                        <p class="phone">400-100-5678</p>
-                        <p>
-                            周一至周日 8:00-18:00
-                            <br>（仅收市话费）
-                        </p>
-                        <a class="btn-line" href="" target="_blank"><i class="iconfont"></i> 24小时在线客服</a>
-                    </div>
-                </div>
             </div>
-            <div class="footer_bottom">
-                <div class="footer_bottom_container comWidth">
-                    <div class="footer_bottom_img fl">
-                        <img src="img/logo.png" />
-                    </div>
-                    <div class="footer_bottom_info fl">
-                        <ul class="footer_bottom_nav">
-                            <li><a href="#">小米网</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">MIUI</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">米聊</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">多看书城</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米路由器</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">视频电话</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米后院</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米天猫店</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米淘宝直营店</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米网盟</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">问题反馈</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">Select Region</a></li>
+            <div id="footer">
+                <div class="footer_top comWidth">
+                    <div class="footer-service">
+                        <ul class="list-service clearfix">
+                            <li><a href=""><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a href=""><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a href=""><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a href=""><i class="iconfont"></i>满150元包邮</a></li>
+                            <li><a href=""><i class="iconfont"></i>520余家售后网点</a></li>
                         </ul>
-                        <p class="footer_bottom_info">
-                            ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号
-                        </p>
-                        <p class="footer_bottom_info">
-                            违法和不良信息举报电话：185-0130-1238, 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
-                        </p>
                     </div>
-                    <div class="useless_link">
-                        <a href="" target="_blank"><img src="img/v-logo-1.png" alt="诚信网站"></a>
-                        <a href="" target="_blank"><img src="img/v-logo-2.png" alt="可信网站"></a>
-                        <a href="" target="_blank"><img src="img/v-logo-3.png" alt="网上交易保障中心"></a>
+                    <div class="footer-links clearfix">
+                        <dl class="col-links col-links-first">
+                            <dt>帮助中心</dt>
+                            <dd><a href="" target="_blank">购物指南</a></dd>
+                            <dd><a href="" target="_blank">支付方式</a></dd>
+                            <dd><a href="" target="_blank">配送方式</a></dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>服务支持</dt>
+                            <dd><a href="" target="_blank">售后政策</a></dd>
+                            <dd><a href="" target="_blank">自助服务</a></dd>
+                            <dd><a href="" target="_blank">相关下载</a></dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>线下门店</dt>
+                            <dd><a href="" target="_blank">小米之家</a></dd>
+                            <dd><a href="" target="_blank">服务网点</a></dd>
+                            <dd><a href="" target="_blank">零售网点</a></dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>关于小米</dt>
+                            <dd><a href="" target="_blank">了解小米</a></dd>
+                            <dd><a href="" target="_blank">加入小米</a></dd>
+                            <dd><a href="" target="_blank">联系我们</a></dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>关注我们</dt>
+                            <dd><a href="" target="_blank">新浪微博</a></dd>
+                            <dd><a href="" target="_blank">小米部落</a></dd>
+                            <dd><a href="" data-toggle="modal">官方微信</a></dd>
+                        </dl>
+                        <dl class="col-links">
+                            <dt>特色服务</dt>
+                            <dd><a href="" target="_blank">F 码通道</a></dd>
+                            <dd><a href="" target="_blank">小米移动</a></dd>
+                            <dd><a href="" target="_blank">防伪查询</a></dd>
+                        </dl>
+                        <div class="col-contact">
+                            <p class="phone">400-100-5678</p>
+                            <p>
+                                周一至周日 8:00-18:00
+                                <br>（仅收市话费）
+                            </p>
+                            <a class="btn-line" href="" target="_blank"><i class="iconfont"></i> 24小时在线客服</a>
+                        </div>
                     </div>
                 </div>
-                <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_container comWidth">
+                        <div class="footer_bottom_img fl">
+                            <img src="img/logo.png" />
+                        </div>
+                        <div class="footer_bottom_info fl">
+                            <ul class="footer_bottom_nav">
+                                <li><a href="#">小米网</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">MIUI</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">米聊</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">多看书城</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">小米路由器</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">视频电话</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">小米后院</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">小米天猫店</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">小米淘宝直营店</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">小米网盟</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">问题反馈</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="#">Select Region</a></li>
+                            </ul>
+                            <p class="footer_bottom_info">
+                                ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号
+                            </p>
+                            <p class="footer_bottom_info">
+                                违法和不良信息举报电话：185-0130-1238, 本网站所列数据，除特殊说明，所有数据均出自我司实验室测试
+                            </p>
+                        </div>
+                        <div class="useless_link">
+                            <a href="" target="_blank"><img src="img/v-logo-1.png" alt="诚信网站"></a>
+                            <a href="" target="_blank"><img src="img/v-logo-2.png" alt="可信网站"></a>
+                            <a href="" target="_blank"><img src="img/v-logo-3.png" alt="网上交易保障中心"></a>
+                        </div>
+                    </div>
+                    <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+                </div>
             </div>
         </div>
-    </div>
-    <script src="js/vue-view.js"></script>
-    <script src="js/mi.js"></script>
+        <script src="js/vue-view.js"></script>
+        <script src="js/mi.js"></script>
 </body>
 
 </html>

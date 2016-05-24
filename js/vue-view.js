@@ -1,4 +1,4 @@
-Vue.config.debug = true;
+//Vue.config.debug = true;
 
 var nav_list_display = new Vue({
     el: ".nav_list",
