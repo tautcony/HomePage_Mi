@@ -208,7 +208,6 @@ $(function() {
     var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
     $(corspondID[0]).css("display", "block");
     $.each(arr, function( index, value ) {
-        console.log( index + ": " + value );
         $(value).mouseover(function() {
             for(var i = 0; i < 4; ++i) {
                 $(corspondID[i]).css("display", "none");

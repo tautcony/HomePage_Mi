@@ -175,12 +175,18 @@ var category_list_display = new Vue({
             	title: "米兔 服装",
             	datalist: [
             		{title: "米兔", img_name: "img/category/mitu-80.jpg", href: ""},
+                    {title: "服装", img_name: "img/category/fuzhuang-80.jpg", href: ""},
+
             	]
             },
             {
             	title: "箱包 其他周边",
             	datalist: [
             		{title: "箱包", img_name: "img/category/xiangbao-80.jpg", href: ""},
+                    {title: "90分旅行箱", img_name: "img/category/lvxingxiang.jpg", href: ""},
+                    {title: "小米鼠标垫", img_name: "img/category/shubiaodian-80.jpg", href: ""},
+                    {title: "生活周边", img_name: "img/category/zhoubian1.jpg", href: ""},
+
             	]
             }
         ]
@@ -321,17 +327,35 @@ var main_page_list_display = new Vue({
                 {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元", reviewed: "1.5万", review: "还可以插内存卡，可以插线播放，音质很棒，如果体积大点...",author: "422979039"},
             ],
             speaker: [
-                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元"},
-                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new"},
-                {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元"},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元", reviewed: "", review: "", author: ""},
             ],
-            battery: [],
-            memcard: []
+            battery: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            memcard: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ]
         }
     }
 });
