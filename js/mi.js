@@ -207,6 +207,7 @@ $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(funct
 $(function() {
     var arr = [$("#match-tab-hot"), $("#match-tab-speaker"), $("#match-tab-battery"), $("#match-tab-memcard")];
     var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
+    $(corspondID[0]).css("display", "block");
     $.each(arr, function( index, value ) {
         console.log( index + ": " + value );
         $(value).mouseover(function() {
@@ -219,4 +220,3 @@ $(function() {
         });
     });
 });
-
