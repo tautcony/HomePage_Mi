@@ -200,7 +200,7 @@ $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click(funct
         function() {
             console.log('hao ');
     });*/
-    $(this).parents("div").prev().children().children().animate({marginLeft: -index * 296}, 400);
+    $(this).parents("div").prev().children().children().animate({ marginLeft: -index * 296 }, 400);
 });
 
 

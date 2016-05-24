@@ -327,107 +327,107 @@
                 </div>
             </div>
         </div>
-        <div class="page-main"><div class="comWidth">
-            <div class="smart">
-                <div class="title-box">
-                    <h2 class="title">智能硬件</h2>
-                    <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
-                </div>
-                <div class="row">
-                    <div class="span4 first-row">
-                        <div class="block-item img-l">
-                            <img src="img/page-main/smart/left-span.jpg" />
-                        </div>
+        <div class="page-main">
+            <div class="comWidth">
+                <div class="smart">
+                    <div class="title-box">
+                        <h2 class="title">智能硬件</h2>
+                        <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
                     </div>
-                    <div class="span16">
-                        <ul class="block-list">
-                            <li class="block-item block-item-m" v-for="item in (smart_list)">
-                                <div class="figure figure-img">
-                                    <a href="{{item.href}}">
-                                        <img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}">
-                                    </a>
-                                </div>
-                                <h3 class="title">
+                    <div class="row">
+                        <div class="span4 first-row">
+                            <div class="block-item img-l">
+                                <img src="img/page-main/smart/left-span.jpg" />
+                            </div>
+                        </div>
+                        <div class="span16">
+                            <ul class="block-list">
+                                <li class="block-item block-item-m" v-for="item in (smart_list)">
+                                    <div class="figure figure-img">
+                                        <a href="{{item.href}}">
+                                            <img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="desc">{{item.intro}}</p>
-                                <p class="price"> <span>{{item.price}}</span></p>
-                                <div class="flag flag-new" v-if="item.label=='new'">新品</div>
-                                <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
-                            </li>
-
-                        </ul>
+                                    <p class="desc">{{item.intro}}</p>
+                                    <p class="price"> <span>{{item.price}}</span></p>
+                                    <div class="flag flag-new" v-if="item.label=='new'">新品</div>
+                                    <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="match">
-                <div class="title-box">
-                    <h2 class="title">搭配</h2>
-                    <div class="more">
-                        <ul class="tab-list">
-                            <li class="tab-active" id="match-tab-hot">热门</li>
-                            <li id="match-tab-speaker">耳机音箱</li>
-                            <li id="match-tab-battery">电源</li>
-                            <li id="match-tab-memcard">电池存储卡</li>
-                        </ul>
+                <div class="match">
+                    <div class="title-box">
+                        <h2 class="title">搭配</h2>
+                        <div class="more">
+                            <ul class="tab-list">
+                                <li class="tab-active" id="match-tab-hot">热门</li>
+                                <li id="match-tab-speaker">耳机音箱</li>
+                                <li id="match-tab-battery">电源</li>
+                                <li id="match-tab-memcard">电池存储卡</li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-                <div class="row match-row-template">
-                    <div class="span4 first-row"><ul>
-                        <li class="block-item img-m">
-                            <img src="img/match/match_left1.jpg" />
-                        </li>
-                        <li class="block-item img-m">
-                            <img src="img/match/match_left2.jpg" />
-                        </li>
-                    </ul></div>
-                    <div class="span16" v-for="value in (main_page)" id="{{$key}}">
-                        <ul class="block-list">
-                            <li class="block-item block-item-m" v-for="item in (value)">
-                                <div class="figure figure-img">
-                                    <a href="{{item.href}}"><img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}"></a>
-                                </div>
-                                <h3 class="title">
+                    <div class="row match-row-template">
+                        <div class="span4 first-row">
+                            <ul>
+                                <li class="block-item img-m">
+                                    <img src="img/match/match_left1.jpg" />
+                                </li>
+                                <li class="block-item img-m">
+                                    <img src="img/match/match_left2.jpg" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="span16" v-for="value in (main_page)" id="{{$key}}">
+                            <ul class="block-list">
+                                <li class="block-item block-item-m" v-for="item in (value)">
+                                    <div class="figure figure-img">
+                                        <a href="{{item.href}}"><img src="{{item.img_src}}" width="160" height="160" alt="{{item.title}}"></a>
+                                    </div>
+                                    <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="desc">{{item.intro}}</p>
-                                <p class="price"> <span>{{item.price}}</span></p>
-                                <div class="flag flag-new" v-if="item.label=='new'">新品</div>
-                                <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
-                             </li>
-                            <li class="block-item block-list-s">
-                                <div class="figure-img">
-                                    <a href="#">
-                                        <img src="img/page-main/match/match8.jpg" alt="">
-                                    </a>
-                                </div>
-                                <h3 class="title">小米蓝牙音箱 蓝色</h3>
-                                <p class="price">199元</p>
-                            </li>
-                            <li class="block-item block-list-s">
-                                <div class="figure-more"><a><i class="iconfont"></i></a></div>
-                                <a class="more">浏览更多<br><small>热门</small></a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="video"></div>
-                </div>
-            </div>
-                    <div class="armature"></div>
-                    <div class="around"></div>
-                    <div class="recommend"></div>
-                    <div class="review"></div>
-                    <div class="content">
-                        <div class="title-box">
-                            <h2 class="title">内容</h2>
+                                    <p class="desc">{{item.intro}}</p>
+                                    <p class="price"> <span>{{item.price}}</span></p>
+                                    <div class="flag flag-new" v-if="item.label=='new'">新品</div>
+                                    <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                </li>
+                                <li class="block-item block-list-s">
+                                    <div class="figure-img">
+                                        <a href="#">
+                                            <img src="img/page-main/match/match8.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <h3 class="title">小米蓝牙音箱 蓝色</h3>
+                                    <p class="price">199元</p>
+                                </li>
+                                <li class="block-item block-list-s">
+                                    <div class="figure-more"><a><i class="iconfont"></i></a></div>
+                                    <a class="more">浏览更多<br><small>热门</small></a>
+                                </li>
+                            </ul>
                         </div>
-                        <div>
-                            <ul class="content-list">
-                                <li v-for="item in (content_list)" class="content-item {{item.item_class}} {{item.item_first_class}} box-shadow" >
-                                    <h2 class="title">{{item.title}}</h2>
-                                    <div class="content-bd">
-                                        <a href="">
+                    </div>
+                </div>
+                <div class="armature"></div>
+                <div class="around"></div>
+                <div class="recommend"></div>
+                <div class="review"></div>
+                <div class="content">
+                    <div class="title-box">
+                        <h2 class="title">内容</h2>
+                    </div>
+                    <div>
+                        <ul class="content-list">
+                            <li v-for="item in (content_list)" class="content-item {{item.item_class}} {{item.item_first_class}} box-shadow">
+                                <h2 class="title">{{item.title}}</h2>
+                                <div class="content-bd">
+                                    <a href="">
                                         <ul class="item-list {{item.cont_class}}">
                                             <li v-for="list in item.datalist">
                                                 <h4 class="name">
@@ -440,30 +440,30 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        </a>
-                                    </div>
-                                    <div class="xm-pagers-wrapper">
-                                        <ul class="xm-pagers {{item.xm_class}}">
-                                            <li class="pager pager-active">
-                                                <span class="dot"></span>
-                                            </li>
-                                            <li class="pager">
-                                                <span class="dot"></span>
-                                            </li>
-                                            <li class="pager">
-                                                <span class="dot"></span>
-                                            </li>
-                                            <li class="pager">
-                                                <span class="dot"></span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-        </div>
-        </div>
+                                    </a>
+                                </div>
+                                <div class="xm-pagers-wrapper">
+                                    <ul class="xm-pagers {{item.xm_class}}">
+                                        <li class="pager pager-active">
+                                            <span class="dot"></span>
+                                        </li>
+                                        <li class="pager">
+                                            <span class="dot"></span>
+                                        </li>
+                                        <li class="pager">
+                                            <span class="dot"></span>
+                                        </li>
+                                        <li class="pager">
+                                            <span class="dot"></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="video"></div>
+            </div>
         </div>
         <div id="footer">
             <div class="footer_top comWidth">
