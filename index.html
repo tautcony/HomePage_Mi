@@ -55,12 +55,12 @@
                 </div>
             </div>
         </div>
-        <!--
+
         <div id="nav_menu_template">
-            <div v-for="c in (nav_template)" class="navMenu nav_menu_show{{c.id}}">
+            <div v-for="c in (nav_item_list)" class="navMenu nav_menu_show{{$key}}">
                 <div class="nav_menu_list">
-                    <ul class="nav_menu_spec" id="nav_item_list_{{c.id}}">
-                        <li v-for="item in ({{c.catalog}})">
+                    <ul class="nav_menu_spec" id="nav_item_list_{{$key}}">
+                        <li v-for="item in c">
                             <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
                             <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
                             <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
@@ -69,88 +69,10 @@
                 </div>
             </div>
         </div>
-        -->
         <!--
             TODO: solve the 404 error in tag img
             http://qiita.com/nyamogera/items/b8a1c2cb65722dc39a60
         -->
-        <div class="navMenu nav_menu_show1">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_1">
-                    <li v-for="item in (mi_phone)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show2">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_2">
-                    <li v-for="item in (red_mi)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show3">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_3">
-                    <li v-for="item in (mi_pad)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show4">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_4">
-                    <li v-for="item in (mi_tv)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show5">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_5">
-                    <li v-for="item in (mi_tv_box)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show6">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_6">
-                    <li v-for="item in (mi_router)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="navMenu nav_menu_show7">
-            <div class="nav_menu_list">
-                <ul class="nav_menu_spec" id="nav_item_list_7">
-                    <li v-for="item in (mi_smart_hardware)">
-                        <a href="{{item.href}}" class="nav_menu_list_img"><img src="img/{{item.img_name}}" /></a>
-                        <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
-                        <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
-                    </li>
-                </ul>
-            </div>
-        </div>
         <div class="container comWidth clearfix">
             <div class="nav clearfix">
                 <div class="header-logo">
