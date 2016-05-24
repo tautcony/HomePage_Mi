@@ -260,6 +260,7 @@ var content_list_display = new Vue({
                 item_first_class: "content-item-first",
                 item_class: "content-item-book",
                 cont_class: "item-list-1",
+                xm_controls_class: "xm-carousel-controls",
                 datalist: [
                     {name: "阿弥陀佛，么么哒", desc: "大冰新书，12个不舍得读完的、暖心的、真实的江湖故事！",price: "9.99元", img_src: "img/content/list1_1.jpg"},
                     {name: "特价专区", desc: "精选畅销好书，特价促销，天天更新，天天特价！",price: "限时优惠", img_src: "img/content/list1_2.jpg"},
@@ -272,6 +273,7 @@ var content_list_display = new Vue({
                 xm_class: "xm-pagers-2",
                 item_class: "content-item-theme",
                 cont_class: "item-list-2",
+                xm_controls_class: "xm-carouse2-controls",
                 datalist: [
                     {name: "小米Max【深色版】", desc: "小米Max官方主题，专属的锁屏鲜花壁纸惊艳全场" , price: "免费", img_src: "img/content/list2_1.jpg"},
                     {name: "pai", desc: "全新界面设计，椭圆形图标风格，扁平化图标" , price: "免费", img_src: "img/content/list2_2.jpg"},
@@ -284,6 +286,7 @@ var content_list_display = new Vue({
                 xm_class: "xm-pagers-3",
                 item_class: "content-item-game",
                 cont_class: "item-list-3",
+                xm_controls_class: "xm-carouse3-controls",
                 datalist: [
                     {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "img/content/list3_1.jpg"},
                     {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "img/content/list3_2.jpg"},
@@ -296,6 +299,7 @@ var content_list_display = new Vue({
                 xm_class: "xm-pagers-4",
                 item_class: "content-item-app",
                 cont_class: "item-list-4",
+                xm_controls_class: "xm-carouse4-controls",
                 datalist: [
                     {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "img/content/list4_1.jpg"},
                     {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "img/content/list4_2.jpg"},

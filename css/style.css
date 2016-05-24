@@ -1248,13 +1248,21 @@ li.content-item-first {
 }
 
 /*xm-controls*/
-.content-item .xm-controls .control {
-    position: absolute;
-    top: 50%;
-    margin-top: -20px;
-    opacity: 0;
+.xm-controls .control:hover {
+    color: #ff6700;
     -webkit-transition: all .6s;
     transition: all .6s;
+}
+
+.content-item .xm-controls .control {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    opacity: 0;
+    margin-top: -20px;
+    width: 20px;
+    height: 48px;
+    line-height: 24px;
 }
 
 .content-item .xm-controls .control-prev {
@@ -1264,22 +1272,3 @@ li.content-item-first {
 .content-item .xm-controls .control-next {
     right: 0px;
 }
-
-
-.xm-controls-block-small .control {
-    width: 20px;
-    height: 24px;
-    padding: 12px 0;
-    font-size: 18px;
-    line-height: 24px;
-    background-color: black;
-}
-
-/*.xm-controls-block-small .control, .xm-controls-block-middle .control {
-    background-color: #b0b0b0;
-    background-color: rgba(66,66,66,0.2);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33424242", endColorstr="#33424242")\9;
-    color: #fff;
-    -webkit-transition: background-color .5s;
-    transition: background-color .5s;
-}*/
