@@ -1,4 +1,4 @@
-//Vue.config.debug = true;
+Vue.config.debug = true;
 
 var nav_list_display = new Vue({
     el: ".nav_list",
@@ -175,12 +175,18 @@ var category_list_display = new Vue({
             	title: "米兔 服装",
             	datalist: [
             		{title: "米兔", img_name: "img/category/mitu-80.jpg", href: ""},
+                    {title: "服装", img_name: "img/category/fuzhuang-80.jpg", href: ""},
+
             	]
             },
             {
             	title: "箱包 其他周边",
             	datalist: [
             		{title: "箱包", img_name: "img/category/xiangbao-80.jpg", href: ""},
+                    {title: "90分旅行箱", img_name: "img/category/lvxingxiang.jpg", href: ""},
+                    {title: "小米鼠标垫", img_name: "img/category/shubiaodian-80.jpg", href: ""},
+                    {title: "生活周边", img_name: "img/category/zhoubian1.jpg", href: ""},
+
             	]
             }
         ]
@@ -200,20 +206,19 @@ var category_hot_list_display = new Vue({
     }
 });
 
-//用阿里图标库再用vue写会报错 先注销
-/*var channel_list_display = new Vue({
+var channel_list_display = new Vue({
 	el: ".channel_list",
 	data: {
 		channel_list: [
-			{href: "#", icon: "&#xe665;", content: "电信专场"},
-			{href: "#", icon: "&#xe65a;", content: "企业团购"},
-			{href: "#", icon: "&#xe614;", content: "官翻产品"},
-			{href: "#", icon: "&#xe618;", content: "小米移动"},
-			{href: "#", icon: "&#xe671;", content: "以旧换新"},
-			{href: "#", icon: "&#xf00a8;", content: "话费充值"}
+			{href: "#", icon: "", content: "电信专场"},
+			{href: "#", icon: "", content: "企业团购"},
+			{href: "#", icon: "", content: "官翻产品"},
+			{href: "#", icon: "", content: "小米移动"},
+			{href: "#", icon: "", content: "以旧换新"},
+			{href: "#", icon: "", content: "话费充值"}
 		]
 	}
-});*/
+});
 
 var star_goods_display = new Vue({
     el: "#star_goods",
@@ -311,10 +316,10 @@ var content_list_display = new Vue({
     }
 });
 
-var main_page_list_display = new Vue({
+var main_page_match_list_display = new Vue({
     el: ".match-row-template",
     data: {
-        main_page: {
+        main_page_match: {
             hot: [
                 {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh", price: "79元", reviewed: "17万", review: "这个小巧玲珑啊，比10400安的小了好多，感觉不错，...",author: "LIN翼"},
                 {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版", price: "29元", reviewed: "2.2万", review: "价钱优惠，音质好。值得推荐",author: "1006768313"},
@@ -326,17 +331,184 @@ var main_page_list_display = new Vue({
                 {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元", reviewed: "1.5万", review: "还可以插内存卡，可以插线播放，音质很棒，如果体积大点...",author: "422979039"},
             ],
             speaker: [
-                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元"},
-                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new"},
-                {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元"},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元", reviewed: "", review: "", author: ""},
             ],
-            battery: [],
-            memcard: []
+            battery: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            memcard: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ]
+        }
+    }
+});
+
+var main_page_accessories_list_display = new Vue({
+    el: ".accessories-row-template",
+    data: {
+        main_page_accessories: {
+            hot: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            phonecase: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            backcase: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            mo: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            other: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+        }
+    }
+});
+
+var main_page_around_list_display = new Vue({
+    el: ".around-row-template",
+    data: {
+        main_page_around: {
+            hot: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            cloth: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            rabbit: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            life: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+            case: [
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+            ],
+        }
+    }
+});
+
+
+
+
+
+
+//footer
+var footer_service_display = new Vue({
+    el: ".list-service",
+    data: {
+        footer_service_list: [
+            {href: "#", icon: "", content: "1小时快修服务"},
+            {href: "#", icon: "", content: "7天无理由退货"},
+            {href: "#", icon: "", content: "15天免费换货"},
+            {href: "#", icon: "", content: "满150元包邮"},
+            {href: "#", icon: "", content: "520余家售后网点"}
+        ]
+    }
+});
+
+var footer_links_display = new Vue({
+    el: ".footer-links",
+    data: {
+        footer_links_table_list: {
+            "帮助中心": [{href: "#", content: "购物指南"}, {href: "#", content: "支付方式"}, {href: "#", content: "配送方式"}],
+            "服务支持": [{href: "#", content: "售后政策"}, {href: "#", content: "自助服务"}, {href: "#", content: "相关下载"}],
+            "线下门店": [{href: "#", content: "小米之家"}, {href: "#", content: "服务网点"}, {href: "#", content: "零售网点"}],
+            "关于小米": [{href: "#", content: "了解小米"}, {href: "#", content: "加入小米"}, {href: "#", content: "联系我们"}],
+            "关注我们": [{href: "#", content: "新浪微博"}, {href: "#", content: "小米部落"}, {href: "#", content: "官方微信"}],
+            "特色服务": [{href: "#", content: "F 码通道"}, {href: "#", content: "小米移动"}, {href: "#", content: "防伪查询"}],
         }
     }
 });

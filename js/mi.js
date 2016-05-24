@@ -208,7 +208,6 @@ $(function() {
     var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
     $(corspondID[0]).css("display", "block");
     $.each(arr, function( index, value ) {
-        console.log( index + ": " + value );
         $(value).mouseover(function() {
             for(var i = 0; i < 4; ++i) {
                 $(corspondID[i]).css("display", "none");
@@ -220,7 +219,7 @@ $(function() {
     });
 });
 
-//xm-control Event
+//xm-control Event--------------------
 $("li.content-item").hover(function() {
     $(this).children().last().children().first().stop().animate({ opacity: 0.3 }, 200);
     $(this).children().last().children().last().stop().animate({ opacity: 0.3 }, 200);
@@ -275,3 +274,36 @@ $("img.control-next").click(function() {
         $(".xm-pagers-" + index).children().filter(".pager-active").next().click();
     }
 });
+//-----------------------------------------
+$(function() {
+    var arr = [$("#accessories-tab-hot"), $("#accessories-tab-phonecase"), $("#accessories-tab-backcase"), $("#accessories-tab-mo"),  $("#accessories-tab-other")];
+    var corspondID = [".accessories #hot", ".accessories #phonecase", ".accessories #backcase", ".accessories #mo", ".accessories #other"];
+    $(corspondID[0]).css("display", "block");
+    $.each(arr, function( index, value ) {
+        $(value).mouseover(function() {
+            for(var i = 0; i < 5; ++i) {
+                $(corspondID[i]).css("display", "none");
+                $(arr[i]).removeClass();
+            }
+            $(corspondID[index]).css("display", "block");
+            $(arr[index]).addClass("tab-active");
+        });
+    });
+});
+
+$(function() {
+    var arr = [$("#around-tab-hot"), $("#around-tab-cloth"), $("#around-tab-rabbit"), $("#around-tab-life"),  $("#around-tab-case")];
+    var corspondID = [".around #hot", ".around #cloth", ".around #rabbit", ".around #life", ".around #case"];
+    $(corspondID[0]).css("display", "block");
+    $.each(arr, function( index, value ) {
+        $(value).mouseover(function() {
+            for(var i = 0; i < 5; ++i) {
+                $(corspondID[i]).css("display", "none");
+                $(arr[i]).removeClass();
+            }
+            $(corspondID[index]).css("display", "block");
+            $(arr[index]).addClass("tab-active");
+        });
+    });
+});
+
