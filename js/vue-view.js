@@ -312,14 +312,14 @@ var main_page_list_display = new Vue({
     data: {
         main_page: {
             hot: [
-                {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版", price: "29元"},
-                {href: "", img_src: "img/page-main/match/match3.jpg", title: "小米移动电源10000mAh 高配版", price: "149元"},
-                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元"},
-                {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元"},
-                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
-                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new"},
-                {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元"}
+                {href: "", img_src: "img/page-main/match/match1.jpg", title: "小米移动电源10000mAh", price: "79元", reviewed: "17万", review: "这个小巧玲珑啊，比10400安的小了好多，感觉不错，...",author: "LIN翼"},
+                {href: "", img_src: "img/page-main/match/match2.jpg", title: "小米活塞耳机 基础版", price: "29元", reviewed: "2.2万", review: "价钱优惠，音质好。值得推荐",author: "1006768313"},
+                {href: "", img_src: "img/page-main/match/match3.jpg", title: "小米移动电源10000mAh 高配版", price: "149元", reviewed: "8210", review: "手感超舒服，有USB C输入充电，以后不用到处换插头了", author: "玻璃樽81"},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元", reviewed: "7.4万", review: "小米的产品值得信赖，用了一段时间，无论是听歌，打电话...",author: "气功流"},
+                {href: "", img_src: "img/page-main/match/match5.jpg", title: "小米插线板", price: "49元", reviewed: "22.1万", review: "东西真心不错，用过最好用的插线板，做工外观没得挑剔，...",author: "yinyin19891117"},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元", reviewed: "3.4万", review: "客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...",author: "894039435"},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", label: "new", reviewed: "5505", review: "很精致，小巧可爱，连接成功是女声说话提示。音质很纯很...",author: "Cc大坏"},
+                {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元", reviewed: "1.5万", review: "还可以插内存卡，可以插线播放，音质很棒，如果体积大点...",author: "422979039"},
             ],
             speaker: [
                 {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元"},
@@ -336,4 +336,3 @@ var main_page_list_display = new Vue({
         }
     }
 });
-

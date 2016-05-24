@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
-    <!-- <script src="https://cdn.bootcss.com/jquery/3.0.0-beta1/jquery.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
     <script>
     if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>')
     </script>
@@ -83,9 +83,6 @@
                     <li v-for="item in (nav_list)">
                         <a href="{{item.href}}">{{item.title}}</a>
                     </li>
-                    <!--
-                    <li><a href="#">小米手机</a></li><li><a href="#">红米</a></li><li><a href="#">平板</a></li><li><a href="#">电视</a></li><li><a href="#">盒子 · 影音</a></li><li><a href="#">路由器</a></li><li><a href="#">智能硬件</a></li><li><a href="#">服务</a></li><li><a href="#">社区</a></li>
-                    -->
                 </ul>
                 <div class="search fl">
                     <div class="search-box">
@@ -100,9 +97,6 @@
                         <li v-for="item in (search_extra)">
                             <a href="#"><span class="spec_name">{{item.title}}</span><span class="result">约有{{item.count}}件</span></a>
                         </li>
-                        <!--
-                                <li><a href="#"><span class="spec_name">移动电源</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">空气净化器</span><span class="result">约有2件</span></a></li><li><a href="#"><span class="spec_name">小米手环</span><span class="result">约有5件</span></a></li><li><a href="#"><span class="spec_name">WiFi</span><span class="result">约有7件</span></a></li><li><a href="#"><span class="spec_name">自拍杆</span><span class="result">约有1件</span></a></li><li><a href="#"><span class="spec_name">小米体重秤</span><span class="result">约有134件</span></a></li><li><a href="#"><span class="spec_name">小蚁摄像机</span><span class="result">约有6件</span></a></li><li><a href="#"><span class="spec_name">运动相机</span><span class="result">约有22件</span></a></li><li><a href="#"><span class="spec_name">智能插座</span><span class="result">约有4件</span></a></li><li><a href="#"><span class="spec_name">配件优惠套装</span><span class="result">约有11件</span></a></li>
-                            -->
                     </ul>
                 </div>
             </div>
@@ -144,9 +138,6 @@
                                 </ul>
                             </div>
                         </li>
-                        <!--
-                        <li class="category_item"><a href="" class="category_item_icon">手机 平板 电话卡</a></li><li class="category_item"><a href="" class="category_item_icon">电视 盒子</a></li><li class="category_item"><a href="" class="category_item_icon">路由器 智能硬件</a></li><li class="category_item"><a href="" class="category_item_icon">移动电源 插线板</a></li><li class="category_item"><a href="" class="category_item_icon">耳机 音箱</a></li><li class="category_item"><a href="" class="category_item_icon">电池 存储卡</a></li><li class="category_item"><a href="" class="category_item_icon">保护套 后盖</a></li><li class="category_item"><a href="" class="category_item_icon">贴膜 其他配件</a></li><li class="category_item"><a href="" class="category_item_icon">米兔 服装</a></li><li class="category_item"><a href="" class="category_item_icon">箱包 其他周边</a></li>
-                    -->
                     </ul>
                     <ul class="category_hot">
                         <ul class="category_hot_list">
@@ -156,9 +147,6 @@
                             <li style="display: none" v-for="item in (category_hot_list)">
                                 <a href="{{item.href}}"><img src="img/{{item.img_name}}" /></a>
                             </li>
-                            <!--
-                            <li style="display: block"><a href="#"><img src="img/hot1.jpg"/></a></li><li style="display: block"><a href="#"><img src="img/hot5.jpg"/></a></li>
-                        -->
                         </ul>
                         <ul class="category_move">
                             <li>
@@ -297,10 +285,10 @@
                 <div class="row match-row-template">
                     <div class="span4 first-row"><ul>
                         <li class="block-item img-m">
-                            <img src="img/match/match_left1.jpg" />
+                            <img src="img/page-main/match/match_left_1.jpg" />
                         </li>
                         <li class="block-item img-m">
-                            <img src="img/match/match_left2.jpg" />
+                            <img src="img/page-main/match/match_left_2.jpg" />
                         </li>
                     </ul></div>
                     <div class="span16" v-for="value in (main_page)" id="{{$key}}" style="display: none;">
@@ -312,8 +300,14 @@
                                 <h3 class="title">
                                     <a href="{{item.href}}">{{item.title}}</a>
                                 </h3>
-                                <p class="desc">{{item.intro}}</p>
                                 <p class="price"> <span>{{item.price}}</span></p>
+                                <p class="desc">{{item.reviewed}}人评论</p>
+                                <div class="review-wrapper">
+                                    <a href="" >
+                                        <span class="review">{{item.review}}</span>
+                                        <span class="author">来自 {{item.author}} 的评论</span>
+                                    </a>
+                                </div>
                                 <div class="flag flag-new" v-if="item.label=='new'">新品</div>
                                 <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
                              </li>

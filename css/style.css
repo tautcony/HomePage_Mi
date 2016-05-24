@@ -765,6 +765,47 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
     color: #ff6700;
 }
 
+
+
+.block-item-m .review-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    width: 234px;
+    height: 0;
+    overflow: hidden;
+    font-size: 12px;
+    background: #ff6700;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.block-item-m:hover .review-wrapper {
+    height: 75px;
+    opacity: 1;
+}
+
+.block-item-m .review-wrapper a {
+    display: block;
+    padding: 8px 30px;
+    outline: 0;
+}
+
+
+.block-item-m .review {
+    margin-bottom: 5px;
+    display: block;
+    color: #fff;
+}
+
+.block-item-m .author {
+    color: #fff;
+    display: block;
+    color: rgba(255,255,255,0.6);
+}
+
 .block-list-s {
     float: left;
     width: 234px;
