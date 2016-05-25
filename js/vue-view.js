@@ -481,6 +481,23 @@ var main_page_around_list_display = new Vue({
 });
 
 
+var recommend_goods_display = new Vue({
+    el: "#recommend_goods",
+    data: {
+        recommend_goods: [
+            {color_id: "1", img_id: "img/star/star_1.jpg", title: "小米电视全系列", desc: "买就送爱奇艺会员卡", price: "1799元起"},
+            {color_id: "2", img_id: "img/star/star_2.jpg", title: "小米盒子3 增强版", desc: "高端 4K 网络机顶盒", price: "399元"},
+            {color_id: "3", img_id: "img/star/star_3.jpg", title: "小米手环 光感版", desc: "小米手环 光感版", price: "99元"},
+            {color_id: "4", img_id: "img/star/star_4.jpg", title: "米家压力IH电饭煲", desc: "米家压力IH电饭煲", price: "999元"},
+            {color_id: "5", img_id: "img/star/star_5.jpg", title: "移动电源10000mAh 高配版", desc: "支持USB Type-C充放电，双向快充", price: "149元"},
+            {color_id: "1", img_id: "img/star/star_6.jpg", title: "Yeelight床头灯", desc: "触摸式操作，给卧室1600万种颜色", price: "249元"},
+            {color_id: "2", img_id: "img/star/star_7.jpg", title: "小米路由器 mini", desc: "双频AC智能路由器，高性价比", price: "129元"},
+            {color_id: "3", img_id: "img/star/star_8.jpg", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
+            {color_id: "4", img_id: "img/star/star_9.jpg", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
+            {color_id: "5", img_id: "img/star/star_X.jpg", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
+        ]
+    }
+});
 
 
 

@@ -558,6 +558,7 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
 
 .star_spec_wrapper{overflow: hidden;}
 
+
 .star_spec{position: relative;height: 438px;}
 .star_spec,.recommend{width: 2480px; }
 .star_spec .spec_item_list{height: 340px;position: absolute;left: 0;top: 100px;padding-bottom: 20px; margin-top: -43px;}
@@ -1092,6 +1093,7 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
     width: 160px;
 }*/
 
+
 /*content css*/
 .content {
     margin-bottom: 22px;
@@ -1273,3 +1275,18 @@ li.content-item-first {
     right: 0px;
 }
 
+.smart, .match, .accessories, .around, .recommend, .review, .video {
+  margin-bottom: 10px;
+}
+
+.content {
+  padding-bottom: 50px;
+}
+
+.recommend {
+  height: 438px;
+}
+
+.white {
+  background-color: white;
+}
