@@ -1,5 +1,23 @@
 Vue.config.debug = true;
 
+var header_links_inline_display = new Vue({
+  el: "#header .leftArea",
+  data: {
+    header_links_inline:
+    [
+      {href: "#", title: "小米网"},
+      {href: "#", title: "MIUI"},
+      {href: "#", title: "米聊"},
+      {href: "#", title: "游戏"},
+      {href: "#", title: "多看阅读"},
+      {href: "#", title: "云服务"},
+      {href: "#", title: "小米网移动版"},
+      {href: "#", title: "问题反馈"},
+      {href: "#", title: "Select Region"},
+    ]
+  }
+});
+
 var nav_list_display = new Vue({
     el: ".nav_list",
     data: {
@@ -537,4 +555,25 @@ var footer_links_display = new Vue({
             "特色服务": [{href: "#", content: "F 码通道"}, {href: "#", content: "小米移动"}, {href: "#", content: "防伪查询"}],
         }
     }
+});
+
+var footer_links_inline_display = new Vue({
+  el: ".footer_bottom_nav",
+  data: {
+    footer_links_inline:
+    [
+      {href: "#", title: "小米网"},
+      {href: "#", title: "MIUI"},
+      {href: "#", title: "米聊"},
+      {href: "#", title: "多看书城"},
+      {href: "#", title: "小米路由器"},
+      {href: "#", title: "视频电话"},
+      {href: "#", title: "小米后院"},
+      {href: "#", title: "小米天猫店"},
+      {href: "#", title: "小米淘宝直营店"},
+      {href: "#", title: "小米网盟"},
+      {href: "#", title: "问题反馈"},
+      {href: "#", title: "Select Region"},
+    ]
+  }
 });

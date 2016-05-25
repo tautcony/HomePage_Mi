@@ -1047,7 +1047,7 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
 #footer .footer_bottom_nav li{float: left;}
 #footer .footer_bottom_nav a{color: #757575}
 #footer li span {margin: 0.25em;}
-#footer .footer_bottom_info{color: #b0b0b0;font-size: 12px;}
+#footer .footer_bottom_info{color: #b0b0b0;font-size: 12px; width: 900px;}
 
 #footer .useless_link {
     float: right;
