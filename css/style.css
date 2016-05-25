@@ -75,6 +75,46 @@ a:hover {
     vertical-align: -4px;
 }
 
+.topbar .cart-menu {
+    display: none;
+    position: absolute;
+    height: 0;
+    right: 60px;
+    top: 40px;
+    z-index: 100;
+    width: 316px;
+    padding: 15px 0 0;
+    background: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.topbar .cart-menu .empty {
+    margin: 20px;
+    text-align: center;
+}
+
+.topbar .cart-mini:hover {
+    background-color: white;
+}
+
+.topbar .cart-mini:hover i, .topbar .cart-mini:hover a {
+    color: #ff6700;
+}
+
+.topbar .cart-mini:hover + .cart-menu {
+    height: 80px;
+    display: block;
+}
+
+.topbar .cart-menu:hover {
+    height: 80px;
+    display: block;
+}
+
+
 .container {}
 
 .nav {
