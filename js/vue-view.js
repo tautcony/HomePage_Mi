@@ -323,9 +323,9 @@ var content_list_display = new Vue({
                 cont_class: "item-list-3",
                 xm_controls_class: "xm-carouse3-controls",
                 datalist: [
-                    {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "img/content/list3_1.jpg"},
-                    {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "img/content/list3_2.jpg"},
-                    {name: "COK列王的纷争", desc: "全球同服，跨国约战！全世界都是你的战场！" , price: "免费", img_src: "img/content/list3_3.jpg"},
+                    {name: "魔法英雄", desc: "全球同服，几百万歪果仁等你来战！" , price: "免费", img_src: "img/content/list3_1.png"},
+                    {name: "米柚手游模拟器", desc: "在电脑上玩遍小米所有手游" , price: "免费", img_src: "img/content/list3_2.png"},
+                    {name: "COK列王的纷争", desc: "全球同服，跨国约战！全世界都是你的战场！" , price: "免费", img_src: "img/content/list3_3.png"},
                     {desc: "免费下载海量的手机游戏<br>天天都有现金福利赠送",price: "前往小米商店", img_src: "img/content/list3_4.jpg"}
                 ]
             },
@@ -336,9 +336,9 @@ var content_list_display = new Vue({
                 cont_class: "item-list-4",
                 xm_controls_class: "xm-carouse4-controls",
                 datalist: [
-                    {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "img/content/list4_1.jpg"},
-                    {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "img/content/list4_2.jpg"},
-                    {name: "小米应用", desc: "小米出品 必属精品" , price: "免费", img_src: "img/content/list4_3.jpg"},
+                    {name: "2015年度应用", desc: "2015年度应用" , price: "免费", img_src: "img/content/list4_1.png"},
+                    {name: "2015年度游戏", desc: "2015年度游戏" , price: "免费", img_src: "img/content/list4_2.png"},
+                    {name: "小米应用", desc: "小米出品 必属精品" , price: "免费", img_src: "img/content/list4_3.png"},
                     {desc: "帮助小米手机和其他安卓手机用户<br>发现好用的安卓应用",price: "前往小米应用商店", img_src: "img/content/list4_4.jpg"}
                 ]
             }
