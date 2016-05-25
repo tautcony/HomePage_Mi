@@ -1293,19 +1293,19 @@ li.content-item-first {
   background-color: white;
 }
 
-.review {
+.hotreview {
   height: 473px;
 }
 
-.review-block-first {
+.hotreview .review-block-first {
   margin-left: 0 !important;
 }
 
-.review-list {
+.hotreview .review-list {
   margin-left: -14px;
 }
 
-.review-block {
+.hotreview .review-block {
     position: relative;
     float: left;
     width: 296px;
@@ -1317,17 +1317,17 @@ li.content-item-first {
     transition: all .2s linear;
 }
 
-.review-block .figure-img {
+.hotreview .review-block .figure-img {
     width: 296px;
     height: 220px;
     margin: 0 0 28px;
 }
-.review-block .figure-img img {
+.hotreview .review-block .figure-img img {
   width: 296px;
   height: 220px;
 }
 
-.review-block .review-content {
+.hotreview .review-block .review-content {
     height: 72px;
     margin: 0 28px 22px;
     font-size: 14px;
@@ -1337,7 +1337,7 @@ li.content-item-first {
     _zoom: 1;
 }
 
-.review-block .author {
+.hotreview .review-block .author {
     position: relative;
     height: 18px;
     margin: 0 28px 8px;
@@ -1346,14 +1346,14 @@ li.content-item-first {
     color: #b0b0b0;
 }
 
-.review-block .info {
+.hotreview .review-block .info {
     margin: 0 30px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.review-block .info .title {
+.hotreview .review-block .info .title {
     display: inline-block;
     margin: 0;
     font-size: 14px;
@@ -1366,7 +1366,7 @@ li.content-item-first {
     color: #333;
 }
 
-.review-block .info .price {
+.hotreview .review-block .info .price {
     display: inline;
     margin: 0;
     color: #ff6700;
