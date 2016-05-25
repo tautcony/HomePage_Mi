@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
-    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>-->
     <script>
-    if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>')
+        if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>');
     </script>
     <!-- <script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script> -->
     <script>
-    if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>')
+        if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>');
     </script>
 </head>
 
@@ -27,8 +27,8 @@
                     <ul class="leftArea">
                         <li><a href="#">小米网</a></li>
                         <div v-for="item in header_links_inline">
-                          <li><span class="sep">|</span></li>
-                          <li><a href="{{item.href}}">{{item.title}}</a></li>
+                            <li><span class="sep">|</span></li>
+                            <li><a href="{{item.href}}">{{item.title}}</a></li>
                         </div>
                     </ul>
                     <div class="rightArea">
@@ -559,8 +559,9 @@
                 <div class="slogan ir">探索黑科技，小米为发烧而生</div>
             </div>
         </div>
-        <script src="js/vue-view.js"></script>
-        <script src="js/mi.js"></script>
+    </div>
+    <script src="js/vue-view.js"></script>
+    <script src="js/mi.js"></script>
 </body>
 
 </html>
