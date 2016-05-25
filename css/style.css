@@ -536,12 +536,6 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
     /*transition: box-shadow .2s linear;*/
 }
 
-.span4 {
-    width: 234px;
-    float: left;
-    margin-left: 14px;
-    min-height: 1px;
-}
 
 .spec_top{height: 58px;margin-top: 26px;line-height: 58px;}
 .spec_top .spec_type_nav li{float: left;}
@@ -556,19 +550,20 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
 .spec_desc{text-align: center;font-size: 12px;color: #b0b0b0;margin-bottom: 10px;}
 .spec_money{text-align: center;color: #ff6709;}
 
-.star_spec_wrapper{overflow: hidden;}
+.star_spec_wrapper{overflow: hidden; width: 1240px;}
 
 
-.star_spec{position: relative;height: 438px;}
-.star_spec,.recommend{width: 2480px; }
+.star_spec {position: relative;height: 438px;}
+.star_spec{width: 2480px;}
 .star_spec .spec_item_list{height: 340px;position: absolute;left: 0;top: 100px;padding-bottom: 20px; margin-top: -43px;}
 .star_spec .spec_item{background: #FAFAFA;}
 
-.star_spec li,.recommend li{float: left;}
-.star_spec .spec_img{margin-bottom: 20px;}
-.star_spec .spec_left_right,.recommend .spec_left_right{width: 100px;height: 20px;margin-left:1022px;margin-top: 16px; }
-.star_spec .spec_left_right a,.recommend .spec_left_right a{width: 34px;height: 22px;border: 1px solid #e0e0e0; display: block;cursor: pointer;}
-.star_spec .spec_left_right img,.recommend .spec_left_right img{position: absolute;margin: 4px 0px 0 12px;}
+.star_spec li {float: left;}
+.star_spec .spec_img {margin-bottom: 20px;}
+.star_spec .spec_left_right{width: 100px;height: 20px;margin-left:1022px;margin-top: 16px; }
+.star_spec .spec_left_right a {width: 34px;height: 22px;border: 1px solid #e0e0e0; display: block;cursor: pointer;}
+.star_spec .spec_left_right img {position: absolute;margin: 4px 0px 0 12px;}
+
 .spec_top_border1{border-top: 1px solid #ffac13;}
 .spec_top_border2{border-top: 1px solid #83c44e;}
 .spec_top_border3{border-top: 1px solid #2196f3;}
@@ -1275,7 +1270,13 @@ li.content-item-first {
     right: 0px;
 }
 
-.smart, .match, .accessories, .around, .recommend, .review, .video {
+.main-page .smart,
+.main-page .match,
+.main-page .accessories,
+.main-page .around,
+.main-page .recommend,
+.main-page .review,
+.main-page .video {
   margin-bottom: 10px;
 }
 
@@ -1283,7 +1284,7 @@ li.content-item-first {
   padding-bottom: 50px;
 }
 
-.recommend {
+.main-page .recommend {
   height: 438px;
 }
 
