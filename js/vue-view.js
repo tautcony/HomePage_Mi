@@ -161,8 +161,9 @@ var category_list_display = new Vue({
             	title: "移动电源 插线板",
             	datalist: [
             		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""},
-            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""},
-            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""}
+            		{title: "小米插线板", img_name: "img/category/powerscript.jpg", href: ""},
+            		{title: "品牌移动电源", img_name: "img/category/yidongdianyuan.jpg", href: ""},
+                {title: "移动电源附件", img_name: "img/category/dianyuanfujian.jpg", href: ""}
             	]
             },
             {
@@ -175,18 +176,29 @@ var category_list_display = new Vue({
             	title: "电池 存储卡",
             	datalist: [
             		{title: "彩虹五号电池", img_name: "img/category/5Battery1.jpg", href: ""},
+                {title: "彩虹七号电池", img_name: "img/category/7Battery1.jpg", href: ""},
+                {title: "电池", img_name: "img/category/dianchi.jpg", href: ""},
+                {title: "充电器", img_name: "img/category/chongdianqi-80.jpg", href: ""},
+                {title: "线材", img_name: "img/category/xiancai.jpg", href: ""},
+                {title: "存储卡", img_name: "img/category/cunchu.jpg", href: ""},
             	]
             },
             {
             	title: "保护套 后盖",
             	datalist: [
             		{title: "保护套保护壳", img_name: "img/category/baohu.jpg", href: ""},
+                {title: "后盖", img_name: "img/category/hougai.jpg", href: ""},
             	]
         	},
             {
             	title: "贴膜 其他配件",
             	datalist: [
             		{title: "贴膜", img_name: "img/category/tiemo.jpg", href: ""},
+                {title: "自拍杆", img_name: "img/category/zipaigan.jpg", href: ""},
+                {title: "贴纸", img_name: "img/category/tizhi.jpg", href: ""},
+                {title: "防尘塞", img_name: "img/category/fangchensai.jpg", href: ""},
+                {title: "手机支架", img_name: "img/category/zhijia.jpg", href: ""},
+                {title: "随身wifi", img_name: "img/category/wifi.jpg", href: ""},
             	]
             },
             {

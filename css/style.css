@@ -275,6 +275,7 @@ a:hover {
 
 .nav_menu_spec li {
     width: 204px;
+    margin-left: -20px;
     float: left;
 }
 
