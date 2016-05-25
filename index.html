@@ -446,7 +446,25 @@
                       </div>
                   </div>
                 </div>
-                <div class="review"></div>
+                <div class="review">
+                    <div class="title-box">
+                        <h2 class="title">热评产品</h2>
+                    </div>
+                    <div class="review-list">
+                        <div class="review-block box-shadow" v-for="item in list_item">
+                          <div class="figure figure-img">
+                              <img v-bind:src="item.img_src"/>
+                          </div>
+                          <p class="review-content">{{item.review}}</p>
+                          <p class="author">来自于 {{item.author}} 的评价</p>
+                          <div class="info">
+                            <h3 class="title">{{item.title}}</h3>
+                            <span class="sep">|</span>
+                            <p class="price">{{item.price}}</p>
+                          </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="video"></div>
                 <div class="content">
                     <div class="title-box">

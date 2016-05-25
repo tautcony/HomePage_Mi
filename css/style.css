@@ -587,7 +587,7 @@ border-color: rgba(255,255,255,0.3);border-radius: 10px;background: rgba(0,0,0,0
 
 .page-main .title-box {
     position: relative;
-    height: 58px;
+    /*height: 58px;*/
     -webkit-font-smoothing: antialiased;
 }
 
@@ -1289,4 +1289,83 @@ li.content-item-first {
 
 .white {
   background-color: white;
+}
+
+.review {
+  height: 473px;
+}
+
+.review-block-first {
+  margin-left: 0 !important;
+}
+
+.review-list {
+  margin-left: -14px;
+}
+
+.review-block {
+    position: relative;
+    float: left;
+    width: 296px;
+    height: 415px;
+    margin-left: 14px;
+    margin-bottom: 14px;
+    background: #fff;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.review-block .figure-img {
+    width: 296px;
+    height: 220px;
+    margin: 0 0 28px;
+}
+.review-block .figure-img img {
+  width: 296px;
+  height: 220px;
+}
+
+.review-block .review-content {
+    height: 72px;
+    margin: 0 28px 22px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    overflow: hidden;
+    _zoom: 1;
+}
+
+.review-block .author {
+    position: relative;
+    height: 18px;
+    margin: 0 28px 8px;
+    padding: 0 10px 0 0;
+    font-size: 12px;
+    color: #b0b0b0;
+}
+
+.review-block .info {
+    margin: 0 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.review-block .info .title {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: bottom;
+    color: #333;
+}
+
+.review-block .info .price {
+    display: inline;
+    margin: 0;
+    color: #ff6700;
 }

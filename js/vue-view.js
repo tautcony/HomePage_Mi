@@ -499,7 +499,16 @@ var recommend_goods_display = new Vue({
     }
 });
 
-
+var review_list_item_display = new Vue({
+  el: ".review .review-list",
+  data: {
+    list_item: [
+      {href: "", img_src: "img/hot-review/review1.jpg", title: "小米空气净化器2", price: "699元", review: "先五星好评。再来说说小米空气净化器，北方的天气雾霾越来越常态，这就迫切需要一台性价比高的空气净化", author: "sddyboy"},
+      {href: "", img_src: "", title: "", price: "", review: "", author: ""},
+      {href: "", img_src: "", title: "", price: "", review: "", author: ""},
+      {href: "", img_src: "", title: "", price: "", review: "", author: ""},]
+  }
+})
 
 
 //footer
