@@ -522,9 +522,9 @@ var review_list_item_display = new Vue({
   data: {
     list_item: [
       {href: "", img_src: "img/hot-review/review1.jpg", title: "小米空气净化器2", price: "699元", review: "先五星好评。再来说说小米空气净化器，北方的天气雾霾越来越常态，这就迫切需要一台性价比高的空气净化", author: "sddyboy"},
-      {href: "", img_src: "", title: "", price: "", review: "", author: ""},
-      {href: "", img_src: "", title: "", price: "", review: "", author: ""},
-      {href: "", img_src: "", title: "", price: "", review: "", author: ""},]
+      {href: "", img_src: "img/hot-review/review2.jpg", title: "小米插线板", price: "49元", review: "东西真心不错，用过最好用的插线板，做工外观没得挑剔，3个USB接口很实用，充电快，建议不包邮的应该在...", author: "yinyin19891117"},
+      {href: "", img_src: "img/hot-review/review3.jpg", title: "小米水质TDS检测笔", price: "39元", review: "外观漂亮，比很多市面上的水质检测笔外观上干净简洁许多！水质检测试验自来水286，凉白开277，井水3...", author: "紫道场"},
+      {href: "", img_src: "img/hot-review/review4.jpg", title: "小蚁运动相机", price: "399元", review: "还是挺好玩的一款相机，很适合出游携带，给儿子拍些好玩的运动小视频", author: "136395765"},]
   }
 })
 
