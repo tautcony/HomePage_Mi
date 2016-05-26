@@ -597,6 +597,11 @@ a:hover {
     display: block;
     padding-top: 18px;
     color: #ffffff;
+    -webkit-transition: color .2s;
+    -moz-transition: color .2s;
+    -ms-transition: color .2s;
+    -o-transition: color .2s;
+    transition: color .2s;
     color: rgba(255, 255, 255, 0.7);
     -moz-text-overflow: ellipsis;
     text-overflow: ellipsis;
@@ -1552,13 +1557,9 @@ li.content-item-first {
 }
 
 /*xm-controls*/
-.xm-controls .control:hover {
-    color: #ff6700;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
-    -ms-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
+.content-item:hover .xm-controls .control {
+    opacity: 0.3;
+    transition: all .3s;
 }
 
 .content-item .xm-controls .control {
@@ -1567,10 +1568,16 @@ li.content-item-first {
     top: 50%;
     -ms-opacity: 0;
     opacity: 0;
+    transition: all .3s;
     margin-top: -20px;
     width: 20px;
     height: 48px;
     line-height: 24px;
+}
+
+.content-item .xm-controls .control:hover {
+    opacity: 1.0;
+    transition: all .3s;
 }
 
 .content-item .xm-controls .control-prev {

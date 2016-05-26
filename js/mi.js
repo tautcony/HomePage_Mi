@@ -241,26 +241,6 @@ $(function() {
 });
 
 //xm-control Event--------------------
-$("li.content-item").hover(function() {
-    $(this).children().last().children().first().stop().animate({ opacity: 0.3 }, 200);
-    $(this).children().last().children().last().stop().animate({ opacity: 0.3 }, 200);
-}, function() {
-    $(this).children().last().children().first().stop().animate({ opacity: 0 }, 200);
-    $(this).children().last().children().last().stop().animate({ opacity: 0 }, 200);
-});
-
-$("img.control-prev").hover(function() {
-    $(this).stop().animate({ opacity: 1 }, 100);
-}, function() {
-    $(this).stop().animate({ opacity: 0.3 }, 100);
-});
-
-$("img.control-next").hover(function() {
-    $(this).stop().animate({ opacity: 1 }, 100);
-}, function() {
-    $(this).stop().animate({ opacity: 0.3 }, 100);
-});
-
 function checkControlPoint(predex) {
     if (predex === 4) {
         $("img.control-next").css("cursor", "default");
