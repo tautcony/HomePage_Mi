@@ -165,6 +165,9 @@ $(".category_move span").click(function() {
     }
 });
 
+//首页大图按钮切换
+
+
 //category栏的category_item_box显示隐藏
 $(".category_item").hover(function() {
     var index = $(this).index();

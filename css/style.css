@@ -389,6 +389,51 @@ a:hover {
     height: 460px;
 }
 
+/*category hot_list controls*/
+.category_hot .hot_list_controls .ui-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    width: 41px;
+    height: 69px;
+    left: 234px;
+    margin-top: -35px;
+    background: url(../img/icon/imgControls_prev.jpg) no-repeat;
+    opacity: 0.3;
+}
+
+.category_hot .hot_list_controls .ui-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    width: 41px;
+    height: 69px;
+    right: 0px;
+    margin-top: -35px;
+    background: url(../img/icon/imgControls_next.jpg) no-repeat;
+}
+
+.category_hot .hot_list_controls a {
+    opacity: 0.3;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.category_hot .hot_list_controls a:hover {
+    opacity: 1.0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+
 /*category_item*/
 .category_list .category_item_box {
     z-index: 20;
@@ -456,6 +501,11 @@ a:hover {
     color: #ff6700;
     text-align: center;
     line-height: 24px;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 
 .category_item_spec .category_item_btn:hover {
@@ -1635,3 +1685,4 @@ li.content-item-first {
     display: inline;
     color: #ff6700;
 }
+
