@@ -27,13 +27,13 @@ $(".search-box").click(function() {
 
 $(".search-box").mouseover(function() {
     /*$(".search-txt,.search-btn").animate({
-        borderColor: #666666
+        borderColor: #B0B0B0
     },300);*/
     var isFocus = $(".search-txt").is(":focus");
     if (!isFocus) {
-        $(".search-txt").css("border", "1px solid #666666");
+        $(".search-txt").css("border", "1px solid #B0B0B0");
         $(".search-txt").css("border-right", "none");
-        $(".search-btn").css("border", "1px solid #666666");
+        $(".search-btn").css("border", "1px solid #B0B0B0");
     }
 });
 
