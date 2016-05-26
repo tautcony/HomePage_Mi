@@ -394,7 +394,7 @@ a:hover {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    z-index: 999;
+    z-index: 10;
     width: 41px;
     height: 69px;
     left: 234px;
@@ -407,7 +407,7 @@ a:hover {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    z-index: 999;
+    z-index: 10;
     width: 41px;
     height: 69px;
     right: 0px;
