@@ -28,7 +28,7 @@
                 <div class="comWidth">
                     <ul class="leftArea">
                         <li><a href="#">小米网</a></li>
-                        <div v-for="item in header_links_inline">
+                        <div v-for="item in header_links_inline.slice(1)">
                             <li><span class="sep">|</span></li>
                             <li><a href="{{item.href}}">{{item.title}}</a></li>
                         </div>
