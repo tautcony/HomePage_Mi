@@ -1,7 +1,7 @@
 # HomePage_Mi
 Try to write a clone page as mi.com
 
-[Online Version](tautcony.github.io/HomePage_Mi)
+[Online Version](http://tautcony.github.io/HomePage_Mi)
 
 
 By using [Vue.js](https://vuejs.org), many repeating sections can be replaced by a template with a Vue object as the data source.
