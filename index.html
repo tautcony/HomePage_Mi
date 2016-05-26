@@ -13,11 +13,11 @@
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <!--<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>-->
     <script>
-        if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>');
+    if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>');
     </script>
     <!-- <script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script> -->
     <script>
-        if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>');
+    if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>');
     </script>
 </head>
 
@@ -129,6 +129,12 @@
                         </li>
                     </ul>
                     <ul class="category_hot">
+                        <div class="hot_list_controls">
+                            <a class="ui-prev">
+                            </a>
+                            <a class="ui-next">
+                            </a>
+                        </div>
                         <ul class="category_hot_list">
                             <li style="display: block">
                                 <a href="#"><img src="img/hot1.jpg" /></a>
@@ -417,27 +423,27 @@
                     </div>
                 </div>
                 <div class="recommend">
-                  <div class="star_spec_wrapper">
-                      <div class="star_spec comWidth clearfix">
-                          <div class="spec_top">
-                              <h2 class="spec_type_title fl">为你推荐</h2>
-                              <div class="spec_left_right fl">
-                                  <a class="left_img fl white">
-                                      <img src="img/icon/left2.png" /></a>
-                                  <a class="right_img fl white">
-                                      <img src="img/icon/right1.png" /></a>
-                              </div>
-                          </div>
-                          <ul class="spec_item_list" id="recommend_goods">
-                              <li v-for="item in (recommend_goods)" class="box-shadow spec_item spec_top_border{{item.color_id}}">
-                                  <a class="spec_img"><img v-bind:src="item.img_id" /></a>
-                                  <h3 class="spec_title offsetb10"><a href="#" >{{item.title}}</a></h3>
-                                  <p class="spec_money offsetb10">{{item.price}}</p>
-                                  <p class="spec_desc">{{item.desc}}好评</p>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
+                    <div class="star_spec_wrapper">
+                        <div class="star_spec comWidth clearfix">
+                            <div class="spec_top">
+                                <h2 class="spec_type_title fl">为你推荐</h2>
+                                <div class="spec_left_right fl">
+                                    <a class="left_img fl white">
+                                        <img src="img/icon/left2.png" /></a>
+                                    <a class="right_img fl white">
+                                        <img src="img/icon/right1.png" /></a>
+                                </div>
+                            </div>
+                            <ul class="spec_item_list" id="recommend_goods">
+                                <li v-for="item in (recommend_goods)" class="box-shadow spec_item spec_top_border{{item.color_id}}">
+                                    <a class="spec_img"><img v-bind:src="item.img_id" /></a>
+                                    <h3 class="spec_title offsetb10"><a href="#" >{{item.title}}</a></h3>
+                                    <p class="spec_money offsetb10">{{item.price}}</p>
+                                    <p class="spec_desc">{{item.desc}}好评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="hotreview">
                     <div class="title-box">
@@ -445,16 +451,16 @@
                     </div>
                     <div class="review-list">
                         <div class="review-block box-shadow" v-for="item in list_item">
-                          <div class="figure figure-img">
-                              <img v-bind:src="item.img_src"/>
-                          </div>
-                          <p class="review-content">{{item.review}}</p>
-                          <p class="author">来自于 {{item.author}} 的评价</p>
-                          <div class="info">
-                            <h3 class="title">{{item.title}}</h3>
-                            <span class="sep">|</span>
-                            <p class="price">{{item.price}}</p>
-                          </div>
+                            <div class="figure figure-img">
+                                <img v-bind:src="item.img_src" />
+                            </div>
+                            <p class="review-content">{{item.review}}</p>
+                            <p class="author">来自于 {{item.author}} 的评价</p>
+                            <div class="info">
+                                <h3 class="title">{{item.title}}</h3>
+                                <span class="sep">|</span>
+                                <p class="price">{{item.price}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -540,8 +546,8 @@
                         <ul class="footer_bottom_nav">
                             <li><a href="#">小米网</a></li>
                             <div v-for="link in footer_links_inline.slice(1)">
-                              <li><span>|</span></li>
-                              <li><a href="{{link.href}}">{{link.title}}</a></li>
+                                <li><span>|</span></li>
+                                <li><a href="{{link.href}}">{{link.title}}</a></li>
                             </div>
                         </ul>
                         <br>

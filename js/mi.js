@@ -71,7 +71,7 @@ $(function() {
 $(function() {
     var isLeft = 1;
     setInterval(function() {
-        if(isLeft === 1) {
+        if (isLeft === 1) {
             console.log("interval right click");
             $(".right_img").click();
             isLeft = 0;
@@ -165,6 +165,27 @@ $(".category_move span").click(function() {
     }
 });
 
+//首页大图按钮切换
+$(".ui-prev").click(function(event) {
+    //console.log($(this).parent().siblings().last());
+    var index = $("span.cur_move").parent().index();
+    if (index > 0) {
+        $("span.cur_move").parent().prev().children().click();
+    } else {
+        $("span.cur_move").parent().siblings().last().children().click();
+    }
+});
+
+$(".ui-next").click(function(event) {
+    //console.log($(this).parent().siblings().last());
+    var index = $("span.cur_move").parent().index();
+    if (index < 4) {
+        $("span.cur_move").parent().next().children().click();
+    } else {
+        $("span.cur_move").parent().siblings().first().children().click();
+    }
+});
+
 //category栏的category_item_box显示隐藏
 $(".category_item").hover(function() {
     var index = $(this).index();
@@ -183,22 +204,22 @@ $(".category_item").hover(function() {
 
 
 //content 轮播
-$(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click("Myclick",function(event) {
+$(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click("Myclick", function(event) {
     /* Act on the event */
     $(this).addClass('pager-active');
     $(this).siblings().removeClass('pager-active');
     var index = $(this).index();
     //console.log($(this).parents("div").prev().children().children().attr('class'));
     //console.log($(this).parents("div").parents("li").index());
-    var contentindex = ($(this).parents("div").parents("li").index())+1;
+    var contentindex = ($(this).parents("div").parents("li").index()) + 1;
     //$(this).parents("div").prev().children().children().animate({
-    $("ul.item-list-"+contentindex).stop().animate({
+    $("ul.item-list-" + contentindex).stop().animate({
             marginLeft: -index * 296
         },
         500,
         function() {
             console.log('hao ');
-    });
+        });
     //$(this).parents("div").prev().children().children().animate({ marginLeft: -index * 296 }, 400);
 });
 
@@ -207,9 +228,9 @@ $(function() {
     var arr = [$("#match-tab-hot"), $("#match-tab-speaker"), $("#match-tab-battery"), $("#match-tab-memcard")];
     var corspondID = [".match #hot", ".match #speaker", ".match #battery", ".match #memcard"];
     $(corspondID[0]).css("display", "block");
-    $.each(arr, function( index, value ) {
+    $.each(arr, function(index, value) {
         $(value).mouseover(function() {
-            for(var i = 0; i < 4; ++i) {
+            for (var i = 0; i < 4; ++i) {
                 $(corspondID[i]).css("display", "none");
                 $(arr[i]).removeClass();
             }
@@ -220,44 +241,22 @@ $(function() {
 });
 
 //xm-control Event--------------------
-$("li.content-item").hover(function() {
-    $(this).children().last().children().first().stop().animate({ opacity: 0.3 }, 200);
-    $(this).children().last().children().last().stop().animate({ opacity: 0.3 }, 200);
-}, function() {
-    $(this).children().last().children().first().stop().animate({ opacity: 0 }, 200);
-    $(this).children().last().children().last().stop().animate({ opacity: 0 }, 200);
-});
-
-$("img.control-prev").hover(function() {
-    $(this).stop().animate({ opacity: 1 }, 100);
-}, function() {
-    $(this).stop().animate({ opacity: 0.3 }, 100);
-});
-
-$("img.control-next").hover(function() {
-    $(this).stop().animate({ opacity: 1 }, 100);
-}, function() {
-    $(this).stop().animate({ opacity: 0.3 }, 100);
-});
-
-function checkControlPoint(predex){
-    if(predex === 4){
-        $("img.control-next").css("cursor","default");
-    }
-    else if(predex === 1){
-         $("img.control-prev").css("cursor","default");
-    }
-    else {
-        $("img.control-next").css("cursor","pointer");
-        $("img.control-prev").css("cursor","pointer");
+function checkControlPoint(predex) {
+    if (predex === 4) {
+        $("img.control-next").css("cursor", "default");
+    } else if (predex === 1) {
+        $("img.control-prev").css("cursor", "default");
+    } else {
+        $("img.control-next").css("cursor", "pointer");
+        $("img.control-prev").css("cursor", "pointer");
     }
 }
 
 $("img.control-prev").click(function() {
-    var index = $(this).parents("li").index()+1;
+    var index = $(this).parents("li").index() + 1;
     // console.log(index);
     // console.log($("ul.xm-pagers-"+index).children().filter(".pager-active").index());
-    var predex = ($("ul.xm-pagers-"+index).children().filter(".pager-active").index())+1;
+    var predex = ($("ul.xm-pagers-" + index).children().filter(".pager-active").index()) + 1;
     console.log(predex);
     if (predex > 1) {
         $(".xm-pagers-" + index).children().filter(".pager-active").prev().click();
@@ -265,10 +264,10 @@ $("img.control-prev").click(function() {
 });
 
 $("img.control-next").click(function() {
-    var index = $(this).parents("li").index()+1;
+    var index = $(this).parents("li").index() + 1;
     // console.log(index);
     // console.log($("ul.xm-pagers-"+index).children().filter(".pager-active").index());
-    var predex = ($("ul.xm-pagers-"+index).children().filter(".pager-active").index())+1;
+    var predex = ($("ul.xm-pagers-" + index).children().filter(".pager-active").index()) + 1;
     console.log(predex);
     if (predex < 4) {
         $(".xm-pagers-" + index).children().filter(".pager-active").next().click();
@@ -276,12 +275,12 @@ $("img.control-next").click(function() {
 });
 //-----------------------------------------
 $(function() {
-    var arr = [$("#accessories-tab-hot"), $("#accessories-tab-phonecase"), $("#accessories-tab-backcase"), $("#accessories-tab-mo"),  $("#accessories-tab-other")];
+    var arr = [$("#accessories-tab-hot"), $("#accessories-tab-phonecase"), $("#accessories-tab-backcase"), $("#accessories-tab-mo"), $("#accessories-tab-other")];
     var corspondID = [".accessories #hot", ".accessories #phonecase", ".accessories #backcase", ".accessories #mo", ".accessories #other"];
     $(corspondID[0]).css("display", "block");
-    $.each(arr, function( index, value ) {
+    $.each(arr, function(index, value) {
         $(value).mouseover(function() {
-            for(var i = 0; i < 5; ++i) {
+            for (var i = 0; i < 5; ++i) {
                 $(corspondID[i]).css("display", "none");
                 $(arr[i]).removeClass();
             }
@@ -292,12 +291,12 @@ $(function() {
 });
 
 $(function() {
-    var arr = [$("#around-tab-hot"), $("#around-tab-cloth"), $("#around-tab-rabbit"), $("#around-tab-life"),  $("#around-tab-case")];
+    var arr = [$("#around-tab-hot"), $("#around-tab-cloth"), $("#around-tab-rabbit"), $("#around-tab-life"), $("#around-tab-case")];
     var corspondID = [".around #hot", ".around #cloth", ".around #rabbit", ".around #life", ".around #case"];
     $(corspondID[0]).css("display", "block");
-    $.each(arr, function( index, value ) {
+    $.each(arr, function(index, value) {
         $(value).mouseover(function() {
-            for(var i = 0; i < 5; ++i) {
+            for (var i = 0; i < 5; ++i) {
                 $(corspondID[i]).css("display", "none");
                 $(arr[i]).removeClass();
             }
@@ -306,4 +305,3 @@ $(function() {
         });
     });
 });
-
