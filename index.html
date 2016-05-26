@@ -129,23 +129,17 @@
                         </li>
                     </ul>
                     <ul class="category_hot">
+                        <div class="hot_list_controls">
+                            <a class="ui-prev">
+                            </a>
+                            <a class="ui-next">
+                            </a>
+                        </div>
                         <ul class="category_hot_list">
                             <li style="display: block">
-                                <div class="hot_list_controls">
-                                    <a class="ui-prev">
-                                    </a>
-                                    <a class="ui-next">
-                                    </a>
-                                </div>
                                 <a href="#"><img src="img/hot1.jpg" /></a>
                             </li>
                             <li style="display: none" v-for="item in (category_hot_list)">
-                                <div class="hot_list_controls">
-                                    <a class="ui-prev">
-                                    </a>
-                                    <a class="ui-next">
-                                    </a>
-                                </div>
                                 <a href="{{item.href}}"><img v-bind:src="item.img_name" /></a>
                             </li>
                         </ul>
