@@ -160,8 +160,8 @@ $(".category_move span").click(function() {
     $(this).addClass("cur_move");
     if (index !== $(this).parent().index()) {
         index = $(this).parent().index();
-        $(".category_hot_list > li").fadeOut('500');
-        $(".category_hot_list > li:eq(" + index + ")").fadeIn('500');
+        $(".category_hot_list > li").stop().fadeOut('500');
+        $(".category_hot_list > li:eq(" + index + ")").stop().fadeIn('500');
     }
 });
 
