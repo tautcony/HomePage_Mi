@@ -589,15 +589,3 @@ var footer_links_inline_display = new Vue({
     ]
   }
 });
-
-var video_list_display = new Vue({
-    el: ".video-list",
-    data: {
-        video_list: [
-            {video_first: "video-first" , href: "#", img_src: "img/video/video-img1.jpg", title: "小米Max 绝美外观视频", desc: "6.44\" 大屏黄金尺寸，看什么都震撼"},
-            {video_first: " " , href: "#", img_src: "img/video/video-img2.jpg", title: "笑喷了，沈腾爆笑出演，6集联播", desc: "小米Max沈腾爆笑预告全集"},
-            {video_first: " " , href: "#", img_src: "img/video/video-img3.jpg", title: "15秒了解小米5 有多快", desc: "华少用超快语速告诉你小米5 到底有多快"},
-            {video_first: " " , href: "#", img_src: "img/video/video-img4.jpg", title: "《去探索》小米年度品牌视频", desc: "与小米一起探索黑科技"},
-        ]
-    }
-});

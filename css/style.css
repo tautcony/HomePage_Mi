@@ -79,7 +79,7 @@ a:hover {
     display: none;
     position: absolute;
     height: 0;
-    /*right: 219px;*/
+    right: 60px;
     top: 40px;
     z-index: 100;
     width: 316px;
@@ -1599,7 +1599,7 @@ li.content-item-first {
 }
 
 .content {
-    /*padding-bottom: 50px;*/
+    padding-bottom: 50px;
 }
 
 .main-page .recommend {
@@ -1693,79 +1693,3 @@ li.content-item-first {
     color: #ff6700;
 }
 
-/*video-list*/
-.video {
-    margin-bottom: 59px;
-}
-
-.video .video-box .video-list {
-    width: 1240px;
-    height: 285px;
-    margin: 0;
-    padding: 0;
-}
-
-.video .video-box .video-item {
-    float: left;
-    width: 296px;
-    height: 285px;
-    margin: 0px 0px 14px 14px;
-    background-color: #fff;
-}
-
-.video .video-box .video-first {
-    margin-left: 0px;
-}
-
-.video-item .figure-img {
-    position: relative;
-    width: 296px;
-    height: 180px;
-    margin: 0 0 28px 0;
-}
-
-.video-item .title {
-    margin: 0 0 6px;
-    font-size: 14px;
-    font-weight: 400;
-    text-align: center;
-    color: #333;
-}
-
-.video-item .desc {
-    height: 18px;
-    margin: 0;
-    font-size: 12px;
-    color: #b0b0b0;
-    text-align: center
-}
-
-.video-item .play {
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-    width: 32px;
-    height: 20px;
-    border: 2px solid #fff;
-    border-radius: 12px;
-    background-color: rgba(0,0,0,0.6);
-    color: #fff;
-    -webkit-transition: all .2s;
-    transition: all .2s;
-    line-height: 20px;
-}
-
-.video-item .play i {
-    font-size: 30px;
-}
-
-.video-item .figure-img a:hover .play {
-    background-color: #ff6700;
-    padding: 2px;
-    -webkit-transition: all height .2s;
-    transition: all .2s;
-}
-
-.position-adjust {
-    padding-top: 1px;
-}
