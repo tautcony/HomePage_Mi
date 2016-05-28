@@ -1757,13 +1757,12 @@ li.content-item-first {
 
 .video-item .play i {
     font-size: 30px;
+    padding-left: 2px;
 }
 
 .video-item .figure-img a:hover .play {
     background-color: #ff6700;
-    padding: 2px;
-    -webkit-transition: all height .2s;
-    transition: all .2s;
+    border-color: #ff6700;
 }
 
 .position-adjust {
