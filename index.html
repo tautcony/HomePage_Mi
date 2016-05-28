@@ -464,7 +464,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="video"></div>
                 <div class="content">
                     <div class="title-box">
                         <h2 class="title">内容</h2>
@@ -509,6 +508,29 @@
                         </ul>
                     </div>
                 </div>
+                <div class="video">
+                    <div class="title-box">
+                        <h2 class="title">视频</h2>
+                        <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
+                    </div>
+                    <div class="video-box">
+                    	<ul class="video-list">
+                    		<li class="video-item {{item.video_first}} box-shadow" v-for="item in (video_list)">
+                    			<div class="figure-img">
+                    				<a href="{{item.href}}">
+                    					<img v-bind:src="item.img_src" alt="">
+                    					<span class="play">
+                    						<i class="iconfont">&#xe601;</i>
+                    					</span>
+                    				</a>
+                    			</div>
+                    			<h3 class="title">{{item.title}}</h3>
+                    			<p class="desc">{{item.desc}}</p>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="position-adjust"></div>
             </div>
         </div>
         <div id="footer">
