@@ -196,11 +196,11 @@ a:hover {
     width: 53px;
     height: 50px;
     background-color: #ff6700 !important;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -ms-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
     background: url(../img/icon/search2.png) 16px 15px no-repeat;
 }
 
