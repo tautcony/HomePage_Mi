@@ -79,7 +79,7 @@ a:hover {
     display: none;
     position: absolute;
     height: 0;
-    /*right: 219px;*/
+    right: 4.5%;
     top: 40px;
     z-index: 100;
     width: 316px;
