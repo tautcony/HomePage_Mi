@@ -85,7 +85,7 @@ var nav_item_display = new Vue({
     			{title: "小米空气净化器 2", price: "699元", img_src: "img/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
     			{title: "体重秤", price: "99元", img_src: "img/nav_item/mi_smart_hardware/weight.jpg", href: ""},
     			{title: "摄像机", price: "149元", img_src: "img/nav_item/mi_smart_hardware/camera.jpg", href: ""},
-    			{title: "查看全部 智能硬件", price: "", img_src: "img/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
+    			{title: "查看全部<br>智能硬件", price: "", img_src: "img/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
     		]
         }
 	}

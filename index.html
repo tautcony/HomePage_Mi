@@ -54,7 +54,7 @@
                     <ul class="nav_menu_spec" id="nav_item_list_{{$key}}">
                         <li v-for="item in c">
                             <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_src" /></a>
-                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{{item.title}}}</a></p>
                             <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                         </li>
                     </ul>
