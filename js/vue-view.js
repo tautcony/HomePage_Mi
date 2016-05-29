@@ -216,7 +216,6 @@ var category_list_display = new Vue({
                     {title: "90分旅行箱", img_name: "img/category/lvxingxiang.jpg", href: ""},
                     {title: "小米鼠标垫", img_name: "img/category/shubiaodian-80.jpg", href: ""},
                     {title: "生活周边", img_name: "img/category/zhoubian1.jpg", href: ""},
-
             	]
             }
         ]
@@ -227,11 +226,11 @@ var category_hot_list_display = new Vue({
     el: ".category_hot_list",
     data: {
         category_hot_list: [
-            //{img_name: "hot1.jpg", href: "#"},
-            {img_name: "img/hot2.jpg", href: "#"},
-            {img_name: "img/hot3.jpg", href: "#"},
-            {img_name: "img/hot4.jpg", href: "#"},
-            {img_name: "img/hot5.jpg", href: "#"}
+            {img_name: "img/hot/hot1.jpg", href: "#"},
+            {img_name: "img/hot/hot2.jpg", href: "#"},
+            {img_name: "img/hot/hot3.jpg", href: "#"},
+            {img_name: "img/hot/hot4.jpg", href: "#"},
+            {img_name: "img/hot/hot5.jpg", href: "#"}
         ]
     }
 });

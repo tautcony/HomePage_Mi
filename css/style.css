@@ -186,7 +186,7 @@ a:hover {
     width: 53px;
     height: 50px;
     border: 1px solid #e0e0e0;
-    background: url(../img/search1.png) 16px 15px no-repeat;
+    background: url(../img/icon/search1.png) 16px 15px no-repeat;
 }
 
 /*todo: the hover do not active*/
@@ -201,7 +201,7 @@ a:hover {
     -ms-transition: all .8s;
     -o-transition: all .8s;
     transition: all .8s;
-    background: url(../img/search2.png) 16px 15px no-repeat;
+    background: url(../img/icon/search2.png) 16px 15px no-repeat;
 }
 
 .search-box .hot-word1,
@@ -365,7 +365,7 @@ a:hover {
     color: #fff;
     line-height: 42px;
     padding-left: 30px;
-    background: url(../img/navMenu_icon.png) no-repeat 190px 5px;
+    background: url(../img/icon/navMenu_icon.png) no-repeat 190px 5px;
     z-index: 30;
 }
 

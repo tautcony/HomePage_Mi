@@ -137,9 +137,9 @@
                         </div>
                         <ul class="category_hot_list">
                             <li style="display: block">
-                                <a href="#"><img src="img/hot1.jpg" /></a>
+                                <a href="{{category_hot_list[0].href}}"><img v-bind:src="category_hot_list[0].img_name" /></a>
                             </li>
-                            <li style="display: none" v-for="item in (category_hot_list)">
+                            <li style="display: none" v-for="item in (category_hot_list.slice(1))">
                                 <a href="{{item.href}}"><img v-bind:src="item.img_name" /></a>
                             </li>
                         </ul>
@@ -169,17 +169,17 @@
                     <ul class="hotimg-grid-list">
                         <li class="first">
                             <a href="">
-                                <img src="img/hot6.jpg">
+                                <img src="img/hot/hot6.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot7.jpg">
+                                <img src="img/hot/hot7.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot8.jpg">
+                                <img src="img/hot/hot8.jpg">
                             </a>
                         </li>
                     </ul>
