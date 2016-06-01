@@ -8,7 +8,7 @@ $(document).click(function() {
     $(".search-btn").css("border", "1px solid #e0e0e0");
     $(".search-btn").css("border-left", "none");
     $(".hot-word1,.hot-word2").fadeIn('400', function() {
-        console.log('show ok!');
+        /*console.log('show ok!');*/
     });
 });
 
@@ -20,7 +20,7 @@ $(".search-box").click(function() {
     $(".search-btn").css("border", "1px solid #ff6700");
     $(".search-btn").css("border-left", "none");
     $(".hot-word1,.hot-word2").fadeOut('400', function() {
-        console.log('hide ok!');
+        /*console.log('hide ok!');*/
     });
     return false;
 });
@@ -72,11 +72,11 @@ $(function() {
     var isLeft = 1;
     setInterval(function() {
         if (isLeft === 1) {
-            console.log("interval right click");
+            /*console.log("interval right click");*/
             $(".right_img").click();
             isLeft = 0;
         } else {
-            console.log("interval left click");
+            /*console.log("interval left click");*/
             $(".left_img").click();
             isLeft = 1;
         }
@@ -218,7 +218,7 @@ $(".xm-pagers-1>li,.xm-pagers-2>li,.xm-pagers-3>li,.xm-pagers-4>li").click("Mycl
         },
         500,
         function() {
-            console.log('hao ');
+            /*console.log('hao ');*/
         });
     //$(this).parents("div").prev().children().children().animate({ marginLeft: -index * 296 }, 400);
 });
@@ -257,7 +257,7 @@ $("img.control-prev").click(function() {
     // console.log(index);
     // console.log($("ul.xm-pagers-"+index).children().filter(".pager-active").index());
     var predex = ($("ul.xm-pagers-" + index).children().filter(".pager-active").index()) + 1;
-    console.log(predex);
+    /*console.log(predex);*/
     if (predex > 1) {
         $(".xm-pagers-" + index).children().filter(".pager-active").prev().click();
     }
@@ -268,7 +268,7 @@ $("img.control-next").click(function() {
     // console.log(index);
     // console.log($("ul.xm-pagers-"+index).children().filter(".pager-active").index());
     var predex = ($("ul.xm-pagers-" + index).children().filter(".pager-active").index()) + 1;
-    console.log(predex);
+    /*console.log(predex);*/
     if (predex < 4) {
         $(".xm-pagers-" + index).children().filter(".pager-active").next().click();
     }
