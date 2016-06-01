@@ -8,8 +8,8 @@ import markdown
 def process_slides():
   with codecs.open('../../index.html', 'w', encoding='utf8') as outfile:
     md = codecs.open('slides.md', encoding='utf8').read()
+    md = md.replace('\r\n', '\n')
     md_slides = md.split('\n---\n')
-    if(len(md_slides) <= 1): md_slides = md.split('\r\n---\r\n')
     print('Compiled %s slides.' % len(md_slides))
 
     slides = []

@@ -1,16 +1,16 @@
+
+---
 title: 页面预览
 class: image
 
 ![Page Preview](images/preview.png)
 
 ---
-
 title: 所使用的组件介绍
 subtitle: Vue.js
 class: segue dark nobackground
 
 ---
-
 title: Vue.js
 class: big
 build_lists: true
@@ -28,7 +28,6 @@ Vue.js 通过尽可能简单的 API 实现响应的数据绑定和组合的视�
 - 不支持IE8。
 
 ---
-
 title: Code Example
 
 比如，在使用了如下的Vue对象后:
@@ -54,7 +53,6 @@ var header_links_inline_display = new Vue({
 </pre>
 
 ---
-
 title: Code Example
 
 我们可以只写一个形如下面的一个html模板:
