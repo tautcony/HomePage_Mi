@@ -1,21 +1,22 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <title>小米官网——小米手机、红米手机、小米电视官方正品专卖网站</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
-    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <!--<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>-->
     <script>
-    if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>')
+    if (!window.$) document.write('<script src="js/jquery.js">\x3C/script>');
     </script>
     <!-- <script src="https://cdn.bootcss.com/vue/1.0.7/vue.min.js"></script> -->
     <script>
-    if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>')
+    if (!window.Vue) document.write('<script src="js/vue.js">\x3C/script>');
     </script>
 </head>
 
@@ -26,22 +27,10 @@
                 <div class="comWidth">
                     <ul class="leftArea">
                         <li><a href="#">小米网</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">MIUI</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">米聊</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">游戏</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">多看阅读</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">云服务</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">小米网移动版</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">问题反馈</a></li>
-                        <li><span class="sep">|</span></li>
-                        <li><a href="#">Select Region</a></li>
+                        <div v-for="item in header_links_inline.slice(1)">
+                            <li><span class="sep">|</span></li>
+                            <li><a href="{{item.href}}">{{item.title}}</a></li>
+                        </div>
                     </ul>
                     <div class="rightArea">
                         <div class="login fl">
@@ -52,6 +41,9 @@
                         <div class="cart-mini fr">
                             <a href="#"><i class="iconfont "></i>购物车</a>
                         </div>
+                        <div class="cart-menu fr">
+                            <div class="empty">购物车中还没有商品，赶紧选购吧！</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -61,8 +53,8 @@
                 <div class="nav_menu_list">
                     <ul class="nav_menu_spec" id="nav_item_list_{{$key}}">
                         <li v-for="item in c">
-                            <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_name" /></a>
-                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                            <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_src" /></a>
+                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{{item.title}}}</a></p>
                             <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                         </li>
                     </ul>
@@ -105,7 +97,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -115,7 +107,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_2">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_2">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -125,7 +117,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_3">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_3">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'&&!item.datalist_3">选购</span>
@@ -136,12 +128,18 @@
                         </li>
                     </ul>
                     <ul class="category_hot">
+                        <div class="hot_list_controls">
+                            <a class="ui-prev">
+                            </a>
+                            <a class="ui-next">
+                            </a>
+                        </div>
                         <ul class="category_hot_list">
                             <li style="display: block">
-                                <a href="#"><img src="img/hot1.jpg" /></a>
+                                <a href="{{category_hot_list[0].href}}"><img v-bind:src="category_hot_list[0].img_src" /></a>
                             </li>
-                            <li style="display: none" v-for="item in (category_hot_list)">
-                                <a href="{{item.href}}"><img v-bind:src="item.img_name" /></a>
+                            <li style="display: none" v-for="item in (category_hot_list.slice(1))">
+                                <a href="{{item.href}}"><img v-bind:src="item.img_src" /></a>
                             </li>
                         </ul>
                         <ul class="category_move">
@@ -170,17 +168,17 @@
                     <ul class="hotimg-grid-list">
                         <li class="first">
                             <a href="">
-                                <img src="img/hot6.jpg">
+                                <img src="img/hot/hot6.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot7.jpg">
+                                <img src="img/hot/hot7.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot8.jpg">
+                                <img src="img/hot/hot8.jpg">
                             </a>
                         </li>
                     </ul>
@@ -199,7 +197,7 @@
                     </div>
                     <ul class="spec_item_list" id="star_goods">
                         <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
-                            <a class="spec_img"><img v-bind:src="item.img_id" /></a>
+                            <a class="spec_img"><img v-bind:src="item.img_src" /></a>
                             <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
                             <p class="spec_desc">{{item.desc}}</p>
                             <p class="spec_money">{{item.price}}</p>
@@ -236,6 +234,7 @@
                                     <p class="price"> <span>{{item.price}}</span></p>
                                     <div class="flag flag-new" v-if="item.label=='new'">新品</div>
                                     <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                    <div class="flag flag-postfree" v-if="item.label=='postfree'">{{item.post}}</div>
                                 </li>
                             </ul>
                         </div>
@@ -283,6 +282,7 @@
                                     </div>
                                     <div class="flag flag-new" v-if="item.label=='new'">新品</div>
                                     <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                    <div class="flag flag-postfree" v-if="item.label=='postfree'">{{item.post}}</div>
                                 </li>
                                 <li class="block-item block-list-s">
                                     <div class="figure-img">
@@ -344,6 +344,7 @@
                                     </div>
                                     <div class="flag flag-new" v-if="item.label=='new'">新品</div>
                                     <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                    <div class="flag flag-postfree" v-if="item.label=='postfree'">{{item.post}}</div>
                                 </li>
                                 <li class="block-item block-list-s">
                                     <div class="figure-img">
@@ -364,7 +365,7 @@
                 </div>
                 <div class="around">
                     <div class="title-box">
-                        <h2 class="title">配件</h2>
+                        <h2 class="title">周边</h2>
                         <div class="more">
                             <ul class="tab-list">
                                 <li class="tab-active" id="around-tab-hot">热门</li>
@@ -405,6 +406,7 @@
                                     </div>
                                     <div class="flag flag-new" v-if="item.label=='new'">新品</div>
                                     <div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}</div>
+                                    <div class="flag flag-postfree" v-if="item.label=='postfree'">{{item.post}}</div>
                                 </li>
                                 <li class="block-item block-list-s">
                                     <div class="figure-img">
@@ -423,9 +425,48 @@
                         </div>
                     </div>
                 </div>
-                <div class="recommend"></div>
-                <div class="review"></div>
-                <div class="video"></div>
+                <div class="recommend">
+                    <div class="star_spec_wrapper">
+                        <div class="star_spec comWidth clearfix">
+                            <div class="spec_top">
+                                <h2 class="spec_type_title fl">为你推荐</h2>
+                                <div class="spec_left_right fl">
+                                    <a class="left_img fl white">
+                                        <img src="img/icon/left2.png" /></a>
+                                    <a class="right_img fl white">
+                                        <img src="img/icon/right1.png" /></a>
+                                </div>
+                            </div>
+                            <ul class="spec_item_list" id="recommend_goods">
+                                <li v-for="item in (recommend_goods)" class="box-shadow spec_item spec_top_border{{item.color_id}}">
+                                    <a class="spec_img"><img v-bind:src="item.img_src" /></a>
+                                    <h3 class="spec_title offsetb10"><a href="#" >{{item.title}}</a></h3>
+                                    <p class="spec_money offsetb10">{{item.price}}</p>
+                                    <p class="spec_desc">{{item.desc}}好评</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="hotreview">
+                    <div class="title-box">
+                        <h2 class="title">热评产品</h2>
+                    </div>
+                    <div class="review-list">
+                        <div class="review-block box-shadow" v-for="item in list_item">
+                            <div class="figure figure-img">
+                                <img v-bind:src="item.img_src" />
+                            </div>
+                            <p class="review-content">{{item.review}}</p>
+                            <p class="author">来自于 {{item.author}} 的评价</p>
+                            <div class="info">
+                                <h3 class="title">{{item.title}}</h3>
+                                <span class="sep">|</span>
+                                <p class="price">{{item.price}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="content">
                     <div class="title-box">
                         <h2 class="title">内容</h2>
@@ -438,7 +479,7 @@
                                     <ul class="item-list {{item.cont_class}}">
                                         <li v-for="list in item.datalist">
                                             <h4 class="name">{{list.name}}</h4>
-                                            <p class="desc">{{list.desc}}</p>
+                                            <p class="desc">{{{list.desc}}}</p>
                                             <p class="price">{{list.price}}</p>
                                             <div class="figure-img figure">
                                                 <a href=""><img v-bind:src="list.img_src" alt=""></a>
@@ -462,14 +503,37 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="xm-controls xm-controls-block-small">
-                                    <a class="control control-prev iconfont" href="#"></a>
-                                    <a class="control control-next iconfont" href="#">111</a>
+                                <div class="xm-controls {{item.xm_controls_class}}">
+                                    <img class="control control-prev" src="img/icon/content_left_hover.png">
+                                    <img class="control control-next" src="img/icon/content_right_hover.png">
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </div>
+                <div class="video">
+                    <div class="title-box">
+                        <h2 class="title">视频</h2>
+                        <div class="more"><a class="more-link" href="">查看全部<i class="iconfont"></i></a></div>
+                    </div>
+                    <div class="video-box">
+                    	<ul class="video-list">
+                    		<li class="video-item {{item.video_first}} box-shadow" v-for="item in (video_list)">
+                    			<div class="figure-img">
+                    				<a href="{{item.href}}">
+                    					<img v-bind:src="item.img_src" alt="">
+                    					<span class="play">
+                    						<i class="iconfont">&#xe601;</i>
+                    					</span>
+                    				</a>
+                    			</div>
+                    			<h3 class="title">{{item.title}}</h3>
+                    			<p class="desc">{{item.desc}}</p>
+                    		</li>
+                    	</ul>
+                    </div>
+                </div>
+                <div class="position-adjust"></div>
             </div>
         </div>
         <div id="footer">
@@ -506,29 +570,12 @@
                     <div class="footer_bottom_info fl">
                         <ul class="footer_bottom_nav">
                             <li><a href="#">小米网</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">MIUI</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">米聊</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">多看书城</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米路由器</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">视频电话</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米后院</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米天猫店</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米淘宝直营店</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">小米网盟</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">问题反馈</a></li>
-                            <li><span>|</span></li>
-                            <li><a href="#">Select Region</a></li>
+                            <div v-for="link in footer_links_inline.slice(1)">
+                                <li><span>|</span></li>
+                                <li><a href="{{link.href}}">{{link.title}}</a></li>
+                            </div>
                         </ul>
+                        <br>
                         <p class="footer_bottom_info">
                             ©mi.com 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 京网文[2014]0059-0009号
                         </p>
@@ -545,8 +592,9 @@
                 <div class="slogan ir">探索黑科技，小米为发烧而生</div>
             </div>
         </div>
-        <script src="js/vue-view.js"></script>
-        <script src="js/mi.js"></script>
+    </div>
+    <script src="js/vue-view.js"></script>
+    <script src="js/mi.js"></script>
 </body>
 
 </html>
