@@ -26,7 +26,7 @@
             <div class="topbar">
                 <div class="comWidth">
                     <ul class="leftArea">
-                        <li><a href="#">小米网</a></li>
+                        <li><a href="{{header_links_inline[0].href}}">{{header_links_inline[0].title}}</a></li>
                         <div v-for="item in header_links_inline.slice(1)">
                             <li><span class="sep">|</span></li>
                             <li><a href="{{item.href}}">{{item.title}}</a></li>
