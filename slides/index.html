@@ -1,0 +1,277 @@
+<!--
+Google IO 2012 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahe <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="all" href="theme/css/app.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+<!-- <slide class="logoslide nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo.png"></span>
+  </article>
+</slide>
+ -->
+<slide class="title-slide segue nobackground">
+  <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+  <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+  <hgroup class="auto-fadein">
+    <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p>
+  </hgroup>
+</slide>
+
+
+<slide class="image" >
+  
+    <hgroup>
+      <h2>仿制小米首页</h2>
+      <h3>页面预览</h3>
+    </hgroup>
+    <article ><p><img alt="Page Preview" src="images/preview.png" /></p></article>
+ 
+</slide>
+
+<slide class="segue dark nobackground" >
+  
+    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <hgroup class="auto-fadein">
+      <h2>所使用的组件介绍</h2>
+      <h3>Vue.js</h3>
+    </hgroup>
+  
+</slide>
+
+<slide class="big" >
+  
+    <hgroup>
+      <h2>Vue.js</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>Vue.js 通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。</p>
+<ul class="build">
+<li>好用</li>
+<li>很好用</li>
+<li>肥肠好用</li>
+<li>真的是好用</li>
+</ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Code Example</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>比如，在使用了如下的Vue对象后:</p>
+<pre class="prettyprint" data-lang="js">
+var header_links_inline_display = new Vue({
+  el: "#header .leftArea",
+  data: {
+    header_links_inline:
+    [
+      {href: "#", title: "小米网"},
+      {href: "#", title: "MIUI"},
+      {href: "#", title: "米聊"},
+      {href: "#", title: "游戏"},
+      {href: "#", title: "多看阅读"},
+      {href: "#", title: "云服务"},
+      {href: "#", title: "小米网移动版"},
+      {href: "#", title: "问题反馈"},
+      {href: "#", title: "Select Region"},
+    ]
+  }
+});
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Code Example</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>对如下的html模板处理:</p>
+<pre class="prettyprint" data-lang="html">
+&lt;ul class="leftArea">
+    &lt;li>
+        &lt;a href="{{header_links_inline[0].href}}">{{header_links_inline[0].title}}&lt;/a>
+    &lt;/li>
+    &lt;div v-for="item in header_links_inline.slice(1)">
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="{{item.href}}">{{item.title}}&lt;/a></li>
+    &lt;/div>
+&lt;/ul></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>展开后的结果</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p></pre>
+<pre class="prettyprint" data-lang="html">
+&lt;ul class="leftArea"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;小米网&lt;/a&gt;&lt;/li&gt;
+    &lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;MIUI&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;米聊&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;游戏&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;多看阅读&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;云服务&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;小米网移动版&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;问题反馈&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;&lt;div&gt;
+        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Select Region&lt;/a&gt;&lt;/li&gt;
+    &lt;/div&gt;
+&lt;/ul&gt;
+</pre></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>成效</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>在使用了Vue.js库之后，首页上绝大部分的重复冗余的代码都不复存在，整个html的代码也缩减到了600行。</p>
+<p>如果不使用，并且使用标准缩进，整个页面的代码行数需要2k行+并且层级复杂，且由于数据分散，会导致修改非常麻烦。</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>js代码示例</h2>
+      <h3>以有效地完成目标效果为目的</h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="javascript">
+var index;
+//首页大图切换
+$(".category_move span").click(function() {
+    $(".category_move span").removeClass("cur_move");
+    $(this).addClass("cur_move");
+    if (index !== $(this).parent().index()) {
+        index = $(this).parent().index();
+        $(".category_hot_list > li").stop().fadeOut('500');
+        $(".category_hot_list > li:eq(" + index + ")").stop().fadeIn('500');
+    }
+});
+</pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>网页预览</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><article>
+  <iframe data-src="http://tautcony.xyz/HomePage_Mi"></iframe>
+</article></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>mi.com对比</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p><a href="http://www.mi.com/index.html">小米官网——小米手机、红米手机、小米电视官方正品专卖网站</a></p>
+<footer class="source">由于小米官网的限制，无法通过iframe的形式展示mi.com</footer></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>小组成员</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"></article>
+ 
+</slide>
+
+
+<slide class="thank-you-slide segue nobackground">
+  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <article class="flexbox vleft auto-fadein">
+    <h2>&lt;Thank You!&gt;</h2>
+    <p>Important contact information goes here.</p>
+  </article>
+  <p class="auto-fadein" data-config-contact>
+    <!-- populated from slide_config.json -->
+  </p>
+</slide>
+
+<!-- <slide class="logoslide dark nobackground">
+  <article class="flexbox vcenter">
+    <span><img src="images/google_developers_logo_white.png"></span>
+  </article>
+</slide> -->
+
+<slide class="backdrop"></slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
