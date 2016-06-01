@@ -208,12 +208,7 @@ build_lists: true
 可以发现，其形式是颇为相似的
 
 ---
+git的使用<br><br>
 
-content_class: flexbox vcenter
 ![Page Preview](images/git-flow.png)
 <br><br>并且我们充分利用了git带来的便利，进行协同作业
-
----
-
-本PPT使用了Google某年IO大会的[PPT模板](https://code.google.com/archive/p/io-2012-slides/)
-

@@ -50,7 +50,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>页面预览</h2>
       <h3></h3>
     </hgroup>
-    <article ><p><img alt="Page Preview" src="images/preview.png" /></p></article>
+    <article ></article>
  
 </slide>
 
@@ -70,17 +70,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Vue.js</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>Vue.js 通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。</p>
-<p>优点</p>
-<ul class="build">
-<li>简单：官方文档很清晰，比 Angular 简单易学。</li>
-<li>快速：异步批处理方式更新 DOM。</li>
-<li>紧凑：~18kb min+gzip，且无依赖。</li>
-</ul>
-<p>缺点：</p>
-<ul class="build">
-<li>不支持IE8。</li>
-</ul></article>
+    <article ></article>
  
 </slide>
 
@@ -90,26 +80,7 @@ URL: https://code.google.com/p/io-2012-slides
       <h2>Code Example</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>比如，在使用了如下的Vue对象后:</p>
-<pre class="prettyprint" data-lang="js">
-var header_links_inline_display = new Vue({
-  el: "#header .leftArea",
-  data: {
-    header_links_inline:
-    [
-      {href: "#", title: "小米网"},
-      {href: "#", title: "MIUI"},
-      {href: "#", title: "米聊"},
-      {href: "#", title: "游戏"},
-      {href: "#", title: "多看阅读"},
-      {href: "#", title: "云服务"},
-      {href: "#", title: "小米网移动版"},
-      {href: "#", title: "问题反馈"},
-      {href: "#", title: "Select Region"},
-    ]
-  }
-});
-</pre></article>
+    <article ></article>
  
 </slide>
 
@@ -119,18 +90,7 @@ var header_links_inline_display = new Vue({
       <h2>Code Example</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>我们可以只写一个形如下面的一个html模板:</p>
-<pre class="prettyprint" data-lang="html">
-&lt;ul class="leftArea">
-    &lt;li>
-        &lt;a href="{{header_links_inline[0].href}}">{{header_links_inline[0].title}}&lt;/a>
-    &lt;/li>
-    &lt;div v-for="item in header_links_inline.slice(1)">
-        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
-        &lt;li>&lt;a href="{{item.href}}">{{item.title}}&lt;/a></li>
-    &lt;/div>
-&lt;/ul>
-</pre></article>
+    <article ></article>
  
 </slide>
 
@@ -180,9 +140,7 @@ var header_links_inline_display = new Vue({
       <h2>成效</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>在使用了Vue.js库之后，首页上绝大部分的重复冗余的代码都不复存在，只留下最基本的框架，整个html的代码也缩减到了600行。</p>
-<p>如果不使用，并且使用标准缩进，整个页面的代码行数需要2k行+并且层级复杂，且由于数据分散，会导致修改非常麻烦。</p>
-<p>由于这里写的是完全静态的页面，所以并没有触及到Vue.js的高级的特性，但却足以感受到Vue.js的强大。</p></article>
+    <article ></article>
  
 </slide>
 
@@ -192,19 +150,7 @@ var header_links_inline_display = new Vue({
       <h2>js代码示例</h2>
       <h3>以有效地完成目标效果为目的</h3>
     </hgroup>
-    <article ><pre class="prettyprint" data-lang="javascript">
-var index;
-//首页大图切换
-$(".category_move span").click(function() {
-    $(".category_move span").removeClass("cur_move");
-    $(this).addClass("cur_move");
-    if (index !== $(this).parent().index()) {
-        index = $(this).parent().index();
-        $(".category_hot_list > li").stop().fadeOut('500');
-        $(".category_hot_list > li:eq(" + index + ")").stop().fadeIn('500');
-    }
-});
-</pre></article>
+    <article ></article>
  
 </slide>
 
@@ -214,25 +160,7 @@ $(".category_move span").click(function() {
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article ><p>css部分<br><br>
-使用了Web Essentials对css进行了补全，尽可能地保证对各个浏览器的支持  </p>
-<pre class="prettyprint" data-lang="css">
-.block-item-m .author {
-    display: block;
-    color: #ffffff;
-    color: rgba(255,255,255,0.6);
-}
-
-.box-shadow {
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -ms-transition: all 0.35s;
-    -o-transition: all 0.35s;
-    transition: all 0.35s;
-    position: relative;
-    z-index: 1;
-}
-<pre></article>
+    <article ></article>
  
 </slide>
 
@@ -242,9 +170,7 @@ $(".category_move span").click(function() {
       <h2>网页预览</h2>
       <h3></h3>
     </hgroup>
-    <article ><article>
-  <iframe data-src="http://tautcony.xyz/HomePage_Mi"></iframe>
-</article></article>
+    <article ></article>
  
 </slide>
 
@@ -254,20 +180,7 @@ $(".category_move span").click(function() {
       <h2>与小米官网的对比</h2>
       <h3></h3>
     </hgroup>
-    <article ><ul class="build">
-<li>
-<p><a href="http://www.mi.com/index.html">小米官网——小米手机、红米手机、小米电视官方正品专卖网站</a></p>
-</li>
-<li></li>
-<li>
-<p>通过对比我们可以发现，我们的作品至少达到了与官网90%的相似度</p>
-</li>
-<li></li>
-<li>
-<p>并且通过查看小米相关网页可以发现, 在<a href="http://www.mi.com/en/">小米国际首页</a>也有采用一个类似的库, （<a href="http://olado.github.io/doT/index.html">doT.js</a>）</p>
-</li>
-</ul>
-<footer class="source">由于小米官网的限制，无法通过iframe的形式展示mi.com</footer></article>
+    <article ></article>
  
 </slide>
 
@@ -307,17 +220,9 @@ $(".category_move span").click(function() {
       <h2></h2>
       <h3></h3>
     </hgroup>
-    <article class="flexbox vcenter"></article>
- 
-</slide>
-
-<slide  >
-  
-    <hgroup>
-      <h2></h2>
-      <h3></h3>
-    </hgroup>
-    <article ></article>
+    <article ><p>git的使用<br><br></p>
+<p><img alt="Page Preview" src="images/git-flow.png" />
+<br><br>并且我们充分利用了git带来的便利，进行协同作业</p></article>
  
 </slide>
 
