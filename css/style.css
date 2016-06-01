@@ -79,7 +79,7 @@ a:hover {
     display: none;
     position: absolute;
     height: 0;
-    /*right: 219px;*/
+    right: 4.5%;
     top: 40px;
     z-index: 100;
     width: 316px;
@@ -186,7 +186,7 @@ a:hover {
     width: 53px;
     height: 50px;
     border: 1px solid #e0e0e0;
-    background: url(../img/search1.png) 16px 15px no-repeat;
+    background: url(../img/icon/search1.png) 16px 15px no-repeat;
 }
 
 /*todo: the hover do not active*/
@@ -196,12 +196,12 @@ a:hover {
     width: 53px;
     height: 50px;
     background-color: #ff6700 !important;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -ms-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;
-    background: url(../img/search2.png) 16px 15px no-repeat;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    background: url(../img/icon/search2.png) 16px 15px no-repeat;
 }
 
 .search-box .hot-word1,
@@ -365,7 +365,7 @@ a:hover {
     color: #fff;
     line-height: 42px;
     padding-left: 30px;
-    background: url(../img/navMenu_icon.png) no-repeat 190px 5px;
+    background: url(../img/icon/navMenu_icon.png) no-repeat 190px 5px;
     z-index: 30;
 }
 
