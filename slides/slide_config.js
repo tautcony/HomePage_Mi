@@ -1,8 +1,8 @@
 var SLIDE_CONFIG = {
   // Slide settings
   settings: {
-    title: '仿制小米首页<br>powered by Vue.js',
-    subtitle: 'Subtitle Goes Here',
+    title: '仿制小米首页',
+    subtitle: 'powered by Vue.js',
     //eventInfo: {
     //  title: 'Google I/O',
     //  date: '6/x/2013'

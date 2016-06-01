@@ -9,7 +9,7 @@ URL: https://code.google.com/p/io-2012-slides
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Google IO 2012</title>
+  <title>Group 14</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
@@ -34,7 +34,7 @@ URL: https://code.google.com/p/io-2012-slides
 </slide>
  -->
 <slide class="title-slide segue nobackground">
-  <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+  <aside class="gdbar"><img src="images/mi_icon_128.png"></aside>
   <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
   <hgroup class="auto-fadein">
     <h1 data-config-title><!-- populated from slide_config.json --></h1>
@@ -47,8 +47,8 @@ URL: https://code.google.com/p/io-2012-slides
 <slide class="image" >
   
     <hgroup>
-      <h2>仿制小米首页</h2>
-      <h3>页面预览</h3>
+      <h2>页面预览</h2>
+      <h3></h3>
     </hgroup>
     <article ><p><img alt="Page Preview" src="images/preview.png" /></p></article>
  
@@ -56,7 +56,7 @@ URL: https://code.google.com/p/io-2012-slides
 
 <slide class="segue dark nobackground" >
   
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
+    <aside class="gdbar"><img src="images/mi_icon_128.png"></aside>
     <hgroup class="auto-fadein">
       <h2>所使用的组件介绍</h2>
       <h3>Vue.js</h3>
@@ -71,11 +71,15 @@ URL: https://code.google.com/p/io-2012-slides
       <h3></h3>
     </hgroup>
     <article ><p>Vue.js 通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件。</p>
+<p>优点</p>
 <ul class="build">
-<li>好用</li>
-<li>很好用</li>
-<li>肥肠好用</li>
-<li>真的是好用</li>
+<li>简单：官方文档很清晰，比 Angular 简单易学。</li>
+<li>快速：异步批处理方式更新 DOM。</li>
+<li>紧凑：~18kb min+gzip，且无依赖。</li>
+</ul>
+<p>缺点：</p>
+<ul class="build">
+<li>不支持IE8。</li>
 </ul></article>
  
 </slide>
@@ -115,7 +119,7 @@ var header_links_inline_display = new Vue({
       <h2>Code Example</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>对如下的html模板处理:</p>
+    <article ><p>我们可以只写一个形如下面的一个html模板:</p>
 <pre class="prettyprint" data-lang="html">
 &lt;ul class="leftArea">
     &lt;li>
@@ -125,47 +129,48 @@ var header_links_inline_display = new Vue({
         &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
         &lt;li>&lt;a href="{{item.href}}">{{item.title}}&lt;/a></li>
     &lt;/div>
-&lt;/ul></article>
+&lt;/ul>
+</pre></article>
  
 </slide>
 
 <slide  >
   
     <hgroup>
-      <h2>展开后的结果</h2>
+      <h2></h2>
       <h3></h3>
     </hgroup>
-    <article ><p></pre>
+    <article ><p>浏览时它会将模板展开为如下html代码</p>
 <pre class="prettyprint" data-lang="html">
-&lt;ul class="leftArea"&gt;
-    &lt;li&gt;&lt;a href="#"&gt;小米网&lt;/a&gt;&lt;/li&gt;
-    &lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;MIUI&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;米聊&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;游戏&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;多看阅读&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;云服务&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;小米网移动版&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;问题反馈&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;&lt;div&gt;
-        &lt;li&gt;&lt;span class="sep"&gt;|&lt;/span&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Select Region&lt;/a&gt;&lt;/li&gt;
-    &lt;/div&gt;
-&lt;/ul&gt;
-</pre></p></article>
+&lt;ul class="leftArea">
+    &lt;li>&lt;a href="#">小米网&lt;/a>&lt;/li>
+    &lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">MIUI&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">米聊&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">游戏&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">多看阅读&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">云服务&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">小米网移动版&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">问题反馈&lt;/a>&lt;/li>
+    &lt;/div>&lt;div>
+        &lt;li>&lt;span class="sep">|&lt;/span>&lt;/li>
+        &lt;li>&lt;a href="#">Select Region&lt;/a>&lt;/li>
+    &lt;/div>
+&lt;/ul>
+</pre></article>
  
 </slide>
 
@@ -175,8 +180,9 @@ var header_links_inline_display = new Vue({
       <h2>成效</h2>
       <h3></h3>
     </hgroup>
-    <article ><p>在使用了Vue.js库之后，首页上绝大部分的重复冗余的代码都不复存在，整个html的代码也缩减到了600行。</p>
-<p>如果不使用，并且使用标准缩进，整个页面的代码行数需要2k行+并且层级复杂，且由于数据分散，会导致修改非常麻烦。</p></article>
+    <article ><p>在使用了Vue.js库之后，首页上绝大部分的重复冗余的代码都不复存在，只留下最基本的框架，整个html的代码也缩减到了600行。</p>
+<p>如果不使用，并且使用标准缩进，整个页面的代码行数需要2k行+并且层级复杂，且由于数据分散，会导致修改非常麻烦。</p>
+<p>由于这里写的是完全静态的页面，所以并没有触及到Vue.js的高级的特性，但却足以感受到Vue.js的强大。</p></article>
  
 </slide>
 
@@ -205,6 +211,34 @@ $(".category_move span").click(function() {
 <slide  >
   
     <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><p>css部分<br><br>
+使用了Web Essentials对css进行了补全，尽可能地保证对各个浏览器的支持  </p>
+<pre class="prettyprint" data-lang="css">
+.block-item-m .author {
+    display: block;
+    color: #ffffff;
+    color: rgba(255,255,255,0.6);
+}
+
+.box-shadow {
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    -ms-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+    position: relative;
+    z-index: 1;
+}
+<pre></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>网页预览</h2>
       <h3></h3>
     </hgroup>
@@ -217,10 +251,22 @@ $(".category_move span").click(function() {
 <slide  >
   
     <hgroup>
-      <h2>mi.com对比</h2>
+      <h2>与小米官网的对比</h2>
       <h3></h3>
     </hgroup>
-    <article ><p><a href="http://www.mi.com/index.html">小米官网——小米手机、红米手机、小米电视官方正品专卖网站</a></p>
+    <article ><ul class="build">
+<li>
+<p><a href="http://www.mi.com/index.html">小米官网——小米手机、红米手机、小米电视官方正品专卖网站</a></p>
+</li>
+<li></li>
+<li>
+<p>通过对比我们可以发现，我们的作品至少达到了与官网90%的相似度</p>
+</li>
+<li></li>
+<li>
+<p>并且通过查看小米相关网页可以发现, 在<a href="http://www.mi.com/en/">小米国际首页</a>也有采用一个类似的库, （<a href="http://olado.github.io/doT/index.html">doT.js</a>）</p>
+</li>
+</ul>
 <footer class="source">由于小米官网的限制，无法通过iframe的形式展示mi.com</footer></article>
  
 </slide>
@@ -228,19 +274,59 @@ $(".category_move span").click(function() {
 <slide  >
   
     <hgroup>
-      <h2>小组成员</h2>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="html">
+&lt;div class="tags">
+    {{? value.tag[1] !== '' }}
+    &lt;div class="tag tag-saleoff">{{=value.tag[1]}}&lt;/div>
+    {{?? (value.tag[3] !== '0') && (value.tag[3] !== '') }}
+    &lt;div class="tag tag-shipping">Free Shipping&lt;/div>
+    {{?? value.tag[4] === true }}
+    &lt;div class="tag tag-gift">Free Gift&lt;/div>
+    {{?? value.tag[2] === true }}
+    &lt;div class="tag tag-new">New&lt;/div>
+    {{?}}
+&lt;/div>
+
+&lt;div class="tags">
+    &lt;div class="flag flag-new" v-if="item.label=='new'">新品&lt;/div>
+    &lt;div class="flag flag-saleoff" v-if="item.label=='saleoff'">{{item.sale}}&lt;/div>
+    &lt;div class="flag flag-postfree" v-if="item.label=='postfree'">{{item.post}}&lt;/div>
+&lt;/div>
+</pre>
+
+<p>可以发现，其形式是颇为相似的</p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
       <h3></h3>
     </hgroup>
     <article class="flexbox vcenter"></article>
  
 </slide>
 
+<slide  >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article ></article>
+ 
+</slide>
+
 
 <slide class="thank-you-slide segue nobackground">
-  <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>
+  <aside class="gdbar right"><img src="images/mi_icon_128.png"></aside>
   <article class="flexbox vleft auto-fadein">
     <h2>&lt;Thank You!&gt;</h2>
-    <p>Important contact information goes here.</p>
+    <p> </p>
   </article>
   <p class="auto-fadein" data-config-contact>
     <!-- populated from slide_config.json -->
