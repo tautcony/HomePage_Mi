@@ -40,52 +40,52 @@ var nav_item_display = new Vue({
 	data: {
         nav_item_list: {
             1: [
-                {title: "小米Max", price: "1499元起", img_name: "img/nav_item/mi_phone/miMax.jpg", href: ""},
-                {title: "小米手机5", price: "1999元起", img_name: "img/nav_item/mi_phone/mi5.jpg", href: ""},
-                {title: "小米手机4S", price: "1699元", img_name: "img/nav_item/mi_phone/mi4s.jpg", href: ""},
-                {title: "小米手机4c", price: "1099元", img_name: "img/nav_item/mi_phone/mi4c.jpg", href: ""},
-                {title: "小米手机4", price: "1299元", img_name: "img/nav_item/mi_phone/mi4.jpg", href: ""},
-                {title: "小米Note 标准版", price: "1499元起", img_name: "img/nav_item/mi_phone/minote.jpg", href: ""}
+                {title: "小米Max", price: "1499元起", img_src: "img/nav_item/mi_phone/miMax.jpg", href: ""},
+                {title: "小米手机5", price: "1999元起", img_src: "img/nav_item/mi_phone/mi5.jpg", href: ""},
+                {title: "小米手机4S", price: "1699元", img_src: "img/nav_item/mi_phone/mi4s.jpg", href: ""},
+                {title: "小米手机4c", price: "1099元", img_src: "img/nav_item/mi_phone/mi4c.jpg", href: ""},
+                {title: "小米手机4", price: "1299元", img_src: "img/nav_item/mi_phone/mi4.jpg", href: ""},
+                {title: "小米Note 标准版", price: "1499元起", img_src: "img/nav_item/mi_phone/minote.jpg", href: ""}
             ],
             2: [
-    			{title: "红米Note 3", price: "899元起", img_name: "img/nav_item/red_mi/redmi3.jpg", href: ""},
-    			{title: "红米手机3", price: "699元起", img_name: "img/nav_item/red_mi/redminote3.jpg", href: ""}
+    			{title: "红米Note 3", price: "899元起", img_src: "img/nav_item/red_mi/redmi3.jpg", href: ""},
+    			{title: "红米手机3", price: "699元起", img_src: "img/nav_item/red_mi/redminote3.jpg", href: ""}
     		],
             3: [
-    			{title: "小米平板2 16GB", price: "899元起", img_name: "img/nav_item/mi_pad/mi_pad_2_16.jpg", href: ""},
-    			{title: "小米平板2 64GB", price: "699元起", img_name: "img/nav_item/mi_pad/mi_pad_2_64.jpg", href: ""},
-    			{title: "小米平板2  64GB Windows版", price: "699元起", img_name: "img/nav_item/mi_pad/mi_pad_2_64_win.jpg", href: ""}
+    			{title: "小米平板2 16GB", price: "899元起", img_src: "img/nav_item/mi_pad/mi_pad_2_16.jpg", href: ""},
+    			{title: "小米平板2 64GB", price: "699元起", img_src: "img/nav_item/mi_pad/mi_pad_2_64.jpg", href: ""},
+    			{title: "小米平板2  64GB Windows版", price: "699元起", img_src: "img/nav_item/mi_pad/mi_pad_2_64_win.jpg", href: ""}
     		],
             4: [
-    			{title: "小米电视3S 43英寸", price: "1799元", img_name: "img/nav_item/mi_tv/mitv3s_43.jpg", href: ""},
-    			{title: "小米电视3S 48英寸", price: "1999元", img_name: "img/nav_item/mi_tv/mitv3s_48.jpg", href: ""},
-    			{title: "小米电视3 55英寸", price: "3999元起", img_name: "img/nav_item/mi_tv/mitv3_55.jpg", href: ""},
-    			{title: "小米电视3 60英寸", price: "4999元起", img_name: "img/nav_item/mi_tv/mitv3_65.jpg", href: ""},
-    			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_name: "img/nav_item/mi_tv/mitv3s_65c.jpg", href: ""},
-    			{title: "小米电视3 70英寸", price: "9999元", img_name: "img/nav_item/mi_tv/mitv3_70.jpg", href: ""}
+    			{title: "小米电视3S 43英寸", price: "1799元", img_src: "img/nav_item/mi_tv/mitv3s_43.jpg", href: ""},
+    			{title: "小米电视3S 48英寸", price: "1999元", img_src: "img/nav_item/mi_tv/mitv3s_48.jpg", href: ""},
+    			{title: "小米电视3 55英寸", price: "3999元起", img_src: "img/nav_item/mi_tv/mitv3_55.jpg", href: ""},
+    			{title: "小米电视3 60英寸", price: "4999元起", img_src: "img/nav_item/mi_tv/mitv3_65.jpg", href: ""},
+    			{title: "小米电视3S 65英寸 曲面", price: "8999元", img_src: "img/nav_item/mi_tv/mitv3s_65c.jpg", href: ""},
+    			{title: "小米电视3 70英寸", price: "9999元", img_src: "img/nav_item/mi_tv/mitv3_70.jpg", href: ""}
     		],
             5: [
-    			{title: "小米盒子mini版", price: "199元", img_name: "img/nav_item/mi_tv_box/box_mini.jpg", href: ""},
-    			{title: "小米盒子3", price: "299元", img_name: "img/nav_item/mi_tv_box/box_3.jpg", href: ""},
-    			{title: "小米盒子3 增强版", price: "399元", img_name: "img/nav_item/mi_tv_box/box_3s.jpg", href: ""},
-    			{title: "小米电视主机", price: "999元", img_name: "img/nav_item/mi_tv_box/tv_console.jpg", href: ""},
-    			{title: "小米家庭音响 金属版", price: "899元", img_name: "img/nav_item/mi_tv_box/seaker_std.jpg", href: ""},
-    			{title: "小米家庭音响 标准版", price: "699元", img_name: "img/nav_item/mi_tv_box/speaker_pro.jpg", href: ""}
+    			{title: "小米盒子mini版", price: "199元", img_src: "img/nav_item/mi_tv_box/box_mini.jpg", href: ""},
+    			{title: "小米盒子3", price: "299元", img_src: "img/nav_item/mi_tv_box/box_3.jpg", href: ""},
+    			{title: "小米盒子3 增强版", price: "399元", img_src: "img/nav_item/mi_tv_box/box_3s.jpg", href: ""},
+    			{title: "小米电视主机", price: "999元", img_src: "img/nav_item/mi_tv_box/tv_console.jpg", href: ""},
+    			{title: "小米家庭音响 金属版", price: "899元", img_src: "img/nav_item/mi_tv_box/seaker_std.jpg", href: ""},
+    			{title: "小米家庭音响 标准版", price: "699元", img_src: "img/nav_item/mi_tv_box/speaker_pro.jpg", href: ""}
     		],
             6: [
-    			{title: "全新小米路由器", price: "699元起", img_name: "img/nav_item/mi_router/new_router.jpg", href: ""},
-    			{title: "小米路由器 3", price: "149元", img_name: "img/nav_item/mi_router/router3.jpg", href: ""},
-    			{title: "小米路由器 mini", price: "129元", img_name: "img/nav_item/mi_router/router_mini.jpg", href: ""},
-    			{title: "小米路由器 青春版", price: "79元", img_name: "img/nav_item/mi_router/router_seishun.jpg", href: ""},
-    			{title: "小米WiFi放大器", price: "39元", img_name: "img/nav_item/mi_router/wifi_amp.jpg", href: ""}
+    			{title: "全新小米路由器", price: "699元起", img_src: "img/nav_item/mi_router/new_router.jpg", href: ""},
+    			{title: "小米路由器 3", price: "149元", img_src: "img/nav_item/mi_router/router3.jpg", href: ""},
+    			{title: "小米路由器 mini", price: "129元", img_src: "img/nav_item/mi_router/router_mini.jpg", href: ""},
+    			{title: "小米路由器 青春版", price: "79元", img_src: "img/nav_item/mi_router/router_seishun.jpg", href: ""},
+    			{title: "小米WiFi放大器", price: "39元", img_src: "img/nav_item/mi_router/wifi_amp.jpg", href: ""}
     		],
             7: [
-    			{title: "米家压力IH电饭煲", price: "999元", img_name: "img/nav_item/mi_smart_hardware/cooker.jpg", href: ""},
-    			{title: "九号平衡车", price: "1999元", img_name: "img/nav_item/mi_smart_hardware/balance_car.jpg", href: ""},
-    			{title: "小米空气净化器 2", price: "699元", img_name: "img/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
-    			{title: "体重秤", price: "99元", img_name: "img/nav_item/mi_smart_hardware/weight.jpg", href: ""},
-    			{title: "摄像机", price: "149元", img_name: "img/nav_item/mi_smart_hardware/camera.jpg", href: ""},
-    			{title: "查看全部 智能硬件", price: "", img_name: "img/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
+    			{title: "米家压力IH电饭煲", price: "999元", img_src: "img/nav_item/mi_smart_hardware/cooker.jpg", href: ""},
+    			{title: "九号平衡车", price: "1999元", img_src: "img/nav_item/mi_smart_hardware/balance_car.jpg", href: ""},
+    			{title: "小米空气净化器 2", price: "699元", img_src: "img/nav_item/mi_smart_hardware/cleaner.jpg", href: ""},
+    			{title: "体重秤", price: "99元", img_src: "img/nav_item/mi_smart_hardware/weight.jpg", href: ""},
+    			{title: "摄像机", price: "149元", img_src: "img/nav_item/mi_smart_hardware/camera.jpg", href: ""},
+    			{title: "查看全部<br>智能硬件", price: "", img_src: "img/nav_item/mi_smart_hardware/see_all.jpg", href: ""}
     		]
         }
 	}
@@ -116,107 +116,106 @@ var category_list_display = new Vue({
             {
             	title: "手机 平板 电话卡",
             	datalist: [
-            		{title: "小米手机5", img_name: "img/category/mi5.jpg", href: ""},
-					{title: "小米手机4S", img_name: "img/category/mi4.jpg", href: ""},
-					{title: "小米手机MAX", img_name: "img/category/mimax.jpg", href: ""},
-					{title: "红米Note2", img_name: "img/category/note2.jpg", href: ""},
-					{title: "小米手机4", img_name: "img/category/mi4.jpg", href: ""},
-					{title: "小米手机4C", img_name: "img/category/mi4c.jpg", href: ""}
+            		{title: "小米手机5", img_src: "img/category/mi5.jpg", href: ""},
+					{title: "小米手机4S", img_src: "img/category/mi4.jpg", href: ""},
+					{title: "小米手机MAX", img_src: "img/category/mimax.jpg", href: ""},
+					{title: "红米Note2", img_src: "img/category/note2.jpg", href: ""},
+					{title: "小米手机4", img_src: "img/category/mi4.jpg", href: ""},
+					{title: "小米手机4C", img_src: "img/category/mi4c.jpg", href: ""}
             	],
             	datalist_2: [
-            		{title: "红米Note3", img_name: "img/category/note3.jpg", href: ""},
-            		{title: "红米手机3", img_name: "img/category/hongmi3.jpg", href: ""},
-            		{title: "小米平板2", img_name: "img/category/pad2.png", href: ""},
-            		{title: "电信版", img_name: "img/category/telcom.jpg", href: ""},
-            		{title: "合约机", img_name: "img/category/telcom.jpg", href: ""},
-            		{title: "对比手机", img_name: "img/category/compare.jpg", href: ""}
+            		{title: "红米Note3", img_src: "img/category/note3.jpg", href: ""},
+            		{title: "红米手机3", img_src: "img/category/hongmi3.jpg", href: ""},
+            		{title: "小米平板2", img_src: "img/category/pad2.png", href: ""},
+            		{title: "电信版", img_src: "img/category/telcom.jpg", href: ""},
+            		{title: "合约机", img_src: "img/category/telcom.jpg", href: ""},
+            		{title: "对比手机", img_src: "img/category/compare.jpg", href: ""}
             	],
             	datalist_3: [
-            		{title: "小米移动电话卡", img_name: "img/category/mimobile.jpg", href: ""}
+            		{title: "小米移动电话卡", img_src: "img/category/mimobile.jpg", href: ""}
             	]
         	},
             {
             	title: "电视 盒子",
             	datalist: [
-            		{title: "小米电视 40英寸", img_name: "img/category/tv40.jpg", href: ""},
-            		{title: "小米电视 48英寸", img_name: "img/category/tv48.jpg", href: ""},
-            		{title: "小米电视 49英寸", img_name: "img/category/tv49.jpg", href: ""},
-            		{title: "小米电视 55英寸", img_name: "img/category/tv3-55.jpg", href: ""},
-            		{title: "小米电视 60英寸", img_name: "img/category/tv60.jpg", href: ""},
-            		{title: "小米盒子3", img_name: "img/category/hezis.jpg", href: ""}
+            		{title: "小米电视 40英寸", img_src: "img/category/tv40.jpg", href: ""},
+            		{title: "小米电视 48英寸", img_src: "img/category/tv48.jpg", href: ""},
+            		{title: "小米电视 49英寸", img_src: "img/category/tv49.jpg", href: ""},
+            		{title: "小米电视 55英寸", img_src: "img/category/tv3-55.jpg", href: ""},
+            		{title: "小米电视 60英寸", img_src: "img/category/tv60.jpg", href: ""},
+            		{title: "小米盒子3", img_src: "img/category/hezis.jpg", href: ""}
             	]
         	},
             {
             	title: "路由器 智能硬件",
             	datalist: [
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""},
-            		{title: "小米路由器", img_name: "img/category/luyouqi-80.jpg", href: ""}
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""},
+            		{title: "小米路由器", img_src: "img/category/luyouqi-80.jpg", href: ""}
             	]
             },
             {
             	title: "移动电源 插线板",
             	datalist: [
-            		{title: "小米移动电源", img_name: "img/category/dianyuan.jpg", href: ""},
-            		{title: "小米插线板", img_name: "img/category/powerscript.jpg", href: ""},
-            		{title: "品牌移动电源", img_name: "img/category/yidongdianyuan.jpg", href: ""},
-                {title: "移动电源附件", img_name: "img/category/dianyuanfujian.jpg", href: ""}
+            		{title: "小米移动电源", img_src: "img/category/dianyuan.jpg", href: ""},
+            		{title: "小米插线板", img_src: "img/category/powerscript.jpg", href: ""},
+            		{title: "品牌移动电源", img_src: "img/category/yidongdianyuan.jpg", href: ""},
+                {title: "移动电源附件", img_src: "img/category/dianyuanfujian.jpg", href: ""}
             	]
             },
             {
             	title: "耳机 音箱",
             	datalist: [
-            		{title: "小米头戴式耳机", img_name: "img/category/headphone.jpg", href: ""},
+            		{title: "小米头戴式耳机", img_src: "img/category/headphone.jpg", href: ""},
             	]
             },
             {
             	title: "电池 存储卡",
             	datalist: [
-            		{title: "彩虹五号电池", img_name: "img/category/5Battery1.jpg", href: ""},
-                {title: "彩虹七号电池", img_name: "img/category/7Battery1.jpg", href: ""},
-                {title: "电池", img_name: "img/category/dianchi.jpg", href: ""},
-                {title: "充电器", img_name: "img/category/chongdianqi-80.jpg", href: ""},
-                {title: "线材", img_name: "img/category/xiancai.jpg", href: ""},
-                {title: "存储卡", img_name: "img/category/cunchu.jpg", href: ""},
+            		{title: "彩虹五号电池", img_src: "img/category/5Battery1.jpg", href: ""},
+                {title: "彩虹七号电池", img_src: "img/category/7Battery1.jpg", href: ""},
+                {title: "电池", img_src: "img/category/dianchi.jpg", href: ""},
+                {title: "充电器", img_src: "img/category/chongdianqi-80.jpg", href: ""},
+                {title: "线材", img_src: "img/category/xiancai.jpg", href: ""},
+                {title: "存储卡", img_src: "img/category/cunchu.jpg", href: ""},
             	]
             },
             {
             	title: "保护套 后盖",
             	datalist: [
-            		{title: "保护套保护壳", img_name: "img/category/baohu.jpg", href: ""},
-                {title: "后盖", img_name: "img/category/hougai.jpg", href: ""},
+            		{title: "保护套保护壳", img_src: "img/category/baohu.jpg", href: ""},
+                {title: "后盖", img_src: "img/category/hougai.jpg", href: ""},
             	]
         	},
             {
             	title: "贴膜 其他配件",
             	datalist: [
-            		{title: "贴膜", img_name: "img/category/tiemo.jpg", href: ""},
-                {title: "自拍杆", img_name: "img/category/zipaigan.jpg", href: ""},
-                {title: "贴纸", img_name: "img/category/tizhi.jpg", href: ""},
-                {title: "防尘塞", img_name: "img/category/fangchensai.jpg", href: ""},
-                {title: "手机支架", img_name: "img/category/zhijia.jpg", href: ""},
-                {title: "随身wifi", img_name: "img/category/wifi.jpg", href: ""},
+            		{title: "贴膜", img_src: "img/category/tiemo.jpg", href: ""},
+                {title: "自拍杆", img_src: "img/category/zipaigan.jpg", href: ""},
+                {title: "贴纸", img_src: "img/category/tizhi.jpg", href: ""},
+                {title: "防尘塞", img_src: "img/category/fangchensai.jpg", href: ""},
+                {title: "手机支架", img_src: "img/category/zhijia.jpg", href: ""},
+                {title: "随身wifi", img_src: "img/category/wifi.jpg", href: ""},
             	]
             },
             {
             	title: "米兔 服装",
             	datalist: [
-            		{title: "米兔", img_name: "img/category/mitu-80.jpg", href: ""},
-                    {title: "服装", img_name: "img/category/fuzhuang-80.jpg", href: ""},
+            		{title: "米兔", img_src: "img/category/mitu-80.jpg", href: ""},
+                    {title: "服装", img_src: "img/category/fuzhuang-80.jpg", href: ""},
 
             	]
             },
             {
             	title: "箱包 其他周边",
             	datalist: [
-            		{title: "箱包", img_name: "img/category/xiangbao-80.jpg", href: ""},
-                    {title: "90分旅行箱", img_name: "img/category/lvxingxiang.jpg", href: ""},
-                    {title: "小米鼠标垫", img_name: "img/category/shubiaodian-80.jpg", href: ""},
-                    {title: "生活周边", img_name: "img/category/zhoubian1.jpg", href: ""},
-
+            		{title: "箱包", img_src: "img/category/xiangbao-80.jpg", href: ""},
+                    {title: "90分旅行箱", img_src: "img/category/lvxingxiang.jpg", href: ""},
+                    {title: "小米鼠标垫", img_src: "img/category/shubiaodian-80.jpg", href: ""},
+                    {title: "生活周边", img_src: "img/category/zhoubian1.jpg", href: ""},
             	]
             }
         ]
@@ -227,11 +226,11 @@ var category_hot_list_display = new Vue({
     el: ".category_hot_list",
     data: {
         category_hot_list: [
-            //{img_name: "hot1.jpg", href: "#"},
-            {img_name: "img/hot2.jpg", href: "#"},
-            {img_name: "img/hot3.jpg", href: "#"},
-            {img_name: "img/hot4.jpg", href: "#"},
-            {img_name: "img/hot5.jpg", href: "#"}
+            {img_src: "img/hot/hot1.jpg", href: "#"},
+            {img_src: "img/hot/hot2.jpg", href: "#"},
+            {img_src: "img/hot/hot3.jpg", href: "#"},
+            {img_src: "img/hot/hot4.jpg", href: "#"},
+            {img_src: "img/hot/hot5.jpg", href: "#"}
         ]
     }
 });
@@ -254,16 +253,16 @@ var star_goods_display = new Vue({
     el: "#star_goods",
     data: {
         star_goods: [
-            {color_id: "1", img_id: "img/star/star_1.jpg", title: "小米电视全系列", desc: "买就送爱奇艺会员卡", price: "1799元起"},
-            {color_id: "2", img_id: "img/star/star_2.jpg", title: "小米盒子3 增强版", desc: "高端 4K 网络机顶盒", price: "399元"},
-            {color_id: "3", img_id: "img/star/star_3.jpg", title: "小米手环 光感版", desc: "小米手环 光感版", price: "99元"},
-            {color_id: "4", img_id: "img/star/star_4.jpg", title: "米家压力IH电饭煲", desc: "米家压力IH电饭煲", price: "999元"},
-            {color_id: "5", img_id: "img/star/star_5.jpg", title: "移动电源10000mAh 高配版", desc: "支持USB Type-C充放电，双向快充", price: "149元"},
-            {color_id: "1", img_id: "img/star/star_6.jpg", title: "Yeelight床头灯", desc: "触摸式操作，给卧室1600万种颜色", price: "249元"},
-            {color_id: "2", img_id: "img/star/star_7.jpg", title: "小米路由器 mini", desc: "双频AC智能路由器，高性价比", price: "129元"},
-            {color_id: "3", img_id: "img/star/star_8.jpg", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
-            {color_id: "4", img_id: "img/star/star_9.jpg", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
-            {color_id: "5", img_id: "img/star/star_X.jpg", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
+            {color_id: "1", img_src: "img/star/star_1.jpg", title: "小米电视全系列", desc: "买就送爱奇艺会员卡", price: "1799元起"},
+            {color_id: "2", img_src: "img/star/star_2.jpg", title: "小米盒子3 增强版", desc: "高端 4K 网络机顶盒", price: "399元"},
+            {color_id: "3", img_src: "img/star/star_3.jpg", title: "小米手环 光感版", desc: "小米手环 光感版", price: "99元"},
+            {color_id: "4", img_src: "img/star/star_4.jpg", title: "米家压力IH电饭煲", desc: "米家压力IH电饭煲", price: "999元"},
+            {color_id: "5", img_src: "img/star/star_5.jpg", title: "移动电源10000mAh 高配版", desc: "支持USB Type-C充放电，双向快充", price: "149元"},
+            {color_id: "1", img_src: "img/star/star_6.jpg", title: "Yeelight床头灯", desc: "触摸式操作，给卧室1600万种颜色", price: "249元"},
+            {color_id: "2", img_src: "img/star/star_7.jpg", title: "小米路由器 mini", desc: "双频AC智能路由器，高性价比", price: "129元"},
+            {color_id: "3", img_src: "img/star/star_8.jpg", title: "Yeelight LED智能灯泡 彩光版", desc: "1600万种色彩，手机远程遥控", price: "99元"},
+            {color_id: "4", img_src: "img/star/star_9.jpg", title: "小米智能插座 基础版", desc: "手机远程遥控，让普通电器变智能", price: "49元"},
+            {color_id: "5", img_src: "img/star/star_X.jpg", title: "小米活塞耳机 基础版", desc: "全金属音腔，5色可选", price: "29元"},
         ]
     }
 });
@@ -361,34 +360,34 @@ var main_page_match_list_display = new Vue({
                 {href: "", img_src: "img/page-main/match/match8.jpg", title: "小米蓝牙音箱 蓝色"  , price: "199元", reviewed: "1.5万", review: "还可以插内存卡，可以插线播放，音质很棒，如果体积大点...",author: "422979039"},
             ],
             speaker: [
-                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match6.jpg", title: "小米圈铁耳机", price: "99元", reviewed: "3.4万", review: "客服妹子实话说吧！永远支持国产，永远支持小米。这圈铁...", author: "894039435"},
+                {href: "", img_src: "img/page-main/match/match4.jpg", title: "小米蓝牙耳机", price: "79元", reviewed: "7.4万", review: "小米的产品值得信赖，用了一段时间，无论是听歌，打电话...", author: "气功流"},
+                {href: "", img_src: "img/page-main/match/match9.jpg", title: "1MORE金澈耳机", price: "99元", label: "new", reviewed: "6469", review: "一般在网上买的电子产品我是不会评价的，但是小米的售后...", author: "872683230"},
+                {href: "", img_src: "img/page-main/match/match10.jpg", title: "铁三角J100耳机", price: "79元", reviewed: "5392", review: "十分不错的东西效果十分的好", author: "binbin521214"},
+                {href: "", img_src: "img/page-main/match/match7.jpg", title: "小米小钢炮蓝牙音箱2", price: "129元", reviewed: "5115", review: "物流超快，包装一打开，我就闻到了一缕口红的清香，陶醉...", author: "588262758"},
+                {href: "", img_src: "img/page-main/match/match11.jpg", title: "小米方盒子蓝牙音箱", price: "99元", reviewed: "1.3万", review: "音质真棒！比我带低音炮的笔记本放音乐音质还好!哈哈！...", author: "Homic"},
+                {href: "", img_src: "img/page-main/match/match12.jpg", title: "小米小钢炮蓝牙音箱 青春版", price: "99元", label: "new", reviewed: "288", review: "外观、音质都很不错，小米任何产品都很赞！", author: "guanghui775"},
                 {href: "", img_src: "img/page-main/match/match13.jpg", title: "睿米车载蓝牙播放器", price: "69元", reviewed: "", review: "", author: ""},
             ],
             battery: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match14.jpg", title: "移动电源5000mAh", price: "49元", reviewed: "8.2万", review: "之前都不知道，还以为是18650电芯的。拿到手一看这...", author: "ywtdzh"},
+                {href: "", img_src: "img/page-main/match/match15.jpg", title: "移动电源10000mAh", price: "69元", reviewed: "17万", review: "这个小巧玲珑啊，比10400安的小了好多，感觉不错，...", author: "LIN翼"},
+                {href: "", img_src: "img/page-main/match/match16.jpg", title: "移动电源10000mAh 高配版", price: "149元", reviewed: "8317", review: "很薄，充电快，方便携带", author: "CURGT丶FaKer"},
+                {href: "", img_src: "img/page-main/match/match17.jpg", title: "移动电源20000mAh", price: "149元", reviewed: "3.1万", review: "以前一直使用10400的版本，买了这个之后，才知道有...", author: "呈现逐步"},
+                {href: "", img_src: "img/page-main/match/match18.jpg", title: "ZMI智能移动电源 10000mAh", price: "129元", reviewed: "681", review: "不错，款式新颖，手感好，质量好", author: "我带进去"},
+                {href: "", img_src: "img/page-main/match/match19.jpg", title: "小米插线板（3孔位+USB）", price: "49元", reviewed: "22.2万", review: "东西真心不错，用过最好用的插线板，做工外观没得挑剔，...", author: "yinyin19891117"},
+                {href: "", img_src: "img/page-main/match/match20.jpg", title: "小米智能插线板", price: "69元", reviewed: "3544", review: "外观漂亮，质量可靠，价格也不贵，总体来说还是值", author: "392845989"},
+                {href: "", img_src: "img/page-main/match/match21.jpg", title: "小米插线板 5孔位", price: "39元", reviewed: "", review: "", author: ""},
             ],
             memcard: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/match/match22.jpg", title: "SanDisk 8GB存储卡", price: "17.9元", reviewed: "30.9万", review: "挺好的 用着呢，在这上面买东西好像不需要担心什么", author: "米粉_阿达",label: "saleoff",sale: "享8折"},
+                {href: "", img_src: "img/page-main/match/match23.jpg", title: "紫5镍氢充电电池", price: "49元", reviewed: "535", review: "电池买回来给孩子的玩具使用的，总体感觉不错。感谢。", author: "CPU"},
+                {href: "", img_src: "img/page-main/match/match24.jpg", title: "彩虹5号电池（10粒装）", price: "9.9元", reviewed: "5.1万", review: "价格实惠，外观好看，还有盒子便于保管，不错。", author: "monkeyshine"},
+                {href: "", img_src: "img/page-main/match/match25.jpg", title: "彩虹7号电池（10粒装）", price: "9.9元", reviewed: "2.5万", review: "好用，好看。。价格实惠", author: "米米徳"},
+                {href: "", img_src: "img/page-main/match/match26.jpg", title: "CR2032纽扣电池", price: "9元", reviewed: "1.1万", review: "商城就可以买到，不用特意出去找了，很方便", author: "892726356"},
+                {href: "", img_src: "img/page-main/match/match27.jpg", title: "小米USB充电器（4口）", price: "69元", reviewed: "2428", review: "很敦实，一个孔充电速度很快，四个孔还没试", author: "小小杏鲍菇"},
+                {href: "", img_src: "img/page-main/match/match28.jpg", title: "小米车载充电器", price: "49元", reviewed: "1.8万", review: "挺好，挺有质感，充电也快，非常满意", author: "975550705"},
+                {href: "", img_src: "img/page-main/match/match29.jpg", title: "红米2/红米2A能量套装", price: "69元", reviewed: "", review: "", author: ""},
             ]
         }
     }
@@ -399,54 +398,54 @@ var main_page_accessories_list_display = new Vue({
     data: {
         main_page_accessories: {
             hot: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/accessories/accessories1.jpg", title: "小米随身WIFI", price: "19.9元", reviewed: "29.4万", review: "很不错，用起来很方便，走到哪儿用到哪儿，节省了好多流...", author: "朔之故里"},
+                {href: "", img_src: "img/page-main/accessories/accessories2.jpg", title: "多彩便携USB线 120cm", price: "19元", reviewed: "6.5万", review: "拿到数据线，打开包装一看，惊奇地发现，原来这面条线是...", author: "末忆▽"},
+                {href: "", img_src: "img/page-main/accessories/accessories3.jpg", title: "小米自拍杆", price: "49元", reviewed: "6.7万", review: "自拍神器，买了两个了，上个是在小米之家买的，可惜两个...", author: "ㄣ蛐蛐",label: "saleoff",sale: "享8折"},
+                {href: "", img_src: "img/page-main/accessories/accessories4.jpg", title: "青米USB快速充电数据线", price: "14.9元", reviewed: "9407", review: "可以呦，充电很快的咯", author: "朕丨与子偕老"},
+                {href: "", img_src: "img/page-main/accessories/accessories5.jpg", title: "苹果Lightning to USB数据线", price: "39元", reviewed: "9738", review: "用过觉得好又来买了，价廉物美。", author: "淡淡玫瑰香"},
+                {href: "", img_src: "img/page-main/accessories/accessories6.jpg", title: "功夫米兔手机支架", price: "19元", reviewed: "1.7万", review: "放手机平板都没有问题，最棒的是竖着放也很稳。不放手机...", author: "米狼CK"},
+                {href: "", img_src: "img/page-main/accessories/accessories7.jpg", title: "ZMI无限拓展数据线 120cm", price: "29元", reviewed: "3426", review: "线材不错，做工好，使用方便", author: "kanli3000"},
+                {href: "", img_src: "img/page-main/accessories/accessories8.jpg", title: "指环式防滑手机支架 粉色", price: "12.5元", reviewed: "", review: "", author: ""},
             ],
             phonecase: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/accessories/accessories9.jpg", title: "小米手机5 智能翻盖保护套", price: "49元", reviewed: "6653", review: "很不错，很好用。已推荐朋友使用。", author: "舊時書生"},
+                {href: "", img_src: "img/page-main/accessories/accessories10.jpg", title: "小米Max 智能显示保护套", price: "59元", reviewed: "132", review: "今天刚接收，试用了一下，非常好用，护屏一打开屏幕就亮...", author: "林中路",label: "new"},
+                {href: "", img_src: "img/page-main/accessories/accessories11.jpg", title: "小米手机4 智能唤醒翻盖保护套", price: "29元", reviewed: "11.3万", review: "手感不错  灵敏度也很高。   100%吻合小米4 ...", author: "烟台小懒人"},
+                {href: "", img_src: "img/page-main/accessories/accessories12.jpg", title: "小米手机4c 智能唤醒翻盖保护套", price: "49元", reviewed: "2万", review: "非常好用，手感超好，质量杠杠的", author: "韦春哥"},
+                {href: "", img_src: "img/page-main/accessories/accessories13.jpg", title: "红米Note3 炫彩翻页保护套", price: "39元", reviewed: "1.7万", review: "大小合适，特别好，质量和颜色都非常棒！", author: "142010366"},
+                {href: "", img_src: "img/page-main/accessories/accessories14.jpg", title: "红米3标准版 炫彩翻盖保护套", price: "39元", reviewed: "4867", review: "很好的手机保护套，质量ok", author: "binarystar1989"},
+                {href: "", img_src: "img/page-main/accessories/accessories15.jpg", title: "红米Note2 炫彩翻盖保护套", price: "29元", reviewed: "2.1万", review: "手感不错，大小正合适，外观也挺漂亮", author: "2012-11-25"},
+                {href: "", img_src: "img/page-main/accessories/accessories16.jpg", title: "平板2保护套", price: "69元", reviewed: "", review: "", author: ""},
             ],
             backcase: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/accessories/accessories17.jpg", title: "小米手机5 多彩半透保护壳", price: "29元", reviewed: "1782", review: "不错，外形刚刚好快递快", author: "395644839"},
+                {href: "", img_src: "img/page-main/accessories/accessories18.jpg", title: "红米Note 2 冰淇淋炫彩后盖", price: "25元", reviewed: "5901", review: "还不错，质量很好，非常喜欢", author: "588030553",label: "saleoff",sale: "享9折"},
+                {href: "", img_src: "img/page-main/accessories/accessories19.jpg", title: "红米Note 2 小清新系列背贴", price: "19元", reviewed: "117", review: "后盖贴纸大小刚好，很不错哟，喜欢的朋友可以试试！", author: "舒云江",label: "saleoff",sale: "享7折"},
+                {href: "", img_src: "img/page-main/accessories/accessories20.jpg", title: "小米手机4c 透明超薄软胶保护套", price: "19元", reviewed: "1.2万", review: "很好的产品，一直信赖小米。", author: "少爷爱喝普洱茶"},
+                {href: "", img_src: "img/page-main/accessories/accessories21.jpg", title: "红米3标准版 透明软胶保护套", price: "19元", reviewed: "3506", review: "很棒很漂亮正合适~~~~~~~", author: "麦兜兜727"},
+                {href: "", img_src: "img/page-main/accessories/accessories22.jpg", title: "红米手机2 极简原色后盖", price: "19元", reviewed: "3654", review: "很合适 真的很好 颜色很正", author: "zhoujianMI1S",label: "saleoff",sale: "享8折"},
+                {href: "", img_src: "img/page-main/accessories/accessories23.jpg", title: "小米手机4 仿真纹理后盖背贴", price: "29元", reviewed: "3052", review: "贴纸不错有质感，防滑耐磨。", author: "XS丨丶漂泊"},
+                {href: "", img_src: "img/page-main/accessories/accessories24.jpg", title: "平板2 保护壳", price: "49元", reviewed: "", review: "", author: ""},
             ],
             mo: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/accessories/accessories25.jpg", title: "小米手机5 极薄防蓝光贴膜", price: "49元", reviewed: "3437", review: "超级棒的贴膜，手感一级棒！", author: "萍踪浪影"},
+                {href: "", img_src: "img/page-main/accessories/accessories26.jpg", title: "小米Max 标准高透贴膜", price: "19元", reviewed: "255", review: "贴膜系列真好里面有两张膜还有练习膜", author: "陶震宇",label: "new"},
+                {href: "", img_src: "img/page-main/accessories/accessories27.jpg", title: "小米Note 标准高透贴膜", price: "19元", reviewed: "7万", review: "还是不错哦，关键是实惠，被刮花了又可以换阿，嘻嘻", author: "A一吻天荒"},
+                {href: "", img_src: "img/page-main/accessories/accessories28.jpg", title: "红米Note3 钢化玻璃膜", price: "19元", reviewed: "2.4万", review: "质量有保证，原装就是好", author: "Danny_Wong"},
+                {href: "", img_src: "img/page-main/accessories/accessories29.jpg", title: "红米手机3 钢化玻璃贴膜", price: "19元", reviewed: "4516", review: "小米一直用心做每一样事情 。我一直支持小米", author: "石游子"},
+                {href: "", img_src: "img/page-main/accessories/accessories30.jpg", title: "红米Note 极清高透贴膜", price: "30元", reviewed: "3.3万", review: "确实极清高透，屏幕细腻，手感不错还可以当镜子用", author: "广东小伙子"},
+                {href: "", img_src: "img/page-main/accessories/accessories31.jpg", title: "红米Note2 标准高透贴膜", price: "9.9元", reviewed: "1.6万", review: "可以，还是两张，备用比较实惠。", author: "818619863",label: "saleoff",sale: "享6折"},
+                {href: "", img_src: "img/page-main/accessories/accessories32.jpg", title: "小米平板2 极清高透贴膜", price: "39元", reviewed: "", review: "", author: ""},
             ],
             other: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/accessories/accessories33.jpg", title: "小蚁蓝牙遥控器", price: "39元", reviewed: "2632", review: "终于抢到了，配对还简单，可以有，对于旅行版用户来说，...", author: "oangle"},
+                {href: "", img_src: "img/page-main/accessories/accessories34.jpg", title: "指环式防滑手机支架", price: "12.5元", reviewed: "5117", review: "做工精细，美观，在小米官网购物放心。", author: "麻辣机丝"},
+                {href: "", img_src: "img/page-main/accessories/accessories35.jpg", title: "小米蓝牙手柄", price: "99元", reviewed: "2.4万", review: "手感很好。应该买两个了。两个人一起玩格斗，或者街机游...", author: "Fogerson"},
+                {href: "", img_src: "img/page-main/accessories/accessories36.jpg", title: "蓝牙语音体感遥控器", price: "99元", reviewed: "1719", review: "用这个玩打球的游戏真是太棒了，在家就能运动", author: "妮子小桃"},
+                {href: "", img_src: "img/page-main/accessories/accessories37.jpg", title: "手机USB Type-C数据线", price: "39元", reviewed: "9922", review: "做工精细，支持小米。", author: "223434809"},
+                {href: "", img_src: "img/page-main/accessories/accessories38.jpg", title: "小米千兆网线", price: "12.9元", reviewed: "2.7万", review: "千兆线中算便宜的了，做工也精良，连接路由器与光猫的", author: "al冲冠一怒", label: "saleoff", sale: "享9折"},
+                {href: "", img_src: "img/page-main/accessories/accessories7.jpg", title: "ZMI无限拓展数据线 120cm", price: "29元", reviewed: "3426", review: "线材不错，做工好，使用方便", author: "kanli3000"},
+                {href: "", img_src: "img/page-main/accessories/accessories39.jpg", title: "多彩USB线", price: "19元", reviewed: "", review: "", author: ""},
             ],
         }
     }
@@ -457,54 +456,54 @@ var main_page_around_list_display = new Vue({
     data: {
         main_page_around: {
             hot: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/around/around1.jpg", title: "小米短袖T恤 米兔大游行", price: "39元", reviewed: "1469", review: "质量挺好的，特别实惠和好看", author: "910871287"},
+                {href: "", img_src: "img/page-main/around/around2.jpg", title: "小米短袖T恤 摇滚星球", price: "39元", reviewed: "1505", review: "穿起来舒服，价格实惠，关键是正品。", author: "范聚威"},
+                {href: "", img_src: "img/page-main/around/around3.jpg", title: "小米短袖POLO衫 女款", price: "59元", reviewed: "574", review: "大小合适，穿着很舒服", author: "张大脚板~"},
+                {href: "", img_src: "img/page-main/around/around4.jpg", title: "小米V领短袖T恤 女款", price: "39元", reviewed: "1267", review: "好穿级了，纯棉，手感不错，性价比高", author: "狗都爱吃肉"},
+                {href: "", img_src: "img/page-main/around/around5.jpg", title: "小米经典商务双肩包", price: "99元", reviewed: "1169", review: "不錯，把我的15.6吋thinkpad放進去剛剛好，...", author: "MOLKO.S"},
+                {href: "", img_src: "img/page-main/around/around6.jpg", title: "学院风简约双肩包", price: "49元", reviewed: "1.3万", review: "包不错，简约大方，好评", author: "wcswly"},
+                {href: "", img_src: "img/page-main/around/around7.jpg", title: "悟空米兔", price: "49元", reviewed: "16", review: "太棒了，米兔成员中又增添了一位，期待商城上架更多好看...", author: "米粉陈青云", label: "new"},
+                {href: "", img_src: "img/page-main/around/around8.jpg", title: "金属鼠标垫 小号", price: "49元", reviewed: "", review: "", author: ""},
             ],
             cloth: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/around/around9.jpg", title: "小米V领短袖T恤 男款", price: "39元", reviewed: "7564", review: "穿着这衣服，真是舒服，就想抱着女朋友的感觉一样", author: "574081459"},
+                {href: "", img_src: "img/page-main/around/around10.jpg", title: "小米短袖T恤 轻松米兔", price: "39元", reviewed: "2727", review: "衣服很好，特别是前面那个米兔很好看", author: "252638188"},
+                {href: "", img_src: "img/page-main/around/around11.jpg", title: "小米短袖T恤 小熊米兔", price: "39元", reviewed: "2621", review: "又到了换衣服的季节～这季图案不错哦", author: "CXFSTUDIO"},
+                {href: "", img_src: "img/page-main/around/around12.jpg", title: "小米短袖T恤 水管工米兔", price: "39元", reviewed: "1860", review: "很不错的衣服，这件是帮同学买的，很不错", author: "90后土豆"},
+                {href: "", img_src: "img/page-main/around/around13.jpg", title: "雷锋米兔连帽套头卫衣", price: "89元", reviewed: "1740", review: "穿起来萌萌哒，哈哈，一下子变成90后", author: "曾大鸿"},
+                {href: "", img_src: "img/page-main/around/around14.jpg", title: "纯色开衫卫衣 女款", price: "89元", reviewed: "793", review: "非常不错，大小样式都很喜欢，料子也很舒服", author: "无尽沙"},
+                {href: "", img_src: "img/page-main/around/around15.jpg", title: "纯色连帽套头卫衣 男款", price: "79元", reviewed: "2009", review: "简约的设计，特别的是两个口袋是联通的", author: "QQ1098591460"},
+                {href: "", img_src: "img/page-main/around/around16.jpg", title: "米兔连帽套头卫衣", price: "89元", reviewed: "", review: "", author: ""},
             ],
             rabbit: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/around/around17.jpg", title: "米兔明信片", price: "9.9元", reviewed: "177", review: "整体制作得很精美，卡片上的米兔挺萌的，这画风很喜人。", author: "胭脂"},
+                {href: "", img_src: "img/page-main/around/around18.jpg", title: "魔力红米兔钥匙扣", price: "19.9元", reviewed: "586", review: "终于换上新的钥匙圈了，点赞", author: "茉篱"},
+                {href: "", img_src: "img/page-main/around/around19.jpg", title: "背带裤米兔", price: "39元", reviewed: "549", review: "很不错，质量很好，买的值得", author: "yishion6057", label: "saleoff", sale: "享8折"},
+                {href: "", img_src: "img/page-main/around/around20.jpg", title: "帆布鞋米兔", price: "39元", reviewed: "476", review: "非常棒，手感很好，很好看，非常喜欢", author: "枫影渐随", label: "saleoff", sale: "享8折"},
+                {href: "", img_src: "img/page-main/around/around21.jpg", title: "经典版米兔", price: "29元", reviewed: "3.8万", review: "可爱(⊙o⊙)哦，好多女孩向我要呢", author: "273294452"},
+                {href: "", img_src: "img/page-main/around/around22.jpg", title: "文艺版米兔", price: "49元", reviewed: "140", review: "好可爱的一直米兔，衣服做的不错，而且合身。", author: "小米东升哥"},
+                {href: "", img_src: "img/page-main/around/around23.jpg", title: "30cm坐姿米兔", price: "49元", reviewed: "927", review: "很好很可爱。家里人很喜欢。值得拥有！", author: "247908452"},
+                {href: "", img_src: "img/page-main/around/around24.jpg", title: "黑猫米兔", price: "35元", reviewed: "", review: "", author: ""},
             ],
             life: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/around/around25.jpg", title: "金属鼠标垫 小号", price: "49元", reviewed: "6860", review: "高冷～～大气～～视觉冲击感感强烈！～～非常吸引眼球！...", author: "沉甸甸的雪花"},
+                {href: "", img_src: "img/page-main/around/around26.jpg", title: "小米皮质记事本", price: "19元", reviewed: "3529", review: "纸质好，手感不错，大小适宜", author: "戰勳"},
+                {href: "", img_src: "img/page-main/around/around27.jpg", title: "小米LED随身灯 增强版", price: "14.9元", reviewed: "2.4万", review: "非常漂亮的宝贝，不是一般的亮，还可以调节亮度，方便使...", author: "吴老衲", label: "saleoff", sale: "享8折"},
+                {href: "", img_src: "img/page-main/around/around28.jpg", title: "手机支架 小蜜蜂", price: "15元", reviewed: "6.9万", review: "小米的产品经理下了功夫的作品", author: "LOVELOVE", label: "saleoff", sale: "享8折"},
+                {href: "", img_src: "img/page-main/around/around29.jpg", title: "趣味防尘塞 MI标", price: "3.9元", reviewed: "5.7万", review: "圆头机器人，与挂绳颜色一样，春天的颜色，很漂亮，快递...", author: "上善若"},
+                {href: "", img_src: "img/page-main/around/around30.jpg", title: "小米百变随身杯", price: "39元", reviewed: "1.2万", review: "很好很实用，无印良品的感觉～", author: "那一片儿云朵"},
+                {href: "", img_src: "img/page-main/around/around31.jpg", title: "小米电源线收纳盒", price: "49元", reviewed: "1293万", review: "设计合理，不但实用，而且还是一个不错的装饰品。", author: "615988613"},
+                {href: "", img_src: "img/page-main/around/around32.jpg", title: "小米鼠标垫", price: "4.9元", reviewed: "", review: "", author: ""},
             ],
             case: [
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
-                {href: "", img_src: "", title: "", price: "", reviewed: "", review: "", author: ""},
+                {href: "", img_src: "img/page-main/around/around33.jpg", title: "90分旅行箱 20寸", price: "279元", reviewed: "1万", review: "真的非常喜欢，从包装到内在都很美，爱不释手", author: "jiangnanjiang", label: "saleoff", sale: "享9.4折"},
+                {href: "", img_src: "img/page-main/around/around34.jpg", title: "90分旅行箱 24寸", price: "329元", reviewed: "6879", review: "材质做工都相当好，尺寸正合适", author: "米粉0219", label: "saleoff", sale: "享9.5折"},
+                {href: "", img_src: "img/page-main/around/around35.jpg", title: "90分旅行洗漱包", price: "39元", reviewed: "4823", review: "这个包包不错，以后出门洗漱用品有了专业的新家了！", author: "louwujie"},
+                {href: "", img_src: "img/page-main/around/around36.jpg", title: "90分便携收纳袋", price: "29元", reviewed: "1797", review: "小巧实用，做工不错，与描述一致，继续关注！", author: "新顽主爹"},
+                {href: "", img_src: "img/page-main/around/around40.jpg", title: "学院风简约双肩包", price: "49元", reviewed: "1.3万", review: "包不错，简约大方，好评", author: "wcswly"},
+                {href: "", img_src: "img/page-main/around/around37.jpg", title: "小米极简都市双肩包", price: "129元", reviewed: "9122", review: "好东西，刚买到同事就买了一个，太帅了；以后就买小米的...", author: "972458328", label: "saleoff", sale: "享9折"},
+                {href: "", img_src: "img/page-main/around/around38.jpg", title: "小米多功能电脑包", price: "169元", reviewed: "1291", review: "比想象中的实用，好多袋子，出差的选择。不用一堆东西搅...", author: "105870213", label: "saleoff", sale: "享9折"},
+                {href: "", img_src: "img/page-main/around/around39.jpg", title: "小米商务真皮钱包", price: "149元", reviewed: "", review: "", author: ""},
             ],
         }
     }
@@ -515,16 +514,16 @@ var recommend_goods_display = new Vue({
     el: "#recommend_goods",
     data: {
         recommend_goods: [
-            {color_id: "1", img_id: "img/recommend/rec1.jpg", title: "中国好声音1MORE活塞耳机入耳式", desc: "968人", price: "129元"},
-            {color_id: "2", img_id: "img/recommend/rec2.jpg", title: "小米手环", desc: "11万人", price: "69元"},
-            {color_id: "3", img_id: "img/recommend/rec3.jpg", title: "ZONOKI 中锘基运动蓝牙耳机", desc: "1358人", price: "128元"},
-            {color_id: "4", img_id: "img/recommend/rec4.jpg", title: "先锋CL31系列入耳式耳机", desc: "4175人", price: "99元"},
-            {color_id: "5", img_id: "img/recommend/rec5.jpg", title: "Skullcandy Jib耳机", desc: "248人", price: "99元"},
-            {color_id: "1", img_id: "img/recommend/rec6.jpg", title: "铁三角CLR100耳机", desc: "1.2万人", price: "118元"},
-            {color_id: "2", img_id: "img/recommend/rec7.jpg", title: "Focus100运动耳机", desc: "25人", price: "179元"},
-            {color_id: "3", img_id: "img/recommend/rec8.jpg", title: "捷波朗Sport Pulse蓝牙运动耳机", desc: "2人", price: "1599元"},
-            {color_id: "4", img_id: "img/recommend/rec9.jpg", title: "小米小钢炮蓝牙音箱2", desc: "5189人", price: "129元"},
-            {color_id: "5", img_id: "img/recommend/recX.jpg", title: "Yeelight LED智能灯泡", desc: "8507人", price: "59元"},
+            {color_id: "1", img_src: "img/recommend/rec1.jpg", title: "中国好声音1MORE活塞耳机入耳式", desc: "968人", price: "129元"},
+            {color_id: "2", img_src: "img/recommend/rec2.jpg", title: "小米手环", desc: "11万人", price: "69元"},
+            {color_id: "3", img_src: "img/recommend/rec3.jpg", title: "ZONOKI 中锘基运动蓝牙耳机", desc: "1358人", price: "128元"},
+            {color_id: "4", img_src: "img/recommend/rec4.jpg", title: "先锋CL31系列入耳式耳机", desc: "4175人", price: "99元"},
+            {color_id: "5", img_src: "img/recommend/rec5.jpg", title: "Skullcandy Jib耳机", desc: "248人", price: "99元"},
+            {color_id: "1", img_src: "img/recommend/rec6.jpg", title: "铁三角CLR100耳机", desc: "1.2万人", price: "118元"},
+            {color_id: "2", img_src: "img/recommend/rec7.jpg", title: "Focus100运动耳机", desc: "25人", price: "179元"},
+            {color_id: "3", img_src: "img/recommend/rec8.jpg", title: "捷波朗Sport Pulse蓝牙运动耳机", desc: "2人", price: "1599元"},
+            {color_id: "4", img_src: "img/recommend/rec9.jpg", title: "小米小钢炮蓝牙音箱2", desc: "5189人", price: "129元"},
+            {color_id: "5", img_src: "img/recommend/recX.jpg", title: "Yeelight LED智能灯泡", desc: "8507人", price: "59元"},
         ]
     }
 });

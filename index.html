@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <!--<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>-->
     <script>
@@ -54,8 +53,8 @@
                 <div class="nav_menu_list">
                     <ul class="nav_menu_spec" id="nav_item_list_{{$key}}">
                         <li v-for="item in c">
-                            <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_name" /></a>
-                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{item.title}}</a></p>
+                            <a href="{{item.href}}" class="nav_menu_list_img"><img v-bind:src="item.img_src" /></a>
+                            <p><a href="{{item.href}}" class="nav_menu_list_title">{{{item.title}}}</a></p>
                             <p><a href="{{item.href}}" class="nav_menu_list_price">{{item.price}}</a></p>
                         </li>
                     </ul>
@@ -98,7 +97,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -108,7 +107,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_2">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_2">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'">选购</span>
@@ -118,7 +117,7 @@
                                 <ul class="category_item_list fl" v-if="item.datalist_3">
                                     <li class="category_item_spec clearfix" v-for="list in item.datalist_3">
                                         <a href="{{list.href}}" class="category_item_spec_detail fl">
-                                            <img v-bind:src="list.img_name">
+                                            <img v-bind:src="list.img_src">
                                             <span class="category_item_title">{{list.title}}</span>
                                         </a>
                                         <span href="#" class="category_item_btn fl" v-if="item.title == '手机 平板 电话卡'&&!item.datalist_3">选购</span>
@@ -137,10 +136,10 @@
                         </div>
                         <ul class="category_hot_list">
                             <li style="display: block">
-                                <a href="#"><img src="img/hot1.jpg" /></a>
+                                <a href="{{category_hot_list[0].href}}"><img v-bind:src="category_hot_list[0].img_src" /></a>
                             </li>
-                            <li style="display: none" v-for="item in (category_hot_list)">
-                                <a href="{{item.href}}"><img v-bind:src="item.img_name" /></a>
+                            <li style="display: none" v-for="item in (category_hot_list.slice(1))">
+                                <a href="{{item.href}}"><img v-bind:src="item.img_src" /></a>
                             </li>
                         </ul>
                         <ul class="category_move">
@@ -169,17 +168,17 @@
                     <ul class="hotimg-grid-list">
                         <li class="first">
                             <a href="">
-                                <img src="img/hot6.jpg">
+                                <img src="img/hot/hot6.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot7.jpg">
+                                <img src="img/hot/hot7.jpg">
                             </a>
                         </li>
                         <li>
                             <a href="">
-                                <img src="img/hot8.jpg">
+                                <img src="img/hot/hot8.jpg">
                             </a>
                         </li>
                     </ul>
@@ -198,7 +197,7 @@
                     </div>
                     <ul class="spec_item_list" id="star_goods">
                         <li v-for="item in (star_goods)" class="spec_item spec_top_border{{item.color_id}}">
-                            <a class="spec_img"><img v-bind:src="item.img_id" /></a>
+                            <a class="spec_img"><img v-bind:src="item.img_src" /></a>
                             <h3 class="spec_title"><a href="#" >{{item.title}}</a></h3>
                             <p class="spec_desc">{{item.desc}}</p>
                             <p class="spec_money">{{item.price}}</p>
@@ -440,7 +439,7 @@
                             </div>
                             <ul class="spec_item_list" id="recommend_goods">
                                 <li v-for="item in (recommend_goods)" class="box-shadow spec_item spec_top_border{{item.color_id}}">
-                                    <a class="spec_img"><img v-bind:src="item.img_id" /></a>
+                                    <a class="spec_img"><img v-bind:src="item.img_src" /></a>
                                     <h3 class="spec_title offsetb10"><a href="#" >{{item.title}}</a></h3>
                                     <p class="spec_money offsetb10">{{item.price}}</p>
                                     <p class="spec_desc">{{item.desc}}好评</p>
