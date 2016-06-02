@@ -15,7 +15,7 @@ var SLIDE_CONFIG = {
     favIcon: 'images/google_developers_logo_tiny.png',
     fonts: [
       'Microsoft YaHei',
-      'Hiragino Sans GB'
+      'Hiragino Sans GB',
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
     ],
