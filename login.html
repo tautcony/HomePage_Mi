@@ -1,0 +1,100 @@
+﻿<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style-login.css">
+    <title>小米帐号 - 登录</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="wrap">
+        <div class="layout" id="layout">
+          <!--表单输入登录-->
+          <div class="mainbox" id="login-main">
+            <div><a class="ercode" id="qrcode-trigger" href=""></a></div>
+            <!-- header s -->
+            <div class="lgnheader">
+              <div class="header_tit t_c">
+                <em id="custom_display_1" class="milogo">
+                  <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="50" style="fill:#ef5b00"></rect><rect x="11.25" y="15" width="5" height="20" style="fill:#FFFFFF"></rect><rect x="11.25" y="15" width="12.5" height="5" style="fill:#FFFFFF"></rect><rect x="26.25" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect><rect x="33.75" y="15" width="5" height="20" style="fill:#FFFFFF"></rect><circle cx="23.75" cy="22.5" r="7.5" fill="#FFFFFF"></circle><rect x="16.25" y="20" width="7.5" height="15" style="fill:#ef5b00"></rect><rect x="16.25" y="22.5" width="10" height="12.5" style="fill:#ef5b00"></rect><circle cx="23.75" cy="22.5" r="2.5" fill="#ef5b00"></circle><rect x="18.75" y="22.5" width="5" height="12.5" style="fill:#FFFFFF"></rect></svg>
+                </em>
+                <h4 class="header_tit_txt" id="login-title">小米帐号登录</h4>
+              <div class=" site_info"></div></div>
+            </div>
+            <!-- header e -->
+            <div>
+              <div class="login_area">
+                <form action="/pass/serviceLoginAuth2" id="login-main-form">
+                  <div class="loginbox c_b">
+                    <!-- 输入框 -->
+                    <div class="lgn_inputbg c_b">
+                      <!--验证用户名-->
+                      <div class="single_imgarea" id="account-info">
+                        <div class="na-img-area" id="account-avator" style="display:none">
+                          <div class="na-img-bg-area" id="account-avator-con"></div>
+                        </div>
+                        <p class="us_name" id="account-displayname"></p>
+                        <p class="us_id"></p>
+                      </div>
+                      <label id="region-code" class="labelbox login_user c_b" for="">
+                        <input class="item_account" type="text" name="user" id="username" placeholder="邮箱/手机号码/小米帐号">
+                      </label>
+                      <div class="country-container" id="countrycode_container" style="display: none;"></div>
+                      <label class="labelbox pwd_panel c_b">
+                        <div class="eye_panel pwd-visiable">
+                          <i class="eye pwd-eye">
+                          <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <path class="eye_outer" d="M0 8 C6 0,14 0,20 8, 14 16,6 16, 0 8 z"></path>
+                            <circle class="eye_inner" cx="10" cy="8" r="3"></circle>
+                          </svg>
+                          </i>
+                        </div>
+                        <input type="password" placeholder="密码" name="pwd" id="pwd">
+                      </label>
+                    </div>
+                    <div class="lgncode c_b" id="captcha">
+                    </div>
+                    <div class="btns_bg">
+                      <input class="btnadpt btn_orange" id="login-button" type="submit" value="立即登录">
+                    </div>
+                    <!-- 其他登录方式 s -->
+                    <div style="display: block;" class="other_login_type sns-login-container" id="custom_display_16">
+                      <fieldset class="oth_type_tit">
+                        <legend class="oth_type_txt">其他方式登录</legend>
+                      </fieldset>
+                      <div class="oth_type_links">
+                        <a class="icon_type btn_qq sns-login-link"  href="" title="QQ登录"><i class="btn_sns_icontype icon_default_qq"></i></a>
+                        <a class="icon_type btn_weibo sns-login-link" href="" title="微博登录" ><i class="btn_sns_icontype icon_default_weibo"></i></a>
+                        <a class="icon_type btn_alipay sns-login-link" href="" title="支付宝登录"><i class="btn_sns_icontype icon_default_alipay"></i></a>
+                        <a class="icon_type btn_weixin sns-login-link" href="" title="微信登录"><i class="btn_sns_icontype icon_default_weixin"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- 其他登录方式 e -->
+            <div class="n_links_area" id="custom_display_64">
+              <a class="outer-link" href="">注册小米帐号</a><span>|</span>
+              <a class="outer-link" href="">忘记密码？</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="custom_display_4" class="n-footer">  
+      <div class="nf-link-area clearfix">
+        <ul class="lang-select-list">
+          <li><a class="lang-select-li current">简体</a>|</li>
+          <li><a class="lang-select-li">繁体</a>|</li>
+          <li><a class="lang-select-li">English</a>|</li>
+          <li><a href="" target="_blank">常见问题</a></li>
+        </ul>
+      </div>
+      <p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-<a class="beian-record-link" target="_blank" href=""><span><img src="img/ghs.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</span></p>
+    </div>
+
+</body></html>
