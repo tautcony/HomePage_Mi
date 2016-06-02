@@ -14,6 +14,8 @@ var SLIDE_CONFIG = {
     //analytics: 'UA-XXXXXXXX-1', // TODO: Using this breaks GA for some reason (probably requirejs). Update your tracking code in template.html instead.
     favIcon: 'images/google_developers_logo_tiny.png',
     fonts: [
+      'Microsoft YaHei',
+      'Hiragino Sans GB'
       'Open Sans:regular,semibold,italic,italicsemibold',
       'Source Code Pro'
     ],
