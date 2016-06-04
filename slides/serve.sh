@@ -11,6 +11,9 @@ if [ $#  -ne  1 ]
 then
   port=8000
 fi
+cd scripts/md/
+python "render.py"
+cd ../../
 if [ $(uname -s) == "Darwin" ]
 then
   open=open

@@ -73,6 +73,7 @@ title: Code Example
 
 浏览时它会将模板展开为如下html代码
 
+<article class="smaller">
 <pre class="prettyprint" data-lang="html">
 &lt;ul class="leftArea">
     &lt;li>&lt;a href="#">小米网&lt;/a>&lt;/li>
@@ -103,6 +104,7 @@ title: Code Example
     &lt;/div>
 &lt;/ul>
 </pre>
+</article>
 
 ---
 
