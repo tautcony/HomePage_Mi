@@ -25,5 +25,10 @@ else
     open=xdg-open
   fi
 fi
-
-$open http://localhost:$port/index.html && python -m http.server $port;
+$open http://localhost:$port/index.html 
+ret=`python -c 'import sys; print("%i" % (sys.hexversion<0x03000000))'`
+if [ $ret -eq 0 ]; then
+    python -m http.server $port;
+else 
+    python -m SimpleHTTPServer $port;
+fi
