@@ -11,12 +11,16 @@ if [ $#  -ne  1 ]
 then
   port=8000
 fi
-
 if [ $(uname -s) == "Darwin" ]
 then
   open=open
 else
-  open=xdg-open
+  if [ $(uname -s) == "MINGW64_NT-10.0" ]
+  then
+    open=start
+  else
+    open=xdg-open
+  fi
 fi
 
-$open http://localhost:$port/template.html && python -m SimpleHTTPServer $port;
+$open http://localhost:$port/index.html && python -m http.server $port;
