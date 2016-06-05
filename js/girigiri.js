@@ -43,7 +43,7 @@ FM.play();
 
 FM.onerror=function(){
 	//this.src='http://usagi.luxun.pro/kirikiri.m4a'
-	this.src='http://ww.danmu.fm:233/中仃卅中示奈母奈仿奶件.m4a';
+	this.src='http://ww.danmu.fm:233/%E3%81%84%E3%81%91%E3%81%AA%E3%81%84%E3%83%9C%E3%83%BC%E3%83%80%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%B3.m4a';
 	FM.play();
 }
 var lyricsText=lyricsNode.innerHTML;
