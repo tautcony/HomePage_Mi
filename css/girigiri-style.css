@@ -1,0 +1,266 @@
+.o,
+body,
+html {
+    overflow: hidden
+}
+body,
+form,
+h1,
+h2,
+h3,
+h4,
+ol,
+p,
+ul {
+    margin: 0
+}
+.girigiri,
+button {
+    white-space: nowrap
+}
+.girigiri,
+.h,
+.call {
+    pointer-events: none
+}
+ol,
+ul {
+    padding: 0
+}
+button,
+html,
+input,
+option,
+select,
+textarea {
+    font: 1.2em 'PT serif', \5FAE\8EDF\6B63\9ED1\9AD4, \5FAE\8F6F\96C5\9ED1, \534E\6587\7EC6\9ED1, serif;
+    color: #222
+}
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 800
+}
+input:focus,
+textarea:focus {
+    outline: 0
+}
+::selection {
+    background: rgba(0, 149, 255, .1)
+}
+ul {
+    list-style-type: none
+}
+a {
+    color: #05A;
+    text-decoration: none
+}
+img {
+    border: 0
+}
+.o {
+    zoom: 1
+}
+.l {
+    float: left
+}
+.cnzz,
+.r {
+    float: right
+}
+.c:after {
+    content: '.';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+* html .c {
+    height: 1%
+}
+.h {
+    opacity: 0
+}
+xmp {
+    display: none
+}
+a,
+input {
+    transition: .3s ease
+}
+audio {
+    width: 100%
+}
+html {
+    background: 50% 50% red;
+    color: red;
+    transition: background 3s ease
+}
+body,
+html {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0
+}
+body {
+    padding: 1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+b:after {
+    content: attr(dir)
+}
+button {
+
+}
+#btn {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    font-size: 3em
+}
+.call,
+footer {
+    position: absolute;
+    left: 0;
+    right: 0
+}
+.girigiri {
+    font-size: 2.4em;
+    text-shadow: 1px 2px 0 green;
+    position: absolute;
+    -webkit-transform: translate(-50%, -100px);
+    transform: translate(-50%, -100px);
+    height: 1em;
+    font-weight: 700;
+    -webkit-animation: flash 2s;
+    animation: flash 2s
+}
+@-webkit-keyframes flash {
+    from {
+        -webkit-transform: translate(-50%, 0)
+    }
+}
+@keyframes flash {
+    from {
+        transform: translate(-50%, 0)
+    }
+}
+footer {
+    bottom: 0;
+    font-size: .8em
+}
+.call {
+    top: 60px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.5em;
+    font-size: 5vw;
+    font-family: sans-serif;
+    text-shadow: .2em .2em 0 green;
+    -webkit-animation: .3s steps(5) infinite;
+    -moz-animation: .3s steps(5) infinite;
+    -ms-animation: .3s steps(5) infinite;
+    animation: .3s steps(5) infinite;
+    -webkit-animation-name: shake;
+    -moz-animation-name: shake;
+    -ms-animation-name: shake;
+    animation-name: shake
+}
+@-webkit-keyframes shake {
+    50% {
+        -webkit-transform: scale(1.1)
+    }
+    33% {
+        color: red
+    }
+    66% {
+        color: #ff0
+    }
+}
+@-moz-keyframes shake {
+    50% {
+        -moz-transform: scale(1.1)
+    }
+    33% {
+        color: red
+    }
+    66% {
+        color: #ff0
+    }
+}
+@-ms-keyframes shake {
+    50% {
+        -ms-transform: scale(1.1)
+    }
+    33% {
+        color: red
+    }
+    66% {
+        color: #ff0
+    }
+}
+@keyframes shake {
+    50% {
+        transform: scale(1.1)
+    }
+    33% {
+        color: red
+    }
+    66% {
+        color: #ff0
+    }
+}
+#lrc {
+    pointer-events: none;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+    padding: 0 3em;
+    color: #00f;
+    text-align: center;
+    font: 800 32px/1 sans-serif;
+    font-size: 6vw;
+    text-shadow: red 12px 15px 0, green -15px 4px 0, #ff0 4px -16px 0;
+    -webkit-animation: shake3 .3s steps(3) infinite;
+    -moz-animation: shake3 .3s steps(3) infinite;
+    -ms-animation: shake3 .3s steps(3) infinite;
+    animation: shake3 .3s steps(3) infinite
+}
+@-webkit-keyframes shake3 {
+    30% {
+        -webkit-transform: translate(-3px, -5px)
+    }
+    60% {
+        -webkit-transform: translate(6px, 3px)
+    }
+}
+@-moz-keyframes shake3 {
+    30% {
+        -moz-transform: translate(-3px, -5px)
+    }
+    60% {
+        -moz-transform: translate(6px, 3px)
+    }
+}
+@-ms-keyframes shake3 {
+    30% {
+        -o-transform: translate(-3px, -5px)
+    }
+    60% {
+        -o-transform: translate(6px, 3px)
+    }
+}
+@keyframes shake3 {
+    30% {
+        transform: translate(-3px, -5px)
+    }
+    60% {
+        transform: translate(6px, 3px)
+    }
+}
