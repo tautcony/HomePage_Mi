@@ -1,4 +1,4 @@
-# HomePage_Mi
+# mi.xyz
 
 ##Intension
 This repository is created as the final project for the web programming lesson.
