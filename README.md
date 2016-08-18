@@ -7,7 +7,7 @@ This repository is created as the final project for the web programming lesson.
 Write a imitation page of [Xiaomi](www.mi.com/index.html)
 
 ##Result
-[Online Version](http://tautcony.github.io/HomePage_Mi)
+[Online Version](http://tautcony.github.io/mi.xyz)
 
 ##Some note
 By using [Vue.js](https://vuejs.org), many repeating sections can be replaced by a template with a Vue object as the data source.
